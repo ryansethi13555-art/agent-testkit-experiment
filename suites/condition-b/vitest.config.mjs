@@ -1,0 +1,1 @@
+export default { cacheDir: "/tmp/vite-cache", test: { include: ["inline-marketplace/test/*.test.ts", "tests/**/*.test.ts"], testTimeout: 120000, hookTimeout: 120000, pool: "forks", fileParallelism: false } };

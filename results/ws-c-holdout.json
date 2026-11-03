@@ -1,0 +1,2093 @@
+{
+ "workspace": "/home/ryan-sethi/.codex/blind-release-v2/plan-b/gemini-comp/ws-c",
+ "corpus": "/home/ryan-sethi/.codex/revised-plan-a/e0/corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 24.1,
+   "tests": 39,
+   "failed": []
+  },
+  {
+   "seconds": 24.2,
+   "tests": 39,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 23.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ee754b3bb8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 23.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 21.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b5fd4183b8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 21.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 20.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-653460e299": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ee9f08c53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fef5230a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-0704d70e4c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-24d415ba3f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8aaee70e82": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4d5755f597": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1767da2ed7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27bb27260f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.6,
+     "failingStable": [
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: Minimum INR refund is 100 minor units",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.4,
+     "failingStable": [
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: Minimum INR refund is 100 minor units",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-319b88db45": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ff46326d5b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-72a78980e2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-2252479946": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-34b89b727b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dd6a188c57": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-142b68a317": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e9a58a7a33": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e48d36c3d0": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-62874cd85f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0a43d8d08": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ea850af7a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-45e6d924f9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dfaec08497": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-f8f20e03c8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7439bc78e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b084c71403": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7d3e9b8d06": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e41d0b1a6c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1e14570737": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-105727a328": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-96e83ff06b": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [
+      "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S06: Manual capture applied then response dropped recovers safely"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 14.9,
+     "failingStable": [
+      "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S06: Manual capture applied then response dropped recovers safely"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8bcb27de2c": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 14.1,
+     "failingStable": [
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: Minimum INR refund is 100 minor units",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 14.1,
+     "failingStable": [
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: Minimum INR refund is 100 minor units",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+      "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ab36a7ebf6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b59a9449f7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a995dcb549": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95f1c74d78": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.9,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-31d2e8ad79": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ab649f3ed6": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S16: Forged Razorpay webhook with bad signature is rejected with 400"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.2,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S16: Forged Razorpay webhook with bad signature is rejected with 400"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0607952b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-782d5bf789": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-efece32a35": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-32ba3a2db5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84bce1383d": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 11.8,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-bfd7f0f437": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6b2c5a0d9c": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.5,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.5,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-92b5cdab2b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 48.2,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S01: Duplicate webhook to worker queue dedupes and books payment once",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S02: Concurrent duplicate webhooks into job queue are processed idempotently",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S03: Out-of-order webhook where refund arrives before payment",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S04: Stale refund webhook does not overwrite terminal succeeded status",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S06: Manual capture applied then response dropped recovers safely",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S09: Concurrent refunds on single order line never exceed line headroom",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S10: Sequential partial refunds summing past line amount are rejected",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S13: Refund fails asynchronously after acceptance reverses ledger cleanly"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 48.2,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S01: Duplicate webhook to worker queue dedupes and books payment once",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S02: Concurrent duplicate webhooks into job queue are processed idempotently",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S03: Out-of-order webhook where refund arrives before payment",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S04: Stale refund webhook does not overwrite terminal succeeded status",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S06: Manual capture applied then response dropped recovers safely",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S09: Concurrent refunds on single order line never exceed line headroom",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S10: Sequential partial refunds summing past line amount are rejected",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S13: Refund fails asynchronously after acceptance reverses ledger cleanly"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6845349f43": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-983dba84d7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4d248a7464": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d21e7d8f0c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cac8e14334": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.0,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S01: Duplicate webhook to worker queue dedupes and books payment once",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S02: Concurrent duplicate webhooks into job queue are processed idempotently",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S03: Out-of-order webhook where refund arrives before payment",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S04: Stale refund webhook does not overwrite terminal succeeded status",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S06: Manual capture applied then response dropped recovers safely",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S09: Concurrent refunds on single order line never exceed line headroom",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S10: Sequential partial refunds summing past line amount are rejected",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S13: Refund fails asynchronously after acceptance reverses ledger cleanly"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 11.0,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S01: Duplicate webhook to worker queue dedupes and books payment once",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S02: Concurrent duplicate webhooks into job queue are processed idempotently",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S03: Out-of-order webhook where refund arrives before payment",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S04: Stale refund webhook does not overwrite terminal succeeded status",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S06: Manual capture applied then response dropped recovers safely",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S09: Concurrent refunds on single order line never exceed line headroom",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S10: Sequential partial refunds summing past line amount are rejected",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S13: Refund fails asynchronously after acceptance reverses ledger cleanly"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-969024dce1": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-671cf65d46": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a74098df3b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8e53f6c1c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f877242f9": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S03: Out-of-order webhook where refund arrives before payment",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S04: Stale refund webhook does not overwrite terminal succeeded status",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S09: Concurrent refunds on single order line never exceed line headroom",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S10: Sequential partial refunds summing past line amount are rejected",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S13: Refund fails asynchronously after acceptance reverses ledger cleanly"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.4,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S03: Out-of-order webhook where refund arrives before payment",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S04: Stale refund webhook does not overwrite terminal succeeded status",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S09: Concurrent refunds on single order line never exceed line headroom",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S10: Sequential partial refunds summing past line amount are rejected",
+      "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S13: Refund fails asynchronously after acceptance reverses ledger cleanly"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6065a428c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cb29202017": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-25fd6c557b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-55a2fd5278": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9b27895cee": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95c7dbb56d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d23172263e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-daf9a44d54": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-78ca9e9e6d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0e7a916448": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 11.9,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8ef18682cf": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.0,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8f0abdb617": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.0,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-b95cd1f2cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9aa99b20bc": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ae3a3b1bc7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2c7243ba14": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.8,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 11.8,
+     "failingStable": [
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+      "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e167f3ab92": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: Minimum INR refund is 100 minor units",
+  "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+  "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+  "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom",
+  "tests/inline-marketplace-razorpay.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Razorpay Playbook Scenarios S16: Forged Razorpay webhook with bad signature is rejected",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S01: Duplicate webhook sequential with fresh event ID books payment once",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S02: Concurrent duplicate webhooks maintain ledger balance and effect uniqueness",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S03: Out-of-order webhook where refund arrives before payment",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S04: Stale refund event does not regress succeeded status back to pending",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S05: Webhook dropped, app recovers via confirm, late retried webhook is deduped",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S06: Manual capture applied then response dropped recovers safely",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S09: Concurrent refunds on single order line never exceed line headroom",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S10: Sequential partial refunds summing past line amount are rejected",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S11: Client double-submits checkout creates only one payment intent",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S13: Refund fails asynchronously after acceptance reverses ledger cleanly",
+  "tests/inline-marketplace-stripe.test.ts :: Inline Marketplace (LeakyBazaar) \u00b7 Stripe Playbook Scenarios S16: Forged webhook with bad signature is rejected and creates no records",
+  "tests/provider-invariants.test.ts :: R3 Test Kit & Financial Invariants Engine Financial oracle detects double-entry imbalance and reports value at risk",
+  "tests/provider-invariants.test.ts :: R3 Test Kit & Financial Invariants Engine Financial oracle detects refund line over-budget (refund.line-bounded)",
+  "tests/provider-invariants.test.ts :: R3 Test Kit & Financial Invariants Engine ProviderTwin gate injects 500, drop, 429 and clears faults",
+  "tests/provider-invariants.test.ts :: R3 Test Kit & Financial Invariants Engine Webhook signing produces contract-compliant signatures for Stripe and Razorpay",
+  "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios Razorpay contract: refunds under 100 minor units are rejected with 400",
+  "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S01: Webhook payment.captured books payment once and balances ledger",
+  "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S08: Provider 500 on Razorpay refund leaves no financial residue",
+  "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S10: Sequential partial refunds bounded by line headroom",
+  "tests/worker-marketplace-razorpay.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Razorpay Playbook Scenarios S16: Forged Razorpay webhook with bad signature is rejected with 400",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S01: Duplicate webhook to worker queue dedupes and books payment once",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S02: Concurrent duplicate webhooks into job queue are processed idempotently",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S03: Out-of-order webhook where refund arrives before payment",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S04: Stale refund webhook does not overwrite terminal succeeded status",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S05: Webhook dropped, worker settles via confirm, late retried webhook is deduped",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S06: Manual capture applied then response dropped recovers safely",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S08: Provider 500 on refund leaves no financial residue",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S09: Concurrent refunds on single order line never exceed line headroom",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S10: Sequential partial refunds summing past line amount are rejected",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S11: Client double-submits checkout creates only one payment",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S13: Refund fails asynchronously after acceptance reverses ledger cleanly",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S14: Crashed worker recovers running job on restart",
+  "tests/worker-marketplace.test.ts :: Worker Marketplace (QueueBazaar) \u00b7 Playbook Scenarios S16: Forged webhook with bad signature is rejected and never queued"
+ ],
+ "stablePassing": 39,
+ "baseFlaky": [],
+ "detectedCases": 15
+}

@@ -1,0 +1,2145 @@
+{
+ "workspace": "/home/ryan-sethi/.codex/blind-release-v2/plan-b/gemini-comp/ws-a",
+ "corpus": "/home/ryan-sethi/.codex/revised-plan-a/e0/corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 8.5,
+   "tests": 42,
+   "failed": []
+  },
+  {
+   "seconds": 8.6,
+   "tests": 42,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ee754b3bb8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 8.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b5fd4183b8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 8.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-653460e299": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 8.8,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.4,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ee9f08c53": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 10.1,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fef5230a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 9.5,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency records checkout_create_started marker and prevents duplicate provider payments when initial outcome is unknown"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.8,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency records checkout_create_started marker and prevents duplicate provider payments when initial outcome is unknown"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-0704d70e4c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-24d415ba3f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8aaee70e82": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.8,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4d5755f597": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1767da2ed7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27bb27260f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds completes checkout, receives payment.captured webhook, and posts balanced double-entry ledger",
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds enforces Razorpay INR refund minimum (100 minor units) pre-flight before reservation or network calls",
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds refunds through Razorpay payments API passing X-Refund-Idempotency and updates order status"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.7,
+     "failingStable": [
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds completes checkout, receives payment.captured webhook, and posts balanced double-entry ledger",
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds enforces Razorpay INR refund minimum (100 minor units) pre-flight before reservation or network calls",
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds refunds through Razorpay payments API passing X-Refund-Idempotency and updates order status"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-319b88db45": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ff46326d5b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-72a78980e2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-2252479946": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-34b89b727b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dd6a188c57": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-142b68a317": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e9a58a7a33": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e48d36c3d0": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-62874cd85f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0a43d8d08": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ea850af7a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-45e6d924f9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dfaec08497": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.8,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-f8f20e03c8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7439bc78e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.8,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b084c71403": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.8,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7d3e9b8d06": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e41d0b1a6c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1e14570737": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-105727a328": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-96e83ff06b": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 10.5,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles manual capture orders properly, requiring capture call to mark paid and book money"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.9,
+     "failingStable": [
+      "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles manual capture orders properly, requiring capture call to mark paid and book money"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8bcb27de2c": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 10.5,
+     "failingStable": [
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds completes checkout, receives payment.captured webhook, and posts balanced double-entry ledger",
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds enforces Razorpay INR refund minimum (100 minor units) pre-flight before reservation or network calls",
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds refunds through Razorpay payments API passing X-Refund-Idempotency and updates order status"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.7,
+     "failingStable": [
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds completes checkout, receives payment.captured webhook, and posts balanced double-entry ledger",
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds enforces Razorpay INR refund minimum (100 minor units) pre-flight before reservation or network calls",
+      "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds refunds through Razorpay payments API passing X-Refund-Idempotency and updates order status"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ab36a7ebf6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b59a9449f7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a995dcb549": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95f1c74d78": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 10.3,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 10.1,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-31d2e8ad79": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ab649f3ed6": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 9.4,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 9.6,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0607952b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-782d5bf789": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-efece32a35": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-32ba3a2db5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84bce1383d": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 10.4,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 11.1,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-bfd7f0f437": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 9.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6b2c5a0d9c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-92b5cdab2b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 44.0,
+     "failingStable": [
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue completes checkout, enqueues webhook notice, and asynchronously reconciles payment with balanced ledger",
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue deduplicates redundant webhooks via provider_event_id without duplicate processing or ledger postings",
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue handles manual capture flow and merchant capture API",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles lost response gracefully, keeping reservation to block over-refunds and reconciling without re-post",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases refunds within line headroom and updates order status correctly",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases reverses failed refunds and blocks illegal resurrection after reversal"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 44.0,
+     "failingStable": [
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue completes checkout, enqueues webhook notice, and asynchronously reconciles payment with balanced ledger",
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue deduplicates redundant webhooks via provider_event_id without duplicate processing or ledger postings",
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue handles manual capture flow and merchant capture API",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles lost response gracefully, keeping reservation to block over-refunds and reconciling without re-post",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases refunds within line headroom and updates order status correctly",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases reverses failed refunds and blocks illegal resurrection after reversal"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6845349f43": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.4,
+     "failingStable": [
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-983dba84d7": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [
+      "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Money Input Parsing & Strict Validation accepts valid safe integer numbers and clean digit strings"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 14.9,
+     "failingStable": [
+      "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Money Input Parsing & Strict Validation accepts valid safe integer numbers and clean digit strings"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4d248a7464": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d21e7d8f0c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cac8e14334": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 43.7,
+     "failingStable": [
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue completes checkout, enqueues webhook notice, and asynchronously reconciles payment with balanced ledger",
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue deduplicates redundant webhooks via provider_event_id without duplicate processing or ledger postings",
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue handles manual capture flow and merchant capture API",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles lost response gracefully, keeping reservation to block over-refunds and reconciling without re-post",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases refunds within line headroom and updates order status correctly",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases reverses failed refunds and blocks illegal resurrection after reversal"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 41.8,
+     "failingStable": [
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue completes checkout, enqueues webhook notice, and asynchronously reconciles payment with balanced ledger",
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue deduplicates redundant webhooks via provider_event_id without duplicate processing or ledger postings",
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue handles manual capture flow and merchant capture API",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles lost response gracefully, keeping reservation to block over-refunds and reconciling without re-post",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases refunds within line headroom and updates order status correctly",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases reverses failed refunds and blocks illegal resurrection after reversal"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-969024dce1": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-671cf65d46": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue routes mismatched or unexpected payment amounts to platform:unallocated_receipts suspense account"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.4,
+     "failingStable": [
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue routes mismatched or unexpected payment amounts to platform:unallocated_receipts suspense account"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a74098df3b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8e53f6c1c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f877242f9": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 21.7,
+     "failingStable": [
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles lost response gracefully, keeping reservation to block over-refunds and reconciling without re-post",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases refunds within line headroom and updates order status correctly",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases reverses failed refunds and blocks illegal resurrection after reversal"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 21.2,
+     "failingStable": [
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles lost response gracefully, keeping reservation to block over-refunds and reconciling without re-post",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases refunds within line headroom and updates order status correctly",
+      "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases reverses failed refunds and blocks illegal resurrection after reversal"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6065a428c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cb29202017": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-25fd6c557b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-55a2fd5278": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9b27895cee": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95c7dbb56d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue validates line count, currencies and sellers during order creation"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.1,
+     "failingStable": [
+      "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue validates line count, currencies and sellers during order creation"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d23172263e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-daf9a44d54": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-78ca9e9e6d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0e7a916448": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.6,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.0,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8ef18682cf": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 11.6,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8f0abdb617": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.1,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-b95cd1f2cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9aa99b20bc": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ae3a3b1bc7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2c7243ba14": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.8,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 11.5,
+     "failingStable": [
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+      "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e167f3ab92": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Banker's Half-Even Rounding & Commission Split guarantees seller_amount + commission_amount === line_amount for all non-negative amounts",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Banker's Half-Even Rounding & Commission Split satisfies half-even rounding at exact .5 boundaries",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Banker's Half-Even Rounding & Commission Split verifies divHalfEven rejects negative numbers or non-positive denominators",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Double-Entry Ledger Balancing Properties guarantees saleLegs always sums to exactly 0n for any combination of order lines",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Headroom Calculation & Over-Refund Prevention correctly computes headroom with arbitrary mixes of refund statuses and reservations",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Headroom Calculation & Over-Refund Prevention verifies refundHoldsMoney agreement across both applications",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Money Input Parsing & Strict Validation accepts valid safe integer numbers and clean digit strings",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Money Input Parsing & Strict Validation rejects non-integers, floats, negative numbers, scientific notation and overflow",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Money Input Parsing & Strict Validation verifies sdkMinor limits and conversions",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Payment State Machine Monotonicity derives order status consistently from captured and refunded money facts",
+  "tests/cross-cutting-money-invariants.test.ts :: Cross-Cutting Money Invariants & Property-Based Tests Payment State Machine Monotonicity ensures terminal payment states (succeeded, canceled) can never move backwards or change",
+  "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds completes checkout, receives payment.captured webhook, and posts balanced double-entry ledger",
+  "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds enforces Razorpay INR refund minimum (100 minor units) pre-flight before reservation or network calls",
+  "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds handles concurrent checkouts on the same order idempotently with Razorpay",
+  "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds refunds through Razorpay payments API passing X-Refund-Idempotency and updates order status",
+  "tests/inline-razorpay.test.ts :: Inline Marketplace - Razorpay Payments & Refunds verifies Razorpay webhook HMAC signatures and rejects invalid signatures",
+  "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency creates order and guarantees checkout idempotency sequentially and under high concurrency",
+  "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles confirm return endpoint and concurrent webhook without duplicate sales",
+  "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles manual capture orders properly, requiring capture call to mark paid and book money",
+  "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency handles payment_intent.succeeded webhook, books double-entry ledger with 10% commission, and dedupes retries",
+  "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency records checkout_create_started marker and prevents duplicate provider payments when initial outcome is unknown",
+  "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency rejects tampered webhook payloads with invalid signature",
+  "tests/inline-stripe-payments.test.ts :: Inline Marketplace - Stripe Payment Flows & Idempotency validates order inputs rejecting non-positive lines, invalid currencies and empty orders",
+  "tests/inline-stripe-refunds.test.ts :: Inline Marketplace - Stripe Refund Flows & Edge Cases handles partial refunds, adjusts ledger balances, and rejects refunds exceeding line or order capacity",
+  "tests/inline-stripe-refunds.test.ts :: Inline Marketplace - Stripe Refund Flows & Edge Cases handles refund failure and reversal, ensuring accurate ledger restoration and idempotency",
+  "tests/inline-stripe-refunds.test.ts :: Inline Marketplace - Stripe Refund Flows & Edge Cases maintains line reservation when provider call fails with ambiguous error, preventing over-refunds",
+  "tests/inline-stripe-refunds.test.ts :: Inline Marketplace - Stripe Refund Flows & Edge Cases prevents double-refunding when concurrent requests race to consume the same line headroom",
+  "tests/inline-stripe-refunds.test.ts :: Inline Marketplace - Stripe Refund Flows & Edge Cases processes provider dashboard refunds, booking to unallocated refunds account without breaking double-entry balance",
+  "tests/inline-stripe-refunds.test.ts :: Inline Marketplace - Stripe Refund Flows & Edge Cases releases reservation when refund is definitively rejected by provider (e.g. rate limit or amount too large)",
+  "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds asynchronously processes Razorpay payment webhook notice, verifies signatures, and balances ledger",
+  "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds sends Razorpay refunds with X-Refund-Idempotency header and releases reservation on definitive rejection",
+  "tests/worker-razorpay.test.ts :: Worker Marketplace - Razorpay Payments & Refunds validates Razorpay INR refund minimum before reserving line capacity",
+  "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue completes checkout, enqueues webhook notice, and asynchronously reconciles payment with balanced ledger",
+  "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue deduplicates redundant webhooks via provider_event_id without duplicate processing or ledger postings",
+  "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue handles manual capture flow and merchant capture API",
+  "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue recovers running jobs left behind by a simulated crash on startup",
+  "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue routes mismatched or unexpected payment amounts to platform:unallocated_receipts suspense account",
+  "tests/worker-stripe-payments.test.ts :: Worker Marketplace - Stripe Payment Processing & Job Queue validates line count, currencies and sellers during order creation",
+  "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles dashboard refunds arriving before payment webhook is processed",
+  "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases handles lost response gracefully, keeping reservation to block over-refunds and reconciling without re-post",
+  "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases refunds within line headroom and updates order status correctly",
+  "tests/worker-stripe-refunds.test.ts :: Worker Marketplace - Stripe Refund Flows & Edge Cases reverses failed refunds and blocks illegal resurrection after reversal"
+ ],
+ "stablePassing": 42,
+ "baseFlaky": [],
+ "detectedCases": 24
+}

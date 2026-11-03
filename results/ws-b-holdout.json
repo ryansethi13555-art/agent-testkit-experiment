@@ -1,0 +1,2124 @@
+{
+ "workspace": "/home/ryan-sethi/.codex/blind-release-v2/plan-b/gemini-comp/ws-b",
+ "corpus": "/home/ryan-sethi/.codex/revised-plan-a/e0/corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 11.8,
+   "tests": 40,
+   "failed": []
+  },
+  {
+   "seconds": 12.7,
+   "tests": 40,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ee754b3bb8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b5fd4183b8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-653460e299": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ee9f08c53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fef5230a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-0704d70e4c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-24d415ba3f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8aaee70e82": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4d5755f597": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1767da2ed7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27bb27260f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 13.5,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay concurrent operation conflict (400) preserves reservation without corruption"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.2,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay concurrent operation conflict (400) preserves reservation without corruption"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-319b88db45": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ff46326d5b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-72a78980e2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-2252479946": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-34b89b727b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dd6a188c57": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-142b68a317": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e9a58a7a33": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e48d36c3d0": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-62874cd85f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0a43d8d08": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ea850af7a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-45e6d924f9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dfaec08497": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-f8f20e03c8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7439bc78e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b084c71403": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7d3e9b8d06": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e41d0b1a6c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1e14570737": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-105727a328": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-96e83ff06b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8bcb27de2c": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 13.5,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay concurrent operation conflict (400) preserves reservation without corruption",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay webhook signature verification and forgery rejection"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.1,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay concurrent operation conflict (400) preserves reservation without corruption",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay webhook signature verification and forgery rejection"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ab36a7ebf6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b59a9449f7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a995dcb549": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 10.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 11.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95f1c74d78": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 13.8,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.0,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-31d2e8ad79": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ab649f3ed6": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.0,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0607952b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-782d5bf789": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.1,
+     "failingStable": [
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification alloc.declared-part-arithmetic & alloc.declared-parts-sum-to-whole: Multi-seller odd-amount conservation"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.7,
+     "failingStable": [
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification alloc.declared-part-arithmetic & alloc.declared-parts-sum-to-whole: Multi-seller odd-amount conservation"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-efece32a35": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-32ba3a2db5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84bce1383d": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.3,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-bfd7f0f437": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 14.9,
+     "failingStable": [
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S06: Capture applied, response lost across retries - reconcile job settles order to paid"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.4,
+     "failingStable": [
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S06: Capture applied, response lost across retries - reconcile job settles order to paid"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6b2c5a0d9c": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.9,
+     "failingStable": [
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.3,
+     "failingStable": [
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 14.2,
+     "failingStable": [
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 13.8,
+     "failingStable": [
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-92b5cdab2b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 48.8,
+     "failingStable": [
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification alloc.declared-part-arithmetic & alloc.declared-parts-sum-to-whole: Multi-seller odd-amount conservation",
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification refund.lifecycle-no-regression: Terminal states ignore regressive pending webhooks",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Delayed-notification payment (payment_intent.processing) does not prematurely book revenue",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Multiple partial refunds on single payment across distinct order lines accumulate correctly",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Replayed idempotent refund returns exact original response with Idempotent-Replayed header",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Zero-decimal currency (JPY) amounts are exact integer minor units without loss",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S01: Duplicate webhook (sequential, fresh event id) is processed idempotently by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S03: Refund event delivered before payment event is reconciled cleanly by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S04: Stale refund event delivered after final one does not regress refund status",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S06: Capture applied, response lost across retries - reconcile job settles order to paid",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S08: Provider 5xx on refund keeps reservation in unknown state, preventing line overdraft",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S09: Concurrent refunds on one line strictly bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S10: Sequential partial refunds bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S13: Refund fails asynchronously after acceptance - worker reverses ledger entry leaving zero residue",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S14: Worker process restarts after crash and re-queues running jobs"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 48.9,
+     "failingStable": [
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification alloc.declared-part-arithmetic & alloc.declared-parts-sum-to-whole: Multi-seller odd-amount conservation",
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification refund.lifecycle-no-regression: Terminal states ignore regressive pending webhooks",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Delayed-notification payment (payment_intent.processing) does not prematurely book revenue",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Multiple partial refunds on single payment across distinct order lines accumulate correctly",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Replayed idempotent refund returns exact original response with Idempotent-Replayed header",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Zero-decimal currency (JPY) amounts are exact integer minor units without loss",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S01: Duplicate webhook (sequential, fresh event id) is processed idempotently by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S03: Refund event delivered before payment event is reconciled cleanly by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S04: Stale refund event delivered after final one does not regress refund status",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S06: Capture applied, response lost across retries - reconcile job settles order to paid",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S08: Provider 5xx on refund keeps reservation in unknown state, preventing line overdraft",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S09: Concurrent refunds on one line strictly bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S10: Sequential partial refunds bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S13: Refund fails asynchronously after acceptance - worker reverses ledger entry leaving zero residue",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S14: Worker process restarts after crash and re-queues running jobs"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6845349f43": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-983dba84d7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4d248a7464": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d21e7d8f0c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cac8e14334": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 13.2,
+     "failingStable": [
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification alloc.declared-part-arithmetic & alloc.declared-parts-sum-to-whole: Multi-seller odd-amount conservation",
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification refund.lifecycle-no-regression: Terminal states ignore regressive pending webhooks",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Delayed-notification payment (payment_intent.processing) does not prematurely book revenue",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Multiple partial refunds on single payment across distinct order lines accumulate correctly",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Replayed idempotent refund returns exact original response with Idempotent-Replayed header",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Zero-decimal currency (JPY) amounts are exact integer minor units without loss",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S01: Duplicate webhook (sequential, fresh event id) is processed idempotently by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S03: Refund event delivered before payment event is reconciled cleanly by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S04: Stale refund event delivered after final one does not regress refund status",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S06: Capture applied, response lost across retries - reconcile job settles order to paid",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S08: Provider 5xx on refund keeps reservation in unknown state, preventing line overdraft",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S09: Concurrent refunds on one line strictly bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S10: Sequential partial refunds bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S13: Refund fails asynchronously after acceptance - worker reverses ledger entry leaving zero residue",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S14: Worker process restarts after crash and re-queues running jobs"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.8,
+     "failingStable": [
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification alloc.declared-part-arithmetic & alloc.declared-parts-sum-to-whole: Multi-seller odd-amount conservation",
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification refund.lifecycle-no-regression: Terminal states ignore regressive pending webhooks",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Delayed-notification payment (payment_intent.processing) does not prematurely book revenue",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Multiple partial refunds on single payment across distinct order lines accumulate correctly",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Replayed idempotent refund returns exact original response with Idempotent-Replayed header",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Zero-decimal currency (JPY) amounts are exact integer minor units without loss",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S01: Duplicate webhook (sequential, fresh event id) is processed idempotently by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S03: Refund event delivered before payment event is reconciled cleanly by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S04: Stale refund event delivered after final one does not regress refund status",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S06: Capture applied, response lost across retries - reconcile job settles order to paid",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S08: Provider 5xx on refund keeps reservation in unknown state, preventing line overdraft",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S09: Concurrent refunds on one line strictly bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S10: Sequential partial refunds bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S13: Refund fails asynchronously after acceptance - worker reverses ledger entry leaving zero residue",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S14: Worker process restarts after crash and re-queues running jobs"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-969024dce1": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-671cf65d46": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a74098df3b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8e53f6c1c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.6,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f877242f9": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.0,
+     "failingStable": [
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification refund.lifecycle-no-regression: Terminal states ignore regressive pending webhooks",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Multiple partial refunds on single payment across distinct order lines accumulate correctly",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Replayed idempotent refund returns exact original response with Idempotent-Replayed header",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Zero-decimal currency (JPY) amounts are exact integer minor units without loss",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S03: Refund event delivered before payment event is reconciled cleanly by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S04: Stale refund event delivered after final one does not regress refund status",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S09: Concurrent refunds on one line strictly bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S10: Sequential partial refunds bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S13: Refund fails asynchronously after acceptance - worker reverses ledger entry leaving zero residue"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 14.9,
+     "failingStable": [
+      "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification refund.lifecycle-no-regression: Terminal states ignore regressive pending webhooks",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Multiple partial refunds on single payment across distinct order lines accumulate correctly",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Replayed idempotent refund returns exact original response with Idempotent-Replayed header",
+      "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Zero-decimal currency (JPY) amounts are exact integer minor units without loss",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S03: Refund event delivered before payment event is reconciled cleanly by worker",
+      "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S04: Stale refund event delivered after final one does not regress refund status",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S09: Concurrent refunds on one line strictly bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S10: Sequential partial refunds bounded by line amount",
+      "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S13: Refund fails asynchronously after acceptance - worker reverses ledger entry leaving zero residue"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6065a428c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cb29202017": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-25fd6c557b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-55a2fd5278": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9b27895cee": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95c7dbb56d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d23172263e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-daf9a44d54": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-78ca9e9e6d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0e7a916448": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.7,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8ef18682cf": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.7,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.8,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8f0abdb617": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.7,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-b95cd1f2cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9aa99b20bc": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ae3a3b1bc7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2c7243ba14": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 12.8,
+     "failingStable": [
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+      "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e167f3ab92": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 12.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/inline-s01-s05-webhooks.test.ts :: Inline Marketplace: S01-S05 Webhooks and Interleavings S01: Duplicate webhook (sequential, fresh event id) is processed idempotently without duplicate ledger entries",
+  "tests/inline-s01-s05-webhooks.test.ts :: Inline Marketplace: S01-S05 Webhooks and Interleavings S02: Duplicate webhook (concurrent) does not cause duplicate posting or race condition",
+  "tests/inline-s01-s05-webhooks.test.ts :: Inline Marketplace: S01-S05 Webhooks and Interleavings S03: Refund event delivered before payment event is held / retried until payment arrives",
+  "tests/inline-s01-s05-webhooks.test.ts :: Inline Marketplace: S01-S05 Webhooks and Interleavings S04: Stale refund event delivered after final one does not regress refund status",
+  "tests/inline-s01-s05-webhooks.test.ts :: Inline Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after app already recovered via confirm",
+  "tests/inline-s01-s05-webhooks.test.ts :: Inline Marketplace: S01-S05 Webhooks and Interleavings S16: Forged payment webhook (invalid signature) is rejected with 400 without state mutation",
+  "tests/inline-s06-s14-faults-and-races.test.ts :: Inline Marketplace: S06-S14 Faults, Races and Lifecycle S06: Capture applied, response lost across retries - webhook resolves to paid and books once",
+  "tests/inline-s06-s14-faults-and-races.test.ts :: Inline Marketplace: S06-S14 Faults, Races and Lifecycle S08: Provider 5xx on refund (nothing applied) keeps reservation and can be recovered",
+  "tests/inline-s06-s14-faults-and-races.test.ts :: Inline Marketplace: S06-S14 Faults, Races and Lifecycle S09: Concurrent refunds on one order line (rendezvous) strictly respect line bound",
+  "tests/inline-s06-s14-faults-and-races.test.ts :: Inline Marketplace: S06-S14 Faults, Races and Lifecycle S10: Sequential partial refunds summing past line amount are rejected",
+  "tests/inline-s06-s14-faults-and-races.test.ts :: Inline Marketplace: S06-S14 Faults, Races and Lifecycle S11: Client double-submits checkout without creating duplicate payment intents",
+  "tests/inline-s06-s14-faults-and-races.test.ts :: Inline Marketplace: S06-S14 Faults, Races and Lifecycle S13: Refund fails asynchronously after acceptance - ledger reversed with zero residue",
+  "tests/inline-s06-s14-faults-and-races.test.ts :: Inline Marketplace: S06-S14 Faults, Races and Lifecycle S14: App recovers after crash during manual capture without duplicate payment or unbalance",
+  "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification Out-of-band Dashboard Refund: Attributed to unallocated_refunds or reconciled without corrupting line budgets",
+  "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification Property Test: Commission arithmetic and conservation holds across random minor unit amounts",
+  "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification alloc.declared-part-arithmetic & alloc.declared-parts-sum-to-whole: Multi-seller odd-amount conservation",
+  "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification ledger.clearing-mirrors-provider: Clearing account balance exactly matches provider movements",
+  "tests/money-laws-deep.test.ts :: Deep Money Laws and Accounting Verification refund.lifecycle-no-regression: Terminal states ignore regressive pending webhooks",
+  "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Delayed-notification payment (payment_intent.processing) does not prematurely book revenue",
+  "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Multiple partial refunds on single payment across distinct order lines accumulate correctly",
+  "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Replayed idempotent refund returns exact original response with Idempotent-Replayed header",
+  "tests/provider-contracts-edge-cases.test.ts :: Provider Contract Edge Cases & Invariants Zero-decimal currency (JPY) amounts are exact integer minor units without loss",
+  "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay INR minimum refund amount (100 paise = 1.00 INR) is enforced before or during refund",
+  "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay concurrent operation conflict (400) preserves reservation without corruption",
+  "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay duplicate webhook delivery with x-razorpay-event-id is processed once",
+  "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay out-of-order webhook delivery (payment.captured before payment.authorized)",
+  "tests/razorpay-scenarios.test.ts :: Razorpay Provider Contracts and Scenarios Razorpay webhook signature verification and forgery rejection",
+  "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S01: Duplicate webhook (sequential, fresh event id) is processed idempotently by worker",
+  "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S02: Duplicate webhook (concurrent) enqueues and drains cleanly without duplicate postings",
+  "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S03: Refund event delivered before payment event is reconciled cleanly by worker",
+  "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S04: Stale refund event delivered after final one does not regress refund status",
+  "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S05: Payment webhook dropped, retried after shop confirm - books once",
+  "tests/worker-s01-s05-webhooks.test.ts :: Worker Marketplace: S01-S05 Webhooks and Interleavings S16: Forged payment webhook rejected with 400, no jobs enqueued",
+  "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S06: Capture applied, response lost across retries - reconcile job settles order to paid",
+  "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S08: Provider 5xx on refund keeps reservation in unknown state, preventing line overdraft",
+  "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S09: Concurrent refunds on one line strictly bounded by line amount",
+  "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S10: Sequential partial refunds bounded by line amount",
+  "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S11: Client double-submits checkout returns same payment reference",
+  "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S13: Refund fails asynchronously after acceptance - worker reverses ledger entry leaving zero residue",
+  "tests/worker-s06-s14-faults-and-races.test.ts :: Worker Marketplace: S06-S14 Faults, Races and Lifecycle S14: Worker process restarts after crash and re-queues running jobs"
+ ],
+ "stablePassing": 40,
+ "baseFlaky": [],
+ "detectedCases": 17
+}
