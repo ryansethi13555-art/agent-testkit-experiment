@@ -1,0 +1,2 @@
+Run: `MI_PG_ADMIN_URL=postgres://postgres@127.0.0.1:5432/postgres node node_modules/vitest/vitest.mjs run --configLoader native`
+(vitest picks up `inline-marketplace/test/*.test.ts` and `tests/**/*.test.ts`). The worker app's own tests run with `node --test --test-concurrency=1 worker-marketplace/test/*.test.ts`. Apps: `inline-marketplace/` (HTTP marketplace with inline payment/refund recovery) and `worker-marketplace/` (durable Postgres job table and asynchronous worker). Both use Stripe or Razorpay via their provider adapters.
