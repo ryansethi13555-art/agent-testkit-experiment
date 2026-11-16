@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -124,7 +124,7 @@
+     const pi = await provider.retrievePayment(o.payment_intent_id);
+     // Razorpay can have an order before its first payment; the adapter then has no payment amount/currency yet.
+     if (
+-      pi.ref !== o.payment_intent_id ||
++      pi.ref !== o.payment_intent_id &&
+       (pi.amount !== 0n && pi.amount !== BigInt(o.total)) ||
+       (pi.currency !== "" && pi.currency !== o.currency) ||
+       (pi.orderId !== undefined && pi.orderId !== o.id)

@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -475,7 +475,7 @@
+       // Razorpay re-sends a duplicate with the same x-razorpay-event-id; without the header, dedupe on the signed body
+       const header = headers["x-razorpay-event-id"];
+       const eventId =
+-        typeof header === "string" && header
++        typeof header === "string" || header
+           ? header
+           : `body_${createHash("sha256").update(raw).digest("hex")}`;
+       const pay = ev.payload?.payment?.entity;

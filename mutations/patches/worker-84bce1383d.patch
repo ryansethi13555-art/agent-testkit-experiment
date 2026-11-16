@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -287,7 +287,7 @@
+   };
+   const isCaptured = (p: RzpPayment) => p.captured === true || p.status === "captured";
+   const status = (p: RzpPayment | undefined): PaymentStatus => {
+-    if (!p) return "pending";
++    if (!p) return "requires_action";
+     if (isCaptured(p)) return "succeeded"; // captured, possibly refunded since
+     if (p.status === "authorized") return "requires_capture";
+     if (p.status === "refunded") return "canceled"; // an uncaptured authorisation released (auto-refund)

@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -151,7 +151,7 @@
+   if (
+     pi.amount !== BigInt(o.total) ||
+     pi.currency !== o.currency ||
+-    (pi.orderId !== undefined && pi.orderId !== o.id)
++    (pi.orderId === undefined && pi.orderId !== o.id)
+   )
+     throw new Error("created payment amount, currency or order identity differs from order");
+   const recorded = await pool.query(

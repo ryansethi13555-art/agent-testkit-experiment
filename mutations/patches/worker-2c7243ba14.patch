@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -360,7 +360,7 @@
+             providerMinor(o.amount) !== p.amount ||
+             o.currency.toUpperCase() !== p.currency ||
+             (o.receipt != null && o.receipt !== p.orderId) ||
+-            (notesOf(o.notes).order_id !== undefined && notesOf(o.notes).order_id !== p.orderId)
++            (notesOf(o.notes).order_id !== undefined || notesOf(o.notes).order_id !== p.orderId)
+           )
+             throw new ProviderError("unknown", undefined, "order response changed money or identity");
+           return {

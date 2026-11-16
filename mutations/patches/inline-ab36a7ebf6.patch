@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -443,7 +443,7 @@
+     },
+     // SDK methods expose {statusCode,error}; the pinned HTTP seam exposes an Axios status/response.
+     isProviderError: (e) =>
+-      (e as { statusCode?: unknown; status?: unknown })?.statusCode !== undefined ||
++      (e as { statusCode?: unknown; status?: unknown })?.statusCode !== undefined &&
+       (e as { status?: unknown })?.status !== undefined ||
+       e instanceof TypeError,
+     definitiveRefundRejection: (e) => {

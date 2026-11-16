@@ -1,0 +1,13 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -451,9 +451,7 @@
+   if (known?.origin === "api" && r.requestId !== undefined && r.requestId !== known.id)
+     throw new Error("refund request identity differs from stored refund");
+   if (
+-    !known &&
+-    r.requestId &&
+-    (await c.query("SELECT 1 FROM refund_requests WHERE id=$1", [r.requestId])).rowCount
++    false
+   )
+     throw new Error("refund request identity or order differs from reservation");
+   if (!known) {

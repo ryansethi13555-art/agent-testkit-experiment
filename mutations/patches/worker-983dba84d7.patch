@@ -1,0 +1,11 @@
+--- a/src/money.ts
++++ b/src/money.ts
+@@ -35,7 +35,7 @@
+   }
+   if (typeof v === "string" && /^[0-9]{1,15}$/.test(v)) {
+     const b = BigInt(v);
+-    return b <= MAX_AMOUNT ? b : undefined;
++    return b < MAX_AMOUNT ? b : undefined;
+   }
+   return undefined;
+ }

@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -294,7 +294,7 @@
+           [orderId],
+         )
+       ).rows[0]?.s as bigint;
+-      if (amount > paid - held - pendingReq)
++      if (amount > paid + held - pendingReq)
+         throw new HttpError(400, "amount exceeds what is refundable on this payment");
+       const requestError = this.provider.refundRequestError?.(amount, o.currency);
+       if (requestError) throw new HttpError(400, requestError);

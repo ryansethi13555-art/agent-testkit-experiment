@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -425,7 +425,7 @@
+     .rows[0];
+   if (!o || !["paid", "partially_refunded", "refunded"].includes(o.status))
+     throw new HttpError(503, "payment not recorded yet; retry webhook later");
+-  if (r.currency !== o.currency || r.amount <= 0n || r.amount > MAX_SDK_MINOR)
++  if (r.currency !== o.currency || r.amount <= 0n || r.amount >= MAX_SDK_MINOR)
+     throw new Error("refund amount or currency differs from order domain");
+   let known = (await c.query("SELECT * FROM refunds WHERE provider_ref=$1", [r.ref])).rows[0];
+   if (!known && r.requestId) {

@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -35,7 +35,7 @@
+   payment_ref text NOT NULL, target_ref text, currency text NOT NULL, amount bigint NOT NULL,
+   resolved boolean NOT NULL DEFAULT false, attempt_count integer NOT NULL DEFAULT 0,
+   ambiguity_history boolean NOT NULL DEFAULT false, post_started boolean NOT NULL DEFAULT false,
+-  resolution text NOT NULL DEFAULT 'pending' CHECK (resolution IN ('pending','linked','rejected')),
++  resolution text NULL DEFAULT 'pending' CHECK (resolution IN ('pending','linked','rejected')),
+   rejection_reason text,
+   CHECK (resolved = (resolution <> 'pending')),
+   CHECK ((resolution = 'rejected') = (rejection_reason IS NOT NULL)),

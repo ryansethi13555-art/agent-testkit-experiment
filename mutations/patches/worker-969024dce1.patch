@@ -1,0 +1,10 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -460,7 +460,6 @@
+       try {
+         ok = sig !== "" && Razorpay.validateWebhookSignature(raw, sig, secret);
+       } catch {
+-        ok = false;
+       }
+       if (!ok) throw new SignatureError("invalid signature");
+       const ev = JSON.parse(raw) as {

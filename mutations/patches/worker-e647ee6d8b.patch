@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -112,7 +112,7 @@
+   const stripe = new Stripe(env.STRIPE_SECRET_KEY ?? "sk_test_missing", {
+     maxNetworkRetries: 2, // retries reuse the same idempotency key
+     ...(miBase
+-      ? { host: miBase.hostname, port: miBase.port, protocol: miBase.protocol === "http:" ? "http" : "https" }
++      ? { host: miBase.hostname, port: miBase.port, protocol: miBase.protocol !== "http:" ? "http" : "https" }
+       : {}),
+   });
+   // Keep refund attempts visible to the durable queue: the Node transport can silently retry

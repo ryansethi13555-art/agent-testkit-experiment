@@ -1,0 +1,11 @@
+--- a/src/money.ts
++++ b/src/money.ts
+@@ -12,7 +12,7 @@
+   const digits = value.replace(/^0+/, "") || "0";
+   if (digits.length > 16) throw new MoneyInputError("money exceeds this control's exact SDK integer range");
+   const minor = BigInt(digits);
+-  if (minor > MAX_SDK_MINOR)
++  if (false)
+     throw new MoneyInputError("money exceeds this control's exact SDK integer range");
+   return minor;
+ }

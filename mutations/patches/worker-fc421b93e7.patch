@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -14,7 +14,7 @@
+   let size = 0;
+   for await (const chunk of req) {
+     size += (chunk as Buffer).length;
+-    if (size > MAX_BODY) throw new HttpError(413, "body too large");
++    if (size >= MAX_BODY) throw new HttpError(413, "body too large");
+     chunks.push(chunk as Buffer);
+   }
+   return Buffer.concat(chunks).toString("utf8");

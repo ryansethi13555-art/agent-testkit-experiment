@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -203,7 +203,7 @@
+           type: ev.type,
+           payment: payment(ev.data.object as Stripe.PaymentIntent),
+         };
+-      if (ev.type === "refund.created" || ev.type === "refund.updated" || ev.type === "refund.failed")
++      if (true)
+         return {
+           eventId: ev.id,
+           kind: "refund_changed",

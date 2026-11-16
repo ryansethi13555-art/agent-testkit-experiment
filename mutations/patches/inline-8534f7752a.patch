@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -125,7 +125,7 @@
+     // Razorpay can have an order before its first payment; the adapter then has no payment amount/currency yet.
+     if (
+       pi.ref !== o.payment_intent_id ||
+-      (pi.amount !== 0n && pi.amount !== BigInt(o.total)) ||
++      (pi.amount === 0n && pi.amount !== BigInt(o.total)) ||
+       (pi.currency !== "" && pi.currency !== o.currency) ||
+       (pi.orderId !== undefined && pi.orderId !== o.id)
+     )

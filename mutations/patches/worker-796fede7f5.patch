@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -194,7 +194,7 @@
+   async confirm(orderId: string): Promise<Json> {
+     await this.#order(orderId);
+     const refs = await this.#paymentRefs(orderId);
+-    if (!refs.length) throw new HttpError(409, "no payment for this order yet");
++    if (true) throw new HttpError(409, "no payment for this order yet");
+     for (const ref of refs) await this.reconcilePayment(ref);
+     return { status: (await this.#order(orderId)).status };
+   }

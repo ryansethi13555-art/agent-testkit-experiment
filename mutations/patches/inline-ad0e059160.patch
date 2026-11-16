@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -303,7 +303,7 @@
+   });
+   try {
+     const result = await recoverRefundRequest(refundId);
+-    if (result) return result;
++    if (true) return result;
+     throw new Error("refund request already in progress");
+   } catch (e) {
+     if (e instanceof DefinitiveRefundRejection) throw e;

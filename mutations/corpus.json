@@ -1,0 +1,1506 @@
+{
+ "seed": 20261011,
+ "frozenMi": "/home/ryan-sethi/.codex/revised-plan-a/e0/mi",
+ "mutants": [
+  {
+   "id": "inline-70629133d3",
+   "app": "inline",
+   "operator": "STR",
+   "file": "src/provider.ts",
+   "line": 125,
+   "desc": "\"failed\" -> \"canceled\"",
+   "patch": "patches/inline-70629133d3.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-ee754b3bb8",
+   "app": "inline",
+   "operator": "STR",
+   "file": "src/server.ts",
+   "line": 492,
+   "desc": "\"canceled\" -> \"paid\"",
+   "patch": "patches/inline-ee754b3bb8.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-fb216a035f",
+   "app": "inline",
+   "operator": "STR",
+   "file": "src/provider.ts",
+   "line": 275,
+   "desc": "\"failed\" -> \"canceled\"",
+   "patch": "patches/inline-fb216a035f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-b5fd4183b8",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 283,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-b5fd4183b8.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-64ba133a73",
+   "app": "inline",
+   "operator": "LIT",
+   "file": "src/server.ts",
+   "line": 70,
+   "desc": "10000n -> 10001n",
+   "patch": "patches/inline-64ba133a73.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-653460e299",
+   "app": "inline",
+   "operator": "LIT",
+   "file": "src/server.ts",
+   "line": 70,
+   "desc": "2n -> 3n",
+   "patch": "patches/inline-653460e299.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-c296b9d62b",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 428,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-c296b9d62b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-9ee9f08c53",
+   "app": "inline",
+   "operator": "LIT",
+   "file": "src/server.ts",
+   "line": 70,
+   "desc": "1n -> 2n",
+   "patch": "patches/inline-9ee9f08c53.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-d93c04ad3b",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 295,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-d93c04ad3b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-fef5230a73",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 478,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-fef5230a73.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-8e3bb6d724",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 217,
+   "desc": "=== -> !==",
+   "patch": "patches/inline-8e3bb6d724.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-0704d70e4c",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/server.ts",
+   "line": 154,
+   "desc": "!== -> ===",
+   "patch": "patches/inline-0704d70e4c.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-9c38b231f6",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 615,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-9c38b231f6.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-24d415ba3f",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/server.ts",
+   "line": 563,
+   "desc": "!== -> ===",
+   "patch": "patches/inline-24d415ba3f.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-385602d75f",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 422,
+   "desc": "&& -> ||",
+   "patch": "patches/inline-385602d75f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-8aaee70e82",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 44,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-8aaee70e82.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-5d46dc1d2f",
+   "app": "inline",
+   "operator": "AOR",
+   "file": "src/server.ts",
+   "line": 70,
+   "desc": "+ -> -",
+   "patch": "patches/inline-5d46dc1d2f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-4d5755f597",
+   "app": "inline",
+   "operator": "STR",
+   "file": "src/provider.ts",
+   "line": 123,
+   "desc": "\"canceled\" -> \"paid\"",
+   "patch": "patches/inline-4d5755f597.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-e323fc38ea",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 681,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-e323fc38ea.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-1767da2ed7",
+   "app": "inline",
+   "operator": "STR",
+   "file": "src/provider.ts",
+   "line": 121,
+   "desc": "\"requires_capture\" -> \"pending\"",
+   "patch": "patches/inline-1767da2ed7.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-54e3474062",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/server.ts",
+   "line": 369,
+   "desc": "!== -> ===",
+   "patch": "patches/inline-54e3474062.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-27bb27260f",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 406,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-27bb27260f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-346082ac3c",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 431,
+   "desc": "&& -> ||",
+   "patch": "patches/inline-346082ac3c.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-319b88db45",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 127,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-319b88db45.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-510763980e",
+   "app": "inline",
+   "operator": "LIT",
+   "file": "src/server.ts",
+   "line": 99,
+   "desc": "0n -> 1n",
+   "patch": "patches/inline-510763980e.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-ff46326d5b",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 646,
+   "desc": "if-condition -> true",
+   "patch": "patches/inline-ff46326d5b.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-6a7e3c5119",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 454,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-6a7e3c5119.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-72a78980e2",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 463,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-72a78980e2.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-42ae3a30e9",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/server.ts",
+   "line": 217,
+   "desc": "!== -> ===",
+   "patch": "patches/inline-42ae3a30e9.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-2252479946",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 224,
+   "desc": "&& -> ||",
+   "patch": "patches/inline-2252479946.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-ef7f49f7bd",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 397,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-ef7f49f7bd.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-34b89b727b",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 35,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-34b89b727b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-201aa69f53",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 603,
+   "desc": "&& -> ||",
+   "patch": "patches/inline-201aa69f53.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-dd6a188c57",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 153,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-dd6a188c57.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-a4b5b1effe",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/server.ts",
+   "line": 428,
+   "desc": "> -> >=",
+   "patch": "patches/inline-a4b5b1effe.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-142b68a317",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 247,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-142b68a317.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-e0775fa0fc",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 507,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-e0775fa0fc.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-e9a58a7a33",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 32,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-e9a58a7a33.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-70f1d0f6d2",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 397,
+   "desc": "if-condition -> true",
+   "patch": "patches/inline-70f1d0f6d2.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-e48d36c3d0",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 295,
+   "desc": "=== -> !==",
+   "patch": "patches/inline-e48d36c3d0.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-9170ec8d72",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 449,
+   "desc": "if-condition -> true",
+   "patch": "patches/inline-9170ec8d72.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-62874cd85f",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 408,
+   "desc": "SQL \"<=\" -> \"<\"",
+   "patch": "patches/inline-62874cd85f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-1fe2e2dc74",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 31,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-1fe2e2dc74.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-e0a43d8d08",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 28,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-e0a43d8d08.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-464b838e84",
+   "app": "inline",
+   "operator": "LIT",
+   "file": "src/server.ts",
+   "line": 70,
+   "desc": "2n -> 0n",
+   "patch": "patches/inline-464b838e84.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-9ea850af7a",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 657,
+   "desc": "if-condition -> true",
+   "patch": "patches/inline-9ea850af7a.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-8534f7752a",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/server.ts",
+   "line": 128,
+   "desc": "!== -> ===",
+   "patch": "patches/inline-8534f7752a.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-45e6d924f9",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 152,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-45e6d924f9.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-27b0c4aa77",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/money.ts",
+   "line": 13,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-27b0c4aa77.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-dfaec08497",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 296,
+   "desc": "=== -> !==",
+   "patch": "patches/inline-dfaec08497.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-c7d17c8408",
+   "app": "inline",
+   "operator": "ROR",
+   "file": "src/server.ts",
+   "line": 70,
+   "desc": "=== -> !==",
+   "patch": "patches/inline-c7d17c8408.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-f8f20e03c8",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 347,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-f8f20e03c8.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-1a7bb27a0f",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 350,
+   "desc": "if-condition -> true",
+   "patch": "patches/inline-1a7bb27a0f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-7439bc78e9",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 121,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-7439bc78e9.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-4f4c57ccb6",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 70,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-4f4c57ccb6.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-b084c71403",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 70,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-b084c71403.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-94ed68c398",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 38,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-94ed68c398.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-7d3e9b8d06",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/money.ts",
+   "line": 15,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-7d3e9b8d06.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-10d4b7363c",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 369,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-10d4b7363c.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-e41d0b1a6c",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 595,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-e41d0b1a6c.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-b2a51cdf43",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 47,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-b2a51cdf43.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-1e14570737",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 214,
+   "desc": "if-condition -> false",
+   "patch": "patches/inline-1e14570737.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-403c7c764d",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 206,
+   "desc": "if-condition -> true",
+   "patch": "patches/inline-403c7c764d.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-105727a328",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 32,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-105727a328.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-ad0e059160",
+   "app": "inline",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 306,
+   "desc": "if-condition -> true",
+   "patch": "patches/inline-ad0e059160.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-96e83ff06b",
+   "app": "inline",
+   "operator": "SDL",
+   "file": "src/server.ts",
+   "line": 254,
+   "desc": "delete statement",
+   "patch": "patches/inline-96e83ff06b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-9975555927",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 45,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-9975555927.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-8bcb27de2c",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 285,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-8bcb27de2c.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-b730a3bc90",
+   "app": "inline",
+   "operator": "STR",
+   "file": "src/provider.ts",
+   "line": 276,
+   "desc": "\"failed\" -> \"canceled\"",
+   "patch": "patches/inline-b730a3bc90.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-ab36a7ebf6",
+   "app": "inline",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 446,
+   "desc": "|| -> &&",
+   "patch": "patches/inline-ab36a7ebf6.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-1ea3025178",
+   "app": "inline",
+   "operator": "SDL",
+   "file": "src/server.ts",
+   "line": 670,
+   "desc": "delete statement",
+   "patch": "patches/inline-1ea3025178.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-b59a9449f7",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 29,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-b59a9449f7.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-d0158eeacd",
+   "app": "inline",
+   "operator": "SDL",
+   "file": "src/server.ts",
+   "line": 682,
+   "desc": "delete statement",
+   "patch": "patches/inline-d0158eeacd.patch",
+   "split": "dev"
+  },
+  {
+   "id": "inline-a995dcb549",
+   "app": "inline",
+   "operator": "SDL",
+   "file": "src/server.ts",
+   "line": 397,
+   "desc": "delete statement",
+   "patch": "patches/inline-a995dcb549.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "inline-e6ee5834a8",
+   "app": "inline",
+   "operator": "SQL",
+   "file": "src/server.ts",
+   "line": 24,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/inline-e6ee5834a8.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-95f1c74d78",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 124,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-95f1c74d78.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-d062dcc6cd",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 319,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-d062dcc6cd.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-31d2e8ad79",
+   "app": "worker",
+   "operator": "AOR",
+   "file": "src/shop.ts",
+   "line": 297,
+   "desc": "- -> +",
+   "patch": "patches/worker-31d2e8ad79.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-85b817796c",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 325,
+   "desc": "|| -> &&",
+   "patch": "patches/worker-85b817796c.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-ab649f3ed6",
+   "app": "worker",
+   "operator": "UOD",
+   "file": "src/provider.ts",
+   "line": 465,
+   "desc": "remove !",
+   "patch": "patches/worker-ab649f3ed6.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-94e0d3c3f7",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 293,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-94e0d3c3f7.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-0607952b0b",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 293,
+   "desc": "=== -> !==",
+   "patch": "patches/worker-0607952b0b.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-5cf6709ca9",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/shop.ts",
+   "line": 358,
+   "desc": "|| -> &&",
+   "patch": "patches/worker-5cf6709ca9.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-782d5bf789",
+   "app": "worker",
+   "operator": "LIT",
+   "file": "src/shop.ts",
+   "line": 92,
+   "desc": "0n -> 1n",
+   "patch": "patches/worker-782d5bf789.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-d575d9c7e2",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 502,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-d575d9c7e2.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-efece32a35",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 492,
+   "desc": "&& -> ||",
+   "patch": "patches/worker-efece32a35.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-4776252d40",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 226,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-4776252d40.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-32ba3a2db5",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 61,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-32ba3a2db5.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-dff2bcd327",
+   "app": "worker",
+   "operator": "STR",
+   "file": "src/provider.ts",
+   "line": 293,
+   "desc": "\"canceled\" -> \"paid\"",
+   "patch": "patches/worker-dff2bcd327.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-84bce1383d",
+   "app": "worker",
+   "operator": "STR",
+   "file": "src/provider.ts",
+   "line": 290,
+   "desc": "\"pending\" -> \"requires_action\"",
+   "patch": "patches/worker-84bce1383d.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-94151bf16a",
+   "app": "worker",
+   "operator": "SDL",
+   "file": "src/server.ts",
+   "line": 42,
+   "desc": "delete statement",
+   "patch": "patches/worker-94151bf16a.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-bfd7f0f437",
+   "app": "worker",
+   "operator": "UOD",
+   "file": "src/shop.ts",
+   "line": 235,
+   "desc": "remove !",
+   "patch": "patches/worker-bfd7f0f437.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-84dcce17c5",
+   "app": "worker",
+   "operator": "AOR",
+   "file": "src/shop.ts",
+   "line": 116,
+   "desc": "+ -> -",
+   "patch": "patches/worker-84dcce17c5.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-6b2c5a0d9c",
+   "app": "worker",
+   "operator": "SDL",
+   "file": "src/shop.ts",
+   "line": 198,
+   "desc": "delete statement",
+   "patch": "patches/worker-6b2c5a0d9c.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-796fede7f5",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/shop.ts",
+   "line": 197,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-796fede7f5.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-92b5cdab2b",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 108,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-92b5cdab2b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-e647ee6d8b",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 115,
+   "desc": "=== -> !==",
+   "patch": "patches/worker-e647ee6d8b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-6845349f43",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 411,
+   "desc": "!== -> ===",
+   "patch": "patches/worker-6845349f43.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-dff4b81f39",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/shop.ts",
+   "line": 683,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-dff4b81f39.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-983dba84d7",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/money.ts",
+   "line": 38,
+   "desc": "<= -> <",
+   "patch": "patches/worker-983dba84d7.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-a05bc61a71",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/jobs.ts",
+   "line": 119,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-a05bc61a71.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-4d248a7464",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/shop.ts",
+   "line": 569,
+   "desc": "|| -> &&",
+   "patch": "patches/worker-4d248a7464.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-65b43b0dae",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 135,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-65b43b0dae.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-d21e7d8f0c",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/shop.ts",
+   "line": 187,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-d21e7d8f0c.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-1c13dbfd56",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 223,
+   "desc": "=== -> !==",
+   "patch": "patches/worker-1c13dbfd56.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-cac8e14334",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/jobs.ts",
+   "line": 98,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-cac8e14334.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-1a1524e96a",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 135,
+   "desc": "=== -> !==",
+   "patch": "patches/worker-1a1524e96a.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-969024dce1",
+   "app": "worker",
+   "operator": "SDL",
+   "file": "src/provider.ts",
+   "line": 463,
+   "desc": "delete statement",
+   "patch": "patches/worker-969024dce1.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-3a5c5dcc6f",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/shop.ts",
+   "line": 255,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-3a5c5dcc6f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-671cf65d46",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/shop.ts",
+   "line": 480,
+   "desc": "&& -> ||",
+   "patch": "patches/worker-671cf65d46.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-8fde601101",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/money.ts",
+   "line": 9,
+   "desc": "<= -> <",
+   "patch": "patches/worker-8fde601101.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-a74098df3b",
+   "app": "worker",
+   "operator": "SDL",
+   "file": "src/db.ts",
+   "line": 150,
+   "desc": "delete statement",
+   "patch": "patches/worker-a74098df3b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-7f0a581b0b",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 422,
+   "desc": "|| -> &&",
+   "patch": "patches/worker-7f0a581b0b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-8e53f6c1c3",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 94,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-8e53f6c1c3.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-c3bc308cc0",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 288,
+   "desc": "=== -> !==",
+   "patch": "patches/worker-c3bc308cc0.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-7f877242f9",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 152,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-7f877242f9.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-2e77ef85b5",
+   "app": "worker",
+   "operator": "UOD",
+   "file": "src/shop.ts",
+   "line": 406,
+   "desc": "remove !",
+   "patch": "patches/worker-2e77ef85b5.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-6065a428c3",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 23,
+   "desc": "SQL \">\" -> \">=\"",
+   "patch": "patches/worker-6065a428c3.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-a098bed6af",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 119,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-a098bed6af.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-cb29202017",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 24,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-cb29202017.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-590bcee418",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/shop.ts",
+   "line": 446,
+   "desc": "|| -> &&",
+   "patch": "patches/worker-590bcee418.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-25fd6c557b",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 279,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-25fd6c557b.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-da3139b2f8",
+   "app": "worker",
+   "operator": "STR",
+   "file": "src/money.ts",
+   "line": 44,
+   "desc": "\"canceled\" -> \"paid\"",
+   "patch": "patches/worker-da3139b2f8.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-55a2fd5278",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 152,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-55a2fd5278.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-eb1ee00c39",
+   "app": "worker",
+   "operator": "SDL",
+   "file": "src/server.ts",
+   "line": 128,
+   "desc": "delete statement",
+   "patch": "patches/worker-eb1ee00c39.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-9b27895cee",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 29,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-9b27895cee.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-87d8d0453f",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 28,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-87d8d0453f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-95c7dbb56d",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 405,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-95c7dbb56d.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-edf0bc482f",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/shop.ts",
+   "line": 92,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-edf0bc482f.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-d23172263e",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/server.ts",
+   "line": 41,
+   "desc": "&& -> ||",
+   "patch": "patches/worker-d23172263e.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-e20df2a2ce",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/shop.ts",
+   "line": 569,
+   "desc": "|| -> &&",
+   "patch": "patches/worker-e20df2a2ce.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-daf9a44d54",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 143,
+   "desc": "SQL \" = \" -> \" <> \"",
+   "patch": "patches/worker-daf9a44d54.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-c1e79a810e",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/shop.ts",
+   "line": 180,
+   "desc": "|| -> &&",
+   "patch": "patches/worker-c1e79a810e.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-78ca9e9e6d",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 81,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-78ca9e9e6d.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-e8b1fd5617",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 47,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-e8b1fd5617.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-0e7a916448",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/provider.ts",
+   "line": 361,
+   "desc": "!== -> ===",
+   "patch": "patches/worker-0e7a916448.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-fc421b93e7",
+   "app": "worker",
+   "operator": "ROR",
+   "file": "src/server.ts",
+   "line": 17,
+   "desc": "> -> >=",
+   "patch": "patches/worker-fc421b93e7.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-8ef18682cf",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 76,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-8ef18682cf.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-678a4763fe",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 492,
+   "desc": "|| -> &&",
+   "patch": "patches/worker-678a4763fe.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-8f0abdb617",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 492,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-8f0abdb617.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-6dea72a760",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 292,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-6dea72a760.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-b95cd1f2cd",
+   "app": "worker",
+   "operator": "STR",
+   "file": "src/provider.ts",
+   "line": 292,
+   "desc": "\"requires_capture\" -> \"pending\"",
+   "patch": "patches/worker-b95cd1f2cd.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-e389535c13",
+   "app": "worker",
+   "operator": "SQL",
+   "file": "src/db.ts",
+   "line": 36,
+   "desc": "SQL \"NOT \" -> \"\"",
+   "patch": "patches/worker-e389535c13.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-9aa99b20bc",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 478,
+   "desc": "&& -> ||",
+   "patch": "patches/worker-9aa99b20bc.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-6f0b08b746",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/shop.ts",
+   "line": 406,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-6f0b08b746.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-ae3a3b1bc7",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 41,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-ae3a3b1bc7.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-09d8418457",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/shop.ts",
+   "line": 231,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-09d8418457.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-2c7243ba14",
+   "app": "worker",
+   "operator": "LCR",
+   "file": "src/provider.ts",
+   "line": 363,
+   "desc": "&& -> ||",
+   "patch": "patches/worker-2c7243ba14.patch",
+   "split": "dev"
+  },
+  {
+   "id": "worker-939cd21c03",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/server.ts",
+   "line": 108,
+   "desc": "if-condition -> false",
+   "patch": "patches/worker-939cd21c03.patch",
+   "split": "holdout"
+  },
+  {
+   "id": "worker-e167f3ab92",
+   "app": "worker",
+   "operator": "COND",
+   "file": "src/provider.ts",
+   "line": 294,
+   "desc": "if-condition -> true",
+   "patch": "patches/worker-e167f3ab92.patch",
+   "split": "holdout"
+  }
+ ]
+}

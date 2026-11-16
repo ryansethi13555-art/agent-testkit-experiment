@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -21,7 +21,7 @@
+   buyer text NOT NULL,
+   currency text NOT NULL CHECK (currency ~ '^[A-Z]{3}$'),
+   total bigint NOT NULL CHECK (total > 0),
+-  capture_method text NOT NULL CHECK (capture_method IN ('automatic', 'manual')),
++  capture_method text NULL CHECK (capture_method IN ('automatic', 'manual')),
+   status text NOT NULL,
+   payment_ref text,
+   checkout_create_started boolean NOT NULL DEFAULT false,

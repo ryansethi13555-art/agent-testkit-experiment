@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -91,7 +91,7 @@
+   currency text NOT NULL,
+   amount bigint NOT NULL CHECK (amount <> 0),
+   cause_ref text NOT NULL,
+-  kind text NOT NULL,
++  kind text NULL,
+   effect_ref text NOT NULL,
+   created_at timestamptz NOT NULL DEFAULT now());
+ CREATE UNIQUE INDEX IF NOT EXISTS ledger_effect_once ON ledger_entries (cause_ref, effect_ref, account, currency);

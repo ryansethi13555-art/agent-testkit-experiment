@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -643,7 +643,7 @@
+     const body = raw ? (JSON.parse(raw) as Json) : {};
+     if (req.method === "POST" && url.pathname === "/orders") return send(res, 201, await createOrder(body));
+     const m = /^\/orders\/([\w-]+)\/(checkout|confirm|capture|refunds)$/.exec(url.pathname);
+-    if (req.method === "POST" && m) {
++    if (true) {
+       const [, id, action] = m as unknown as [string, string, string];
+       if (action === "checkout") return send(res, 200, await checkout(id));
+       if (action === "confirm") return send(res, 200, await confirmReturn(id));

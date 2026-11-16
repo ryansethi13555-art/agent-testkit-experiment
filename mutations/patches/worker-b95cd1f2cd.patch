@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -289,7 +289,7 @@
+   const status = (p: RzpPayment | undefined): PaymentStatus => {
+     if (!p) return "pending";
+     if (isCaptured(p)) return "succeeded"; // captured, possibly refunded since
+-    if (p.status === "authorized") return "requires_capture";
++    if (p.status === "authorized") return "pending";
+     if (p.status === "refunded") return "canceled"; // an uncaptured authorisation released (auto-refund)
+     if (p.status === "failed") return "failed";
+     return "pending";

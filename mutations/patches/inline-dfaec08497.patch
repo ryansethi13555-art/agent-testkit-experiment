@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -293,7 +293,7 @@
+     const list = (await rzp.orders.fetchPayments(orderRef)) as unknown as { items: RzpPayment[] };
+     return (
+       list.items.find((p) => p.status === "captured" || p.status === "refunded") ??
+-      list.items.find((p) => p.status === "authorized") ??
++      list.items.find((p) => p.status !== "authorized") ??
+       list.items[0]
+     );
+   };

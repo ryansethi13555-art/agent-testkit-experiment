@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -292,7 +292,7 @@
+   const paymentOf = async (orderRef: string): Promise<RzpPayment | undefined> => {
+     const list = (await rzp.orders.fetchPayments(orderRef)) as unknown as { items: RzpPayment[] };
+     return (
+-      list.items.find((p) => p.status === "captured" || p.status === "refunded") ??
++      list.items.find((p) => p.status === "captured" && p.status === "refunded") ??
+       list.items.find((p) => p.status === "authorized") ??
+       list.items[0]
+     );

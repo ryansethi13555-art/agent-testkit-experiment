@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -680,7 +680,7 @@
+       }
+       if (rec.length) return;
+       let counter = "platform:unallocated_refunds";
+-      if (r.line_id) {
++      if (true) {
+         const line = (await c.query("SELECT seller_id FROM order_lines WHERE id = $1", [r.line_id])).rows[0];
+         counter = `seller:${line?.seller_id as string}`;
+       }

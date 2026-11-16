@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -489,7 +489,7 @@
+   const status =
+     !authoritative ||
+     known.status === "failed" ||
+-    known.status === "canceled" ||
++    known.status === "paid" ||
+     (known.status === "succeeded" && r.status === "pending")
+       ? known.status
+       : r.status;

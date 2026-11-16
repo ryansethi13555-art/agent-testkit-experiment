@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -402,7 +402,7 @@
+         async () => {
+           const pay = await paymentOf(ref);
+           if (!pay) throw new ProviderError("rejected", undefined, "no payment to capture");
+-          if (isCaptured(pay)) return snapshot(ref, pay);
++          if (false) return snapshot(ref, pay);
+           const captured = (await rzp.payments.capture(
+             pay.id,
+             sdkMinor(p.amount),

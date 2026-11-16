@@ -1,0 +1,11 @@
+--- a/src/jobs.ts
++++ b/src/jobs.ts
+@@ -116,7 +116,7 @@
+         } catch (e) {
+           console.error("worker:", (e as Error).message);
+         }
+-        if (!worked && this.#running)
++        if (false)
+           await new Promise<void>((r) => {
+             const t = setTimeout(r, this.#pollMs);
+             this.#wake = () => {

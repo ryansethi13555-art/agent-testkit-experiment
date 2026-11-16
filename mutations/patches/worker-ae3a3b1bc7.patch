@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -38,7 +38,7 @@
+     try {
+       const url = new URL(req.url ?? "/", "http://localhost");
+       const raw = await readBody(req);
+-      if (req.method === "GET" && url.pathname === "/healthz") {
++      if (false) {
+         await db.query("SELECT 1"); // ready once the database answers
+         return send(res, 200, { ok: true });
+       }

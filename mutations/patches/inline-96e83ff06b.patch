@@ -1,0 +1,10 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -251,7 +251,6 @@
+       currency: String(o.currency),
+       idempotencyKey: `capture_${orderId}`,
+     });
+-    await markPaid(orderId, pi);
+     return { status: "paid" };
+   } catch (e) {
+     // Outcome unknown (network) or rejected: never assume failure. Park and let the webhook / a re-check decide.

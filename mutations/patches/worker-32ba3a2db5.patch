@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -58,7 +58,7 @@
+   line_id text NOT NULL REFERENCES order_lines(id),
+   currency text NOT NULL,
+   amount bigint NOT NULL CHECK (amount > 0),
+-  state text NOT NULL CHECK (state IN ('requested', 'sent', 'unknown', 'rejected')),
++  state text NULL CHECK (state IN ('requested', 'sent', 'unknown', 'rejected')),
+   provider_ref text,
+   last_error text,
+   created_at timestamptz NOT NULL DEFAULT now(),

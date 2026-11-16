@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -654,7 +654,7 @@
+   } catch (e) {
+     if (e instanceof MoneyInputError) return send(res, 400, { error: e.message });
+     if (e instanceof HttpError) return send(res, e.status, { error: e.message });
+-    if (provider.isProviderError(e)) return send(res, 502, { error: `provider: ${(e as Error).message}` });
++    if (true) return send(res, 502, { error: `provider: ${(e as Error).message}` });
+     console.error(e);
+     send(res, 500, { error: "internal" });
+   }

@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -394,7 +394,7 @@
+     throw e;
+   } finally {
+     try {
+-      if (locked) await c.query("SELECT pg_advisory_unlock(hashtext($1))", [refundId]);
++      if (false) await c.query("SELECT pg_advisory_unlock(hashtext($1))", [refundId]);
+     } finally {
+       c.release();
+     }

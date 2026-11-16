@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -214,7 +214,7 @@
+       return { eventId: ev.id, kind: "ignored", objectId: obj.id, type: ev.type };
+     },
+     isProviderError: (e) =>
+-      typeof (e as { type?: unknown })?.type === "string" &&
++      typeof (e as { type?: unknown })?.type !== "string" &&
+       String((e as { type: string }).type).startsWith("Stripe"),
+     definitiveRefundRejection: (e) => {
+       const error = e as { type?: unknown; statusCode?: unknown; code?: unknown };

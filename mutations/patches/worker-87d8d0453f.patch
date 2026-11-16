@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -25,7 +25,7 @@
+   status text NOT NULL,
+   payment_ref text,
+   checkout_create_started boolean NOT NULL DEFAULT false,
+-  created_at timestamptz NOT NULL DEFAULT now(),
++  created_at timestamptz NULL DEFAULT now(),
+   updated_at timestamptz NOT NULL DEFAULT now());
+ 
+ ALTER TABLE orders ADD COLUMN IF NOT EXISTS checkout_create_started boolean NOT NULL DEFAULT false;

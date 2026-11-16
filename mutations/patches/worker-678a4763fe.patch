@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -489,7 +489,7 @@
+           ref: ref.id,
+           ...(orderRef ? { paymentRef: orderRef } : {}),
+         };
+-      if ((type.startsWith("payment.") || type.startsWith("order.")) && orderRef)
++      if ((type.startsWith("payment.") && type.startsWith("order.")) && orderRef)
+         return { eventId, type, object: "payment", ref: orderRef };
+       return { eventId, type, object: "none", ref: "" };
+     },

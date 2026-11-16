@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -678,7 +678,7 @@
+   recoveryTimer.unref();
+ });
+ 
+-if (process.argv[1] && import.meta.url.endsWith(process.argv[1].split("/").pop() ?? "")) {
++if (false) {
+   await migrate();
+   server.listen(PORT, "127.0.0.1", () => console.log(`leakybazaar listening on ${PORT}`));
+ }

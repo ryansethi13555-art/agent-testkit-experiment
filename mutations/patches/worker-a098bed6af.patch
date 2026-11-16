@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -116,7 +116,7 @@
+ CREATE TABLE IF NOT EXISTS allocations (
+   id text PRIMARY KEY,
+   cause_ref text NOT NULL,
+-  order_id text NOT NULL REFERENCES orders(id),
++  order_id text NULL REFERENCES orders(id),
+   line_id text NOT NULL REFERENCES order_lines(id),
+   currency text NOT NULL,
+   amount bigint NOT NULL,

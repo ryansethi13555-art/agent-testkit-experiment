@@ -1,0 +1,2168 @@
+{
+ "workspace": "/home/claude/rep/C1",
+ "corpus": "corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 410.1,
+   "tests": 175,
+   "failed": []
+  },
+  {
+   "seconds": 410.5,
+   "tests": 175,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 408.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 403.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 400.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 397.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 400.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 403.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 402.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 426.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 378.1,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 373.6,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 57.5,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [inline/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [inline/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/stripe] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 56.1,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [inline/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [inline/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/stripe] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 407.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 403.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 396.5,
+     "failingStable": [
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 399.0,
+     "failingStable": [
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 383.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 386.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 386.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 385.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 385.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 384.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 383.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 383.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 382.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 360.9,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 360.2,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 380.1,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 380.8,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 384.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 364.3,
+     "failingStable": [
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 364.8,
+     "failingStable": [
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 376.2,
+     "failingStable": [
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 373.2,
+     "failingStable": [
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 355.5,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 357.9,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 381.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 384.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 382.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 380.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 386.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 395.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 390.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 390.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 58.3,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [inline/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [inline/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/stripe] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 68.4,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [inline/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [inline/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/stripe] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 389.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 394.3,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/property.test.ts :: randomised refund sequences [worker/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 398.0,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/property.test.ts :: randomised refund sequences [worker/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 391.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 388.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 396.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 398.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 389.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 390.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 393.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 395.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 394.5,
+     "failingStable": [
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 396.4,
+     "failingStable": [
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 900.0,
+     "failingStable": [
+      "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous SDK conversion round-trips exactly and refuses out-of-range money",
+      "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous inline parseMinor",
+      "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous worker parseMinorUnits",
+      "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) matches an independent half-even oracle and never exceeds the amount",
+      "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) rounds exact ties to even",
+      "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) sale legs conserve money: they sum to zero and the clearing leg equals the order total",
+      "tests/money.test.ts :: refund accounting rules a stored payment only moves forward; succeeded and canceled are terminal",
+      "tests/money.test.ts :: refund accounting rules exactly pending, requires_action and succeeded hold money (both apps agree)",
+      "tests/money.test.ts :: refund accounting rules line headroom subtracts live refunds and reservations, never counts failed ones, can reach zero but is exact",
+      "tests/money.test.ts :: refund accounting rules order status follows money facts only",
+      "tests/payments.test.ts :: checkout [inline/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [inline/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [worker/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [worker/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [worker/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [worker/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/stripe] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [worker/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [worker/stripe] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [worker/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [worker/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [worker/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [worker/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": true
+    },
+    {
+     "seconds": 900.1,
+     "failingStable": [
+      "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous SDK conversion round-trips exactly and refuses out-of-range money",
+      "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous inline parseMinor",
+      "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous worker parseMinorUnits",
+      "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) matches an independent half-even oracle and never exceeds the amount",
+      "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) rounds exact ties to even",
+      "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) sale legs conserve money: they sum to zero and the clearing leg equals the order total",
+      "tests/money.test.ts :: refund accounting rules a stored payment only moves forward; succeeded and canceled are terminal",
+      "tests/money.test.ts :: refund accounting rules exactly pending, requires_action and succeeded hold money (both apps agree)",
+      "tests/money.test.ts :: refund accounting rules line headroom subtracts live refunds and reservations, never counts failed ones, can reach zero but is exact",
+      "tests/money.test.ts :: refund accounting rules order status follows money facts only",
+      "tests/payments.test.ts :: checkout [inline/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [inline/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [inline/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [worker/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [worker/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: checkout [worker/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [worker/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/razorpay] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [inline/stripe] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [inline/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [inline/stripe] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: sale booking [worker/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [worker/stripe] an order is not paid, and nothing is booked, before the provider captures",
+      "tests/payments.test.ts :: sale booking [worker/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [worker/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] events about payments the app never created book nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [worker/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/property.test.ts :: randomised refund sequences [worker/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [inline/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] a refund before the order is paid is refused and moves no money",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [inline/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [inline/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": true
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 387.5,
+     "failingStable": [
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 391.8,
+     "failingStable": [
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 392.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 394.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 391.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 387.4,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [worker/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [worker/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [worker/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [worker/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [worker/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [worker/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 384.2,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [worker/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [worker/stripe] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [worker/stripe] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [worker/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [worker/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [worker/stripe] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] refund event delivered before the payment event is applied once the payment is known",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/stripe] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+      "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 388.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 388.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 389.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 393.7,
+     "failingStable": [
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] a declined attempt books nothing, a later success books exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 394.6,
+     "failingStable": [
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] a declined attempt books nothing, a later success books exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 393.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 399.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 393.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 400.9,
+     "failingStable": [
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 397.5,
+     "failingStable": [
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 396.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 395.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 392.9,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] a malformed order is refused before any provider call"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 395.5,
+     "failingStable": [
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] a malformed order is refused before any provider call",
+      "tests/payments.test.ts :: currencies and units [worker/stripe] a malformed order is refused before any provider call"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 396.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 395.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 395.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 397.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 387.1,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [worker/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [worker/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [worker/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 392.4,
+     "failingStable": [
+      "tests/payments.test.ts :: checkout [worker/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+      "tests/payments.test.ts :: checkout [worker/razorpay] concurrent double submit creates exactly one provider payment",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] JPY order: sale, refund and ledger stay in JPY",
+      "tests/payments.test.ts :: currencies and units [worker/razorpay] USD order: sale, refund and ledger stay in USD",
+      "tests/payments.test.ts :: provider faults around capture [worker/razorpay] a capture made in the provider dashboard is booked once",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] a declined attempt books nothing, a later success books exactly once",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+      "tests/payments.test.ts :: sale booking [worker/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] concurrent duplicates of the same event books once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] forged or unsigned webhooks are rejected and change nothing",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] payment events arriving in reverse order still book exactly once",
+      "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+      "tests/property.test.ts :: randomised refund sequences [worker/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+      "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+      "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] a refund of a line that belongs to another order is refused",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] invalid refund amounts never reach the provider",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+      "tests/refunds.test.ts :: refund bounds [worker/razorpay] sequential partial refunds can never sum past the line, nor the order",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] concurrent refunds on two lines cannot exceed the order total",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+      "tests/refunds.test.ts :: refund concurrency [worker/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash with the payment captured but unseen: restart still books it once",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+      "tests/refunds.test.ts :: refund provider faults [worker/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 399.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 390.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 392.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 397.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 393.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous SDK conversion round-trips exactly and refuses out-of-range money",
+  "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous inline parseMinor",
+  "tests/money.test.ts :: amount parsing is exact and refuses anything ambiguous worker parseMinorUnits",
+  "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) matches an independent half-even oracle and never exceeds the amount",
+  "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) rounds exact ties to even",
+  "tests/money.test.ts :: commission (worker money.ts, independently re-stated oracle) sale legs conserve money: they sum to zero and the clearing leg equals the order total",
+  "tests/money.test.ts :: refund accounting rules a stored payment only moves forward; succeeded and canceled are terminal",
+  "tests/money.test.ts :: refund accounting rules exactly pending, requires_action and succeeded hold money (both apps agree)",
+  "tests/money.test.ts :: refund accounting rules line headroom subtracts live refunds and reservations, never counts failed ones, can reach zero but is exact",
+  "tests/money.test.ts :: refund accounting rules order status follows money facts only",
+  "tests/payments.test.ts :: checkout [inline/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+  "tests/payments.test.ts :: checkout [inline/razorpay] concurrent double submit creates exactly one provider payment",
+  "tests/payments.test.ts :: checkout [inline/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+  "tests/payments.test.ts :: checkout [inline/stripe] concurrent double submit creates exactly one provider payment",
+  "tests/payments.test.ts :: checkout [worker/razorpay] a lost checkout response never creates a second provider payment, and the payment is still booked",
+  "tests/payments.test.ts :: checkout [worker/razorpay] concurrent double submit creates exactly one provider payment",
+  "tests/payments.test.ts :: checkout [worker/stripe] a lost checkout response never creates a second provider payment, and the payment is still booked",
+  "tests/payments.test.ts :: checkout [worker/stripe] concurrent double submit creates exactly one provider payment",
+  "tests/payments.test.ts :: currencies and units [inline/razorpay] JPY order: sale, refund and ledger stay in JPY",
+  "tests/payments.test.ts :: currencies and units [inline/razorpay] USD order: sale, refund and ledger stay in USD",
+  "tests/payments.test.ts :: currencies and units [inline/razorpay] a malformed order is refused before any provider call",
+  "tests/payments.test.ts :: currencies and units [inline/stripe] JPY order: sale, refund and ledger stay in JPY",
+  "tests/payments.test.ts :: currencies and units [inline/stripe] USD order: sale, refund and ledger stay in USD",
+  "tests/payments.test.ts :: currencies and units [inline/stripe] a malformed order is refused before any provider call",
+  "tests/payments.test.ts :: currencies and units [worker/razorpay] JPY order: sale, refund and ledger stay in JPY",
+  "tests/payments.test.ts :: currencies and units [worker/razorpay] USD order: sale, refund and ledger stay in USD",
+  "tests/payments.test.ts :: currencies and units [worker/razorpay] a malformed order is refused before any provider call",
+  "tests/payments.test.ts :: currencies and units [worker/stripe] JPY order: sale, refund and ledger stay in JPY",
+  "tests/payments.test.ts :: currencies and units [worker/stripe] USD order: sale, refund and ledger stay in USD",
+  "tests/payments.test.ts :: currencies and units [worker/stripe] a malformed order is refused before any provider call",
+  "tests/payments.test.ts :: provider faults around capture [inline/razorpay] a capture made in the provider dashboard is booked once",
+  "tests/payments.test.ts :: provider faults around capture [inline/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+  "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+  "tests/payments.test.ts :: provider faults around capture [inline/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+  "tests/payments.test.ts :: provider faults around capture [inline/stripe] a capture made in the provider dashboard is booked once",
+  "tests/payments.test.ts :: provider faults around capture [inline/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+  "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+  "tests/payments.test.ts :: provider faults around capture [inline/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+  "tests/payments.test.ts :: provider faults around capture [worker/razorpay] a capture made in the provider dashboard is booked once",
+  "tests/payments.test.ts :: provider faults around capture [worker/razorpay] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+  "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+  "tests/payments.test.ts :: provider faults around capture [worker/razorpay] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+  "tests/payments.test.ts :: provider faults around capture [worker/stripe] a capture made in the provider dashboard is booked once",
+  "tests/payments.test.ts :: provider faults around capture [worker/stripe] capture rejected before applying (5xx) leaves the order unpaid and the books empty",
+  "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture applied then HTTP 500: never double-books, never leaves captured money unbooked",
+  "tests/payments.test.ts :: provider faults around capture [worker/stripe] manual capture lost response (applied, connection reset): never double-books, never leaves captured money unbooked",
+  "tests/payments.test.ts :: sale booking [inline/razorpay] a declined attempt books nothing, a later success books exactly once",
+  "tests/payments.test.ts :: sale booking [inline/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+  "tests/payments.test.ts :: sale booking [inline/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+  "tests/payments.test.ts :: sale booking [inline/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+  "tests/payments.test.ts :: sale booking [inline/stripe] a declined attempt books nothing, a later success books exactly once",
+  "tests/payments.test.ts :: sale booking [inline/stripe] an order is not paid, and nothing is booked, before the provider captures",
+  "tests/payments.test.ts :: sale booking [inline/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+  "tests/payments.test.ts :: sale booking [inline/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+  "tests/payments.test.ts :: sale booking [worker/razorpay] a declined attempt books nothing, a later success books exactly once",
+  "tests/payments.test.ts :: sale booking [worker/razorpay] an order is not paid, and nothing is booked, before the provider captures",
+  "tests/payments.test.ts :: sale booking [worker/razorpay] books the sale once, per line, with half-even commission on remainder amounts",
+  "tests/payments.test.ts :: sale booking [worker/razorpay] odd amounts across two sellers keep every minor unit (no rounding leak)",
+  "tests/payments.test.ts :: sale booking [worker/stripe] a declined attempt books nothing, a later success books exactly once",
+  "tests/payments.test.ts :: sale booking [worker/stripe] an order is not paid, and nothing is booked, before the provider captures",
+  "tests/payments.test.ts :: sale booking [worker/stripe] books the sale once, per line, with half-even commission on remainder amounts",
+  "tests/payments.test.ts :: sale booking [worker/stripe] odd amounts across two sellers keep every minor unit (no rounding leak)",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] concurrent duplicates of the same event books once",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] events about payments the app never created book nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] forged or unsigned webhooks are rejected and change nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] payment events arriving in reverse order still book exactly once",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] concurrent duplicates of the same event books once",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] events about payments the app never created book nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] forged or unsigned webhooks are rejected and change nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] payment events arriving in reverse order still book exactly once",
+  "tests/payments.test.ts :: webhook delivery hazards [inline/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] concurrent duplicates of the same event books once",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] events about payments the app never created book nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] forged or unsigned webhooks are rejected and change nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] payment events arriving in reverse order still book exactly once",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/razorpay] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] a dropped payment webhook is recovered from the provider (return-from-checkout), and the late webhook adds nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] concurrent duplicates of the same event books once",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] events about payments the app never created book nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] forged or unsigned webhooks are rejected and change nothing",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] payment events arriving in reverse order still book exactly once",
+  "tests/payments.test.ts :: webhook delivery hazards [worker/stripe] sequential redelivery of every event (replay / lost acknowledgements) books nothing twice",
+  "tests/property.test.ts :: randomised refund sequences [inline/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+  "tests/property.test.ts :: randomised refund sequences [inline/stripe] books stay right under random refunds, bursts, lost responses and replays",
+  "tests/property.test.ts :: randomised refund sequences [worker/razorpay] books stay right under random refunds, bursts, lost responses and replays",
+  "tests/property.test.ts :: randomised refund sequences [worker/stripe] books stay right under random refunds, bursts, lost responses and replays",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [inline/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [inline/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] failed refund then a new full refund: attribution and ledger stay per refund object",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [worker/razorpay] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] Stripe: canceled refund, and a succeeded refund that reverts to requires_action, stay accounted",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] failed refund then a new full refund: attribution and ledger stay per refund object",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that SUCCEEDS: replayed pending notice cannot regress it, ledger recognised once",
+  "tests/refunds.test.ts :: asynchronous refund outcomes [worker/stripe] pending refund that later FAILS leaves no residue and frees the capacity; stale events do not resurrect it",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] refund event delivered before the payment event is applied once the payment is known",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] refund event delivered before the payment event is applied once the payment is known",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [inline/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] an API refund and a dashboard refund of the SAME amount are never confused",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] refund event delivered before the payment event is applied once the payment is known",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/razorpay] two orders refunded with identical amounts at the same time stay on their own order",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] a dashboard refund is recorded without a line, once, and bounds later API refunds",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] an API refund and a dashboard refund of the SAME amount are never confused",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] refund event delivered before the payment event is applied once the payment is known",
+  "tests/refunds.test.ts :: out of band (dashboard) refunds and attribution [worker/stripe] two orders refunded with identical amounts at the same time stay on their own order",
+  "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund before the order is paid is refused and moves no money",
+  "tests/refunds.test.ts :: refund bounds [inline/razorpay] a refund of a line that belongs to another order is refused",
+  "tests/refunds.test.ts :: refund bounds [inline/razorpay] invalid refund amounts never reach the provider",
+  "tests/refunds.test.ts :: refund bounds [inline/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+  "tests/refunds.test.ts :: refund bounds [inline/razorpay] sequential partial refunds can never sum past the line, nor the order",
+  "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund before the order is paid is refused and moves no money",
+  "tests/refunds.test.ts :: refund bounds [inline/stripe] a refund of a line that belongs to another order is refused",
+  "tests/refunds.test.ts :: refund bounds [inline/stripe] invalid refund amounts never reach the provider",
+  "tests/refunds.test.ts :: refund bounds [inline/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+  "tests/refunds.test.ts :: refund bounds [inline/stripe] sequential partial refunds can never sum past the line, nor the order",
+  "tests/refunds.test.ts :: refund bounds [worker/razorpay] a refund before the order is paid is refused and moves no money",
+  "tests/refunds.test.ts :: refund bounds [worker/razorpay] a refund of a line that belongs to another order is refused",
+  "tests/refunds.test.ts :: refund bounds [worker/razorpay] invalid refund amounts never reach the provider",
+  "tests/refunds.test.ts :: refund bounds [worker/razorpay] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+  "tests/refunds.test.ts :: refund bounds [worker/razorpay] sequential partial refunds can never sum past the line, nor the order",
+  "tests/refunds.test.ts :: refund bounds [worker/stripe] a refund before the order is paid is refused and moves no money",
+  "tests/refunds.test.ts :: refund bounds [worker/stripe] a refund of a line that belongs to another order is refused",
+  "tests/refunds.test.ts :: refund bounds [worker/stripe] invalid refund amounts never reach the provider",
+  "tests/refunds.test.ts :: refund bounds [worker/stripe] provider minimum: Razorpay INR needs 100 minor units, nothing is sent or reserved below it",
+  "tests/refunds.test.ts :: refund bounds [worker/stripe] sequential partial refunds can never sum past the line, nor the order",
+  "tests/refunds.test.ts :: refund concurrency [inline/razorpay] concurrent refunds on two lines cannot exceed the order total",
+  "tests/refunds.test.ts :: refund concurrency [inline/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+  "tests/refunds.test.ts :: refund concurrency [inline/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+  "tests/refunds.test.ts :: refund concurrency [inline/stripe] concurrent refunds on two lines cannot exceed the order total",
+  "tests/refunds.test.ts :: refund concurrency [inline/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+  "tests/refunds.test.ts :: refund concurrency [inline/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+  "tests/refunds.test.ts :: refund concurrency [worker/razorpay] concurrent refunds on two lines cannot exceed the order total",
+  "tests/refunds.test.ts :: refund concurrency [worker/razorpay] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+  "tests/refunds.test.ts :: refund concurrency [worker/razorpay] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+  "tests/refunds.test.ts :: refund concurrency [worker/stripe] concurrent refunds on two lines cannot exceed the order total",
+  "tests/refunds.test.ts :: refund concurrency [worker/stripe] refunds held at the provider so they hit it together: whatever it accepts is booked exactly",
+  "tests/refunds.test.ts :: refund concurrency [worker/stripe] six concurrent refunds of 40% of one line: exactly two succeed, the provider never over-refunds",
+  "tests/refunds.test.ts :: refund provider faults [inline/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+  "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+  "tests/refunds.test.ts :: refund provider faults [inline/razorpay] app crash with the payment captured but unseen: restart still books it once",
+  "tests/refunds.test.ts :: refund provider faults [inline/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+  "tests/refunds.test.ts :: refund provider faults [inline/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+  "tests/refunds.test.ts :: refund provider faults [inline/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+  "tests/refunds.test.ts :: refund provider faults [inline/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+  "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+  "tests/refunds.test.ts :: refund provider faults [inline/stripe] app crash with the payment captured but unseen: restart still books it once",
+  "tests/refunds.test.ts :: refund provider faults [inline/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+  "tests/refunds.test.ts :: refund provider faults [inline/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+  "tests/refunds.test.ts :: refund provider faults [worker/razorpay] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+  "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash while the provider applied a refund: restart neither loses nor repeats it",
+  "tests/refunds.test.ts :: refund provider faults [worker/razorpay] app crash with the payment captured but unseen: restart still books it once",
+  "tests/refunds.test.ts :: refund provider faults [worker/razorpay] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+  "tests/refunds.test.ts :: refund provider faults [worker/razorpay] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+  "tests/refunds.test.ts :: refund provider faults [worker/stripe] 5xx before anything was applied: no refund, no ledger posting, never a double refund later",
+  "tests/refunds.test.ts :: refund provider faults [worker/stripe] Stripe 429 is rejected before execution, so its reservation is released",
+  "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash while the provider applied a refund: restart neither loses nor repeats it",
+  "tests/refunds.test.ts :: refund provider faults [worker/stripe] app crash with the payment captured but unseen: restart still books it once",
+  "tests/refunds.test.ts :: refund provider faults [worker/stripe] applied-then-500: the unknown refund is never resent, even after the provider forgot the idempotency key",
+  "tests/refunds.test.ts :: refund provider faults [worker/stripe] lost response (applied at provider): capacity stays reserved, webhook links it, books agree",
+  "tests/refunds.test.ts :: the audit itself is not vacuous: it flags tampered books and unobserved provider refunds"
+ ],
+ "stablePassing": 175,
+ "baseFlaky": [],
+ "detectedCases": 18
+}

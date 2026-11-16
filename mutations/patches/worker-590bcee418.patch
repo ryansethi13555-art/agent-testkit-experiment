@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -443,7 +443,7 @@
+       if (!cur) {
+         await c.query(
+           "INSERT INTO payments (provider_ref, order_id, status, amount, amount_captured, currency) VALUES ($1, $2, $3, $4, $5, $6)",
+-          [snap.ref, orderId, snap.status, snap.amount, snap.amountCaptured, snap.currency || o.currency],
++          [snap.ref, orderId, snap.status, snap.amount, snap.amountCaptured, snap.currency && o.currency],
+         );
+       } else if (paymentMayMove(cur.status, snap.status)) {
+         await c.query(

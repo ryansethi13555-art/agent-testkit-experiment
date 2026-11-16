@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -132,7 +132,7 @@
+ CREATE TABLE IF NOT EXISTS jobs (
+   id bigserial PRIMARY KEY,
+   provider_event_id text UNIQUE,
+-  type text NOT NULL,
++  type text NULL,
+   payload jsonb NOT NULL,
+   state text NOT NULL DEFAULT 'queued' CHECK (state IN ('queued', 'running', 'done', 'failed')),
+   attempts int NOT NULL DEFAULT 0,

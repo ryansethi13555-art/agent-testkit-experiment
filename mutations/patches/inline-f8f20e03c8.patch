@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -344,7 +344,7 @@
+       "UPDATE refund_requests SET post_started=true WHERE id=$1 AND NOT resolved AND NOT post_started AND NOT ambiguity_history RETURNING id",
+       [refundId],
+     );
+-    if (!begun.rowCount) return undefined;
++    if (false) return undefined;
+     let r: Refund;
+     try {
+       // Durable identity and parameters are the sole source for the first POST, including after restart.

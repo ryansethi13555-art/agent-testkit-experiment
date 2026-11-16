@@ -1,0 +1,2220 @@
+{
+ "workspace": "/home/claude/rep/A3",
+ "corpus": "corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 17.3,
+   "tests": 104,
+   "failed": []
+  },
+  {
+   "seconds": 17.5,
+   "tests": 104,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ee754b3bb8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b5fd4183b8": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.6,
+     "failingStable": [
+      "tests/inline-money.test.ts :: refunds validates the refund request: positive integers, existing line of this order, never another order's line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.6,
+     "failingStable": [
+      "tests/inline-money.test.ts :: refunds validates the refund request: positive integers, existing line of this order, never another order's line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-653460e299": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.9,
+     "failingStable": [
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ee9f08c53": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.8,
+     "failingStable": [
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 20.1,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fef5230a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-0704d70e4c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-24d415ba3f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8aaee70e82": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 16.9,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4d5755f597": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1767da2ed7": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Stripe adapters inline: authorisation events are observations that carry no received money; refunds map status exactly"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 16.6,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Stripe adapters inline: authorisation events are observations that carry no received money; refunds map status exactly"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27bb27260f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters inline: captured vs authorised carry the right received money; the order id is the payment reference"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.4,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters inline: captured vs authorised carry the right received money; the order id is the payment reference"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-319b88db45": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [
+      "tests/inline-money.test.ts :: orders and input validation stores amounts exactly as integer minor units, with the currency",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.5,
+     "failingStable": [
+      "tests/inline-money.test.ts :: orders and input validation stores amounts exactly as integer minor units, with the currency",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ff46326d5b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-72a78980e2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-2252479946": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-34b89b727b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dd6a188c57": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-142b68a317": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e9a58a7a33": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e48d36c3d0": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-62874cd85f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0a43d8d08": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 16.2,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 16.6,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ea850af7a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-45e6d924f9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dfaec08497": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.5,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-f8f20e03c8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7439bc78e9": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [
+      "tests/inline-money.test.ts :: orders and input validation an order is not refundable before it is paid, and a missing order is 404"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.5,
+     "failingStable": [
+      "tests/inline-money.test.ts :: orders and input validation an order is not refundable before it is paid, and a missing order is 404"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.0,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b084c71403": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 16.8,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.5,
+     "failingStable": [
+      "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+      "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7d3e9b8d06": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.2,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: inline money.ts parses only exact non-negative integers within the SDK-safe range"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.8,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: inline money.ts parses only exact non-negative integers within the SDK-safe range"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e41d0b1a6c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1e14570737": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Stripe adapters inline: authorisation events are observations that carry no received money; refunds map status exactly"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.6,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Stripe adapters inline: authorisation events are observations that carry no received money; refunds map status exactly"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-105727a328": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-96e83ff06b": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [
+      "tests/inline-money.test.ts :: manual capture a capture failing before the provider applied it books nothing and can be retried",
+      "tests/inline-money.test.ts :: manual capture a partial capture is never booked as the full sale",
+      "tests/inline-money.test.ts :: manual capture captures once even when requested many times concurrently",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter manual capture sends one idempotent capture per order; concurrent calls book once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.0,
+     "failingStable": [
+      "tests/inline-money.test.ts :: manual capture a capture failing before the provider applied it books nothing and can be retried",
+      "tests/inline-money.test.ts :: manual capture a partial capture is never booked as the full sale",
+      "tests/inline-money.test.ts :: manual capture captures once even when requested many times concurrently",
+      "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter manual capture sends one idempotent capture per order; concurrent calls book once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8bcb27de2c": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters inline: captured vs authorised carry the right received money; the order id is the payment reference"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.1,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters inline: captured vs authorised carry the right received money; the order id is the payment reference"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ab36a7ebf6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b59a9449f7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a995dcb549": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95f1c74d78": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-31d2e8ad79": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [
+      "tests/worker-money.test.ts :: refunds a refund made outside the shop counts against the payment's refundable amount"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.1,
+     "failingStable": [
+      "tests/worker-money.test.ts :: refunds a refund made outside the shop counts against the payment's refundable amount"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ab649f3ed6": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters both adapters dedupe on the provider event id, falling back to the signed body, and verify the signature"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.4,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters both adapters dedupe on the provider event id, falling back to the signed body, and verify the signature"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0607952b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-782d5bf789": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.0,
+     "failingStable": [
+      "tests/worker-money.test.ts :: API validation rejects malformed orders and stores exact minor-unit integers",
+      "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated splits each line with half-even commission and loses no minor unit"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.2,
+     "failingStable": [
+      "tests/worker-money.test.ts :: API validation rejects malformed orders and stores exact minor-unit integers",
+      "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated splits each line with half-even commission and loses no minor unit"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-efece32a35": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Stripe adapters worker: a webhook yields only 'which object changed' (never state), keyed by the event id"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.2,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Stripe adapters worker: a webhook yields only 'which object changed' (never state), keyed by the event id"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-32ba3a2db5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84bce1383d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-bfd7f0f437": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [
+      "tests/worker-money.test.ts :: manual capture a lost capture response is reconciled from the provider object by the queue, booking once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.1,
+     "failingStable": [
+      "tests/worker-money.test.ts :: manual capture a lost capture response is reconciled from the provider object by the queue, booking once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6b2c5a0d9c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-92b5cdab2b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6845349f43": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-983dba84d7": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.7,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: worker money.ts parseMinorUnits accepts only exact integers within the domain"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.1,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: worker money.ts parseMinorUnits accepts only exact integers within the domain"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4d248a7464": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d21e7d8f0c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 20.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 21.2,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Stripe adapters worker: a webhook yields only 'which object changed' (never state), keyed by the event id"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 20.5,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Stripe adapters worker: a webhook yields only 'which object changed' (never state), keyed by the event id"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cac8e14334": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 20.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-969024dce1": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-671cf65d46": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.8,
+     "failingStable": [
+      "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated a second provider payment for the same order is held in suspense, not allocated to sellers twice",
+      "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated an amount that does not match the order goes to suspense, never to sellers; its lines cannot be refunded"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.6,
+     "failingStable": [
+      "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated a second provider payment for the same order is held in suspense, not allocated to sellers twice",
+      "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated an amount that does not match the order goes to suspense, never to sellers; its lines cannot be refunded"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a74098df3b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8e53f6c1c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f877242f9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6065a428c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cb29202017": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-25fd6c557b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 20.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-55a2fd5278": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 20.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9b27895cee": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95c7dbb56d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 20.3,
+     "failingStable": [
+      "tests/worker-money.test.ts :: API validation rejects malformed orders and stores exact minor-unit integers"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.0,
+     "failingStable": [
+      "tests/worker-money.test.ts :: API validation rejects malformed orders and stores exact minor-unit integers"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d23172263e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-daf9a44d54": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-78ca9e9e6d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0e7a916448": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8ef18682cf": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters both adapters dedupe on the provider event id, falling back to the signed body, and verify the signature"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.9,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters both adapters dedupe on the provider event id, falling back to the signed body, and verify the signature"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8f0abdb617": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.9,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters both adapters dedupe on the provider event id, falling back to the signed body, and verify the signature"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 20.3,
+     "failingStable": [
+      "tests/pure-and-adapters.test.ts :: Razorpay adapters both adapters dedupe on the provider event id, falling back to the signed body, and verify the signature"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-b95cd1f2cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9aa99b20bc": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ae3a3b1bc7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2c7243ba14": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e167f3ab92": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/inline-money.test.ts :: checkout a failure before the provider applied the create also never leads to a second create",
+  "tests/inline-money.test.ts :: checkout a lost create response never causes a second provider payment; the observed payment id is adopted",
+  "tests/inline-money.test.ts :: checkout a paid order cannot be checked out again",
+  "tests/inline-money.test.ts :: checkout is idempotent: repeated and concurrent checkouts create exactly one provider payment",
+  "tests/inline-money.test.ts :: manual capture a capture failing before the provider applied it books nothing and can be retried",
+  "tests/inline-money.test.ts :: manual capture a lost capture response parks the order; the webhook later books exactly once",
+  "tests/inline-money.test.ts :: manual capture a partial capture is never booked as the full sale",
+  "tests/inline-money.test.ts :: manual capture captures once even when requested many times concurrently",
+  "tests/inline-money.test.ts :: orders and input validation an order is not refundable before it is paid, and a missing order is 404",
+  "tests/inline-money.test.ts :: orders and input validation rejects malformed money and currency without creating an order",
+  "tests/inline-money.test.ts :: orders and input validation stores amounts exactly as integer minor units, with the currency",
+  "tests/inline-money.test.ts :: payment webhooks: duplicates, ordering, tampering a succeeded event for an unknown order is retried later (5xx) and leaves no processed marker",
+  "tests/inline-money.test.ts :: payment webhooks: duplicates, ordering, tampering an authorisation or created event never books money",
+  "tests/inline-money.test.ts :: payment webhooks: duplicates, ordering, tampering different event ids, confirm-return and capture for one payment still book the sale once",
+  "tests/inline-money.test.ts :: payment webhooks: duplicates, ordering, tampering does not book a payment whose captured amount differs from the order total",
+  "tests/inline-money.test.ts :: payment webhooks: duplicates, ordering, tampering does not book a payment whose currency or order identity differs",
+  "tests/inline-money.test.ts :: payment webhooks: duplicates, ordering, tampering rejects an invalid signature with 400 and no effect",
+  "tests/inline-money.test.ts :: payment webhooks: duplicates, ordering, tampering the same event delivered many times, concurrently, books the sale once",
+  "tests/inline-money.test.ts :: property: random event/refund histories keep the books sound ledger balanced, clearing exact, refunds within capture, DB agrees with provider after reconciliation",
+  "tests/inline-money.test.ts :: refunds a dashboard refund larger than what is left on the order is not recorded as money out",
+  "tests/inline-money.test.ts :: refunds a definitive provider rejection releases the reservation; an ambiguous failure does not",
+  "tests/inline-money.test.ts :: refunds a durable reservation never yet sent is sent exactly once, even with concurrent recovery workers",
+  "tests/inline-money.test.ts :: refunds a lost refund response keeps the amount reserved, is never resent, and a later webhook links it exactly once",
+  "tests/inline-money.test.ts :: refunds a partial refund debits the line's seller, reduces refundable capacity and updates the order",
+  "tests/inline-money.test.ts :: refunds a pending refund holds money; success does not double-book; failure reverses exactly once and frees capacity",
+  "tests/inline-money.test.ts :: refunds a refund event arriving before the payment event is retried later, then applied once",
+  "tests/inline-money.test.ts :: refunds a refund that succeeded and later failed is reversed once",
+  "tests/inline-money.test.ts :: refunds a request whose POST may have started before a crash is never resent after restart",
+  "tests/inline-money.test.ts :: refunds an unknown-outcome reservation limits its own line even when the rest of the order has room",
+  "tests/inline-money.test.ts :: refunds applies the Razorpay INR minimum before reserving or calling the provider",
+  "tests/inline-money.test.ts :: refunds concurrent refunds across lines cannot exceed the order total",
+  "tests/inline-money.test.ts :: refunds concurrent refunds on a line can never exceed it (and each accepted refund is sent exactly once)",
+  "tests/inline-money.test.ts :: refunds dashboard refunds are recorded once, count against the order, and block over-refunding through the API",
+  "tests/inline-money.test.ts :: refunds never links an uncorrelated refund to a reservation by amount alone",
+  "tests/inline-money.test.ts :: refunds pending then failed: reversal posted once even with duplicate and stale events; order and capacity restored",
+  "tests/inline-money.test.ts :: refunds refunds on one order never touch another order's money",
+  "tests/inline-money.test.ts :: refunds refuses a refund whose provider-side currency differs from the order, booking nothing",
+  "tests/inline-money.test.ts :: refunds validates the refund request: positive integers, existing line of this order, never another order's line",
+  "tests/inline-money.test.ts :: sale booking, commission and ledger books a balanced sale: clearing debit, seller net and commission credits per line",
+  "tests/inline-money.test.ts :: sale booking, commission and ledger books each ledger transaction in a single currency and keeps the order currency (USD)",
+  "tests/inline-money.test.ts :: sale booking, commission and ledger property: any set of lines books exactly the order total",
+  "tests/inline-money.test.ts :: sale booking, commission and ledger rounds commission half to even per line and never loses or creates a minor unit",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter Stripe's amount_too_large rejection releases the reservation and books nothing",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter a 429 (rejected before execution) releases the reservation; the retry succeeds and refunds exactly once",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter a connection dropped after Stripe applied the refund is treated as unknown, not as failure",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter a payment webhook whose amount_received differs from the order total books nothing",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter a refund applied by Stripe but answered 500 is never reposted; the signed webhook later books it once",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter commission on the wire path rounds half to even per line",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter creates exactly one PaymentIntent per order with minor-unit amount, lowercase currency, order metadata and a stable idempotency key",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter manual capture sends one idempotent capture per order; concurrent calls book once",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter pending refund then failure: the event body is not trusted, the retrieved refund is; reversal posted once",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter refund POST carries the request id as idempotency key and metadata, and an exact integer amount",
+  "tests/inline-stripe-wire.test.ts :: inline marketplace through the real Stripe adapter verifies webhook signatures (forged, unsigned, expired) and books a duplicated delivery once",
+  "tests/pure-and-adapters.test.ts :: Razorpay adapters both adapters dedupe on the provider event id, falling back to the signed body, and verify the signature",
+  "tests/pure-and-adapters.test.ts :: Razorpay adapters enforces the 100 minor unit INR minimum only for INR",
+  "tests/pure-and-adapters.test.ts :: Razorpay adapters inline: captured vs authorised carry the right received money; the order id is the payment reference",
+  "tests/pure-and-adapters.test.ts :: Razorpay adapters inline: refund events map processed/failed/pending exactly and keep the request id",
+  "tests/pure-and-adapters.test.ts :: Stripe adapters both adapters reject forged, unsigned, altered and stale-timestamp deliveries",
+  "tests/pure-and-adapters.test.ts :: Stripe adapters inline: a verified payment_intent.succeeded carries exact money, currency and order identity",
+  "tests/pure-and-adapters.test.ts :: Stripe adapters inline: authorisation events are observations that carry no received money; refunds map status exactly",
+  "tests/pure-and-adapters.test.ts :: Stripe adapters worker: a webhook yields only 'which object changed' (never state), keyed by the event id",
+  "tests/pure-and-adapters.test.ts :: inline money.ts parses only exact non-negative integers within the SDK-safe range",
+  "tests/pure-and-adapters.test.ts :: inline money.ts refund statuses: money is held while pending, requires_action or succeeded only",
+  "tests/pure-and-adapters.test.ts :: inline money.ts sdkMinor converts only exactly",
+  "tests/pure-and-adapters.test.ts :: worker money.ts a payment only moves forward; succeeded and canceled are final",
+  "tests/pure-and-adapters.test.ts :: worker money.ts commission agrees with an independent implementation and never exceeds the amount",
+  "tests/pure-and-adapters.test.ts :: worker money.ts divHalfEven is the nearest integer, ties to even (property)",
+  "tests/pure-and-adapters.test.ts :: worker money.ts lineHeadroom subtracts only money-holding refunds and every reservation",
+  "tests/pure-and-adapters.test.ts :: worker money.ts order status follows money facts only",
+  "tests/pure-and-adapters.test.ts :: worker money.ts parseMinorUnits accepts only exact integers within the domain",
+  "tests/pure-and-adapters.test.ts :: worker money.ts providerMinor and sdkMinor refuse anything inexact",
+  "tests/pure-and-adapters.test.ts :: worker money.ts saleLegs always sum to zero, credit sellers net of commission, and omit zero legs",
+  "tests/worker-money.test.ts :: API validation refund endpoint validates amount, line and order state",
+  "tests/worker-money.test.ts :: API validation rejects malformed orders and stores exact minor-unit integers",
+  "tests/worker-money.test.ts :: database guards refuses an unbalanced ledger transaction at commit and a second posting in the same slot",
+  "tests/worker-money.test.ts :: job queue a crashed worker's running job is re-queued on recovery and runs",
+  "tests/worker-money.test.ts :: job queue concurrent workers never run the same job twice",
+  "tests/worker-money.test.ts :: job queue retries with backoff, then parks as failed after the attempt limit; errors never mark a job done",
+  "tests/worker-money.test.ts :: manual capture a lost capture response is reconciled from the provider object by the queue, booking once",
+  "tests/worker-money.test.ts :: manual capture authorised then captured once under concurrency; order status follows the money",
+  "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated a second provider payment for the same order is held in suspense, not allocated to sellers twice",
+  "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated a stale provider read never moves a stored payment backwards or re-books it",
+  "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated an amount that does not match the order goes to suspense, never to sellers; its lines cannot be refunded",
+  "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated books a captured payment exactly once under duplicate events, charge events, confirm, checkout and concurrency",
+  "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated checkout never creates a second provider payment after a lost response, crash marker or repeated call",
+  "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated property: any set of lines is booked in full, balanced, and refundable in full",
+  "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated refuses a snapshot with different money, currency or order identity than stored",
+  "tests/worker-money.test.ts :: payments: booked once, only forward, never mis-allocated splits each line with half-even commission and loses no minor unit",
+  "tests/worker-money.test.ts :: property: random histories keep the books sound ledger balanced, clearing exact, nothing over-refunded, DB agrees with provider once reconciled",
+  "tests/worker-money.test.ts :: refunds a definitive rejection releases the reservation; an unknown failure keeps it",
+  "tests/worker-money.test.ts :: refunds a lost response keeps the reservation, never resends (through worker retries to dead letter), then a webhook links it",
+  "tests/worker-money.test.ts :: refunds a refund event before the payment event still yields a booked sale and a recognised refund, once",
+  "tests/worker-money.test.ts :: refunds a refund made outside the shop counts against the payment's refundable amount",
+  "tests/worker-money.test.ts :: refunds a request left in flight by a crash becomes 'unknown' (still reserved) and is never resent",
+  "tests/worker-money.test.ts :: refunds an unknown-outcome reservation limits its own line even when the rest of the order has room",
+  "tests/worker-money.test.ts :: refunds applies the Razorpay INR minimum before reserving or calling the provider",
+  "tests/worker-money.test.ts :: refunds concurrent refunds cannot exceed a line or the order, and each accepted one is sent once",
+  "tests/worker-money.test.ts :: refunds pending refunds hold money; failure reverses exactly once and frees capacity; a later 'succeeded' read cannot resurrect it",
+  "tests/worker-money.test.ts :: refunds refunding one order never changes another",
+  "tests/worker-money.test.ts :: refunds refunds per line within the line, with a seller debit, and the order status follows",
+  "tests/worker-money.test.ts :: refunds succeeded then failed later is reversed once",
+  "tests/worker-money.test.ts :: webhooks only enqueue; money state comes from the provider object never trusts the webhook body: an event claiming success cannot book money the provider does not hold",
+  "tests/worker-money.test.ts :: webhooks only enqueue; money state comes from the provider object redelivery of a failed job's event re-queues it; a finished job is not re-run",
+  "tests/worker-money.test.ts :: webhooks only enqueue; money state comes from the provider object rejects bad signatures, ignores unrelated objects, dedupes by event id (also concurrently)"
+ ],
+ "stablePassing": 104,
+ "baseFlaky": [],
+ "detectedCases": 27
+}

@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -149,7 +149,7 @@
+     capture: o.capture_method,
+   });
+   if (
+-    pi.amount !== BigInt(o.total) ||
++    pi.amount !== BigInt(o.total) &&
+     pi.currency !== o.currency ||
+     (pi.orderId !== undefined && pi.orderId !== o.id)
+   )

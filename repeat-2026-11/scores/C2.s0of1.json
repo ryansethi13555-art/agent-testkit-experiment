@@ -1,0 +1,2764 @@
+{
+ "workspace": "/home/claude/rep/C2",
+ "corpus": "corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 60.4,
+   "tests": 140,
+   "failed": []
+  },
+  {
+   "seconds": 60.8,
+   "tests": 140,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ee754b3bb8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b5fd4183b8": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 60.6,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-653460e299": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ee9f08c53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fef5230a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-0704d70e4c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-24d415ba3f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8aaee70e82": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 60.8,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4d5755f597": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1767da2ed7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27bb27260f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 62.1,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 62.7,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-319b88db45": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ff46326d5b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 59.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-72a78980e2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-2252479946": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-34b89b727b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dd6a188c57": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-142b68a317": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e9a58a7a33": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 62.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e48d36c3d0": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-62874cd85f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0a43d8d08": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ea850af7a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 61.0,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-45e6d924f9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dfaec08497": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-f8f20e03c8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7439bc78e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b084c71403": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7d3e9b8d06": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e41d0b1a6c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1e14570737": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 71.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-105727a328": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-96e83ff06b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8bcb27de2c": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 68.4,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 67.9,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ab36a7ebf6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b59a9449f7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a995dcb549": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95f1c74d78": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 358.0,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 357.9,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-31d2e8ad79": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ab649f3ed6": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 46.7,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a payment the app never created never books money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 46.2,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a payment the app never created never books money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0607952b0b": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 60.6,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-782d5bf789": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-efece32a35": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-32ba3a2db5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84bce1383d": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 38.7,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 38.5,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-bfd7f0f437": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6b2c5a0d9c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-92b5cdab2b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 682.2,
+     "failingStable": [
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a partial capture made outside the app never books more money than was captured",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture happy path books only after capture",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture whose response is lost is booked once when the event arrives, and a retry does not double book",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 681.9,
+     "failingStable": [
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a partial capture made outside the app never books more money than was captured",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture happy path books only after capture",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture whose response is lost is booked once when the event arrives, and a retry does not double book",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6845349f43": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-983dba84d7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 40.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4d248a7464": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d21e7d8f0c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cac8e14334": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 680.9,
+     "failingStable": [
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a partial capture made outside the app never books more money than was captured",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture happy path books only after capture",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture whose response is lost is booked once when the event arrives, and a retry does not double book",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 680.2,
+     "failingStable": [
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a partial capture made outside the app never books more money than was captured",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture happy path books only after capture",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture whose response is lost is booked once when the event arrives, and a retry does not double book",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-969024dce1": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 60.6,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-671cf65d46": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 101.6,
+     "failingStable": [
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a partial capture made outside the app never books more money than was captured",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture happy path books only after capture"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 101.4,
+     "failingStable": [
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a partial capture made outside the app never books more money than was captured",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture happy path books only after capture"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a74098df3b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8e53f6c1c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 60.2,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 60.0,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f877242f9": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 336.2,
+     "failingStable": [
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 336.0,
+     "failingStable": [
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6065a428c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cb29202017": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-25fd6c557b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 59.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-55a2fd5278": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 61.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9b27895cee": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95c7dbb56d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 60.4,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds rejects invalid order input and never creates money from it",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds rejects invalid order input and never creates money from it"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 60.2,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds rejects invalid order input and never creates money from it",
+      "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds rejects invalid order input and never creates money from it"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d23172263e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 59.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-daf9a44d54": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-78ca9e9e6d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0e7a916448": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 38.1,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 38.0,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8ef18682cf": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 38.9,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 39.3,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8f0abdb617": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 39.4,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 39.4,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 60.0,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 60.5,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-b95cd1f2cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9aa99b20bc": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 59.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ae3a3b1bc7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 59.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 59.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2c7243ba14": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 38.1,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 37.2,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+      "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e167f3ab92": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 60.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture checkout answering 5xx after applying does not lead to a second payment",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle a payment the app never created never books money",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds rejects invalid order input and never creates money from it",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+  "tests/inline.razorpay.test.ts :: inline marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: amounts and currencies USD order: books and refunds in the order's currency",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: lost responses around payment creation and capture a partial capture made outside the app never books more money than was captured",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: lost responses around payment creation and capture checkout answering 5xx after applying does not lead to a second payment",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: lost responses around payment creation and capture manual capture happy path books only after capture",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: lost responses around payment creation and capture manual capture whose response is lost is booked once when the event arrives, and a retry does not double book",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle a payment the app never created never books money",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle an order is never marked paid by a payment of another order",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle duplicate webhook deliveries in parallel post once",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds a full dashboard refund marks the order refunded",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds a refund of a pending refund that the provider later succeeds is booked once",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds an applied refund that answers 5xx is not resent with a different identity",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds concurrent refunds on one line never exceed the line amount",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds provider 429 on refund moves no money and is never booked",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds refund events delivered in reverse order converge to the provider's final state",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds rejects invalid order input and never creates money from it",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds sequential partial refunds can never sum past the line amount",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+  "tests/inline.stripe.test.ts :: inline marketplace on stripe: refunds two refunds that meet at the provider together are both accounted exactly once",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies INR refunds below the provider minimum of 100 minor units never reach the provider",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies USD order: books and refunds in the order's currency",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture checkout answering 5xx after applying does not lead to a second payment",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle a payment the app never created never books money",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle an order is never marked paid by a payment of another order",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries in parallel post once",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a full dashboard refund marks the order refunded",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund of a pending refund that the provider later succeeds is booked once",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds an applied refund that answers 5xx is not resent with a different identity",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds concurrent refunds on one line never exceed the line amount",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 429 on refund moves no money and is never booked",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refund events delivered in reverse order converge to the provider's final state",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds rejects invalid order input and never creates money from it",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds sequential partial refunds can never sum past the line amount",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+  "tests/worker.razorpay.test.ts :: worker marketplace on razorpay: refunds two refunds that meet at the provider together are both accounted exactly once",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies USD order: books and refunds in the order's currency",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: amounts and currencies randomised multi line orders with partial refunds keep every money law (property test)",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: engine oracle over the whole database MoneyInvariant oracle: ledger balance, line bounds, refund reconciliation and paid-iff-captured hold after a mixed workload",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a lost checkout response never creates a second provider payment",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture a partial capture made outside the app never books more money than was captured",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture checkout answering 5xx after applying does not lead to a second payment",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture double-submitted checkout creates exactly one provider payment",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture happy path books only after capture",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: lost responses around payment creation and capture manual capture whose response is lost is booked once when the event arrives, and a retry does not double book",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle a declined attempt books nothing; a later successful attempt books once",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle a payment the app never created never books money",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle an order is never marked paid by a payment of another order",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle books the sale once: clearing mirrors capture, parts sum to the whole, commission within one minor unit of 10%",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle checkout is idempotent: one provider payment however often the client asks",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle confirm (buyer return) racing the webhook still records the sale once",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries in parallel post once",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle duplicate webhook deliveries, same id and fresh id, sequential, post once",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: payment lifecycle rejects forged webhooks (wrong secret, missing header, tampered body) without any effect",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a dashboard refund delivered before the payment event is applied once the payment is known",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a full dashboard refund marks the order refunded",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a lost refund response is not resent and the refund is accounted once when the webhook arrives",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund of a pending refund that the provider later succeeds is booked once",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds a refund that fails asynchronously after acceptance is reversed exactly once and the budget is released",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds an applied refund that answers 5xx is not resent with a different identity",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds concurrent refunds on one line never exceed the line amount",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds dashboard refunds count against the budget: the app cannot refund past the payment",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds one line's budget is not spent from another line, and a full refund of every line marks the order refunded",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds partial refunds reverse the seller share and keep the clearing account equal to provider money",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 429 on refund moves no money and is never booked",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds provider 5xx before apply moves no money and never produces an over-refund on retries",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refund events delivered in reverse order converge to the provider's final state",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds refuses refunds of another order's line, unknown lines/orders, unpaid orders and malformed amounts",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds rejects invalid order input and never creates money from it",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds sequential partial refunds can never sum past the line amount",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds stale refund events delivered after the final one do not resurrect a failed refund",
+  "tests/worker.stripe.test.ts :: worker marketplace on stripe: refunds two refunds that meet at the provider together are both accounted exactly once"
+ ],
+ "stablePassing": 140,
+ "baseFlaky": [],
+ "detectedCases": 21
+}

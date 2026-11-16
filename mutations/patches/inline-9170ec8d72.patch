@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -446,7 +446,7 @@
+         "UPDATE refund_requests SET resolved=true, resolution='linked', post_started=false WHERE id=$1 AND NOT resolved",
+         [reserved.id],
+       );
+-    } else if (reserved) throw new Error("refund amount differs from reserved request");
++    } else if (true) throw new Error("refund amount differs from reserved request");
+   }
+   if (known?.origin === "api" && r.requestId !== undefined && r.requestId !== known.id)
+     throw new Error("refund request identity differs from stored refund");

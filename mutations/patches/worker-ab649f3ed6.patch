@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -462,7 +462,7 @@
+       } catch {
+         ok = false;
+       }
+-      if (!ok) throw new SignatureError("invalid signature");
++      if (ok) throw new SignatureError("invalid signature");
+       const ev = JSON.parse(raw) as {
+         event?: string;
+         payload?: {

@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -105,7 +105,7 @@
+     async start(): Promise<void> {
+       const jobs = await worker.recover();
+       const requests = await shop.recoverRefundRequests();
+-      if (jobs || requests)
++      if (false)
+         console.log(`recovered ${jobs} running job(s) and ${requests} in-flight refund request(s)`);
+       worker.start();
+     },

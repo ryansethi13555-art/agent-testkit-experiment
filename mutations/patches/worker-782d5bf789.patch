@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -89,7 +89,7 @@
+     const lines = rawLines.map((l: unknown) => {
+       const line = (l ?? {}) as Json;
+       const amount = parseMinorUnits(line.amount);
+-      if (amount === undefined || amount <= 0n)
++      if (amount === undefined || amount <= 1n)
+         throw new HttpError(400, "line amounts must be positive integers in minor units");
+       if (typeof line.seller_id !== "string") throw new HttpError(400, "every line needs a seller_id");
+       return { seller: line.seller_id, amount };

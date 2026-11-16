@@ -1,0 +1,10 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -147,7 +147,6 @@
+   const c = await db.connect();
+   try {
+     // serialise concurrent migrations (e.g. two processes starting at once)
+-    await c.query("SELECT pg_advisory_lock(7262001)");
+     await c.query(SCHEMA);
+   } finally {
+     await c.query("SELECT pg_advisory_unlock(7262001)").catch(() => {});

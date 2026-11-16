@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -232,7 +232,7 @@
+       await this.applyPayment(snap);
+       return { status: (await this.#order(orderId)).status };
+     } catch (e) {
+-      if (!(e instanceof ProviderError)) throw e;
++      if ((e instanceof ProviderError)) throw e;
+       // Never assume the outcome: reconcile from the provider object in the background.
+       await enqueue(this.db, "reconcile_payment", { ref }, null);
+       if (e.outcome === "rejected") throw new HttpError(409, `capture rejected: ${e.message}`);

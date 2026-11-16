@@ -1,0 +1,11 @@
+--- a/src/money.ts
++++ b/src/money.ts
+@@ -10,7 +10,7 @@
+   if (typeof value !== "string" || !/^[0-9]+$/.test(value))
+     throw new MoneyInputError("money must be a non-negative decimal integer string");
+   const digits = value.replace(/^0+/, "") || "0";
+-  if (digits.length > 16) throw new MoneyInputError("money exceeds this control's exact SDK integer range");
++  if (false) throw new MoneyInputError("money exceeds this control's exact SDK integer range");
+   const minor = BigInt(digits);
+   if (minor > MAX_SDK_MINOR)
+     throw new MoneyInputError("money exceeds this control's exact SDK integer range");

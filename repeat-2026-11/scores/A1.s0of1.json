@@ -1,0 +1,2375 @@
+{
+ "workspace": "/home/claude/rep/A1",
+ "corpus": "corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 36.2,
+   "tests": 99,
+   "failed": []
+  },
+  {
+   "seconds": 36.1,
+   "tests": 99,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ee754b3bb8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b5fd4183b8": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 35.5,
+     "failingStable": [
+      "tests/inline.refunds.test.ts :: refund posting never lets refunds exceed a line or the order, and does not call the provider for refused requests"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 35.2,
+     "failingStable": [
+      "tests/inline.refunds.test.ts :: refund posting never lets refunds exceed a line or the order, and does not call the provider for refused requests"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-653460e299": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 35.0,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 34.9,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ee9f08c53": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 35.2,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fef5230a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 35.8,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: checkout a lost create response never produces a second provider payment; the provider event recovers identity and the sale books once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 34.9,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: checkout a lost create response never produces a second provider payment; the provider event recovers identity and the sale books once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-0704d70e4c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-24d415ba3f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8aaee70e82": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 35.2,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 34.6,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4d5755f597": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1767da2ed7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27bb27260f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 34.1,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace a lost refund response is never re-sent; the processed webhook links it once",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace books a captured payment once however it is redelivered (event-id header, or payload hash when absent)",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace enforces the INR 1.00 refund minimum locally: no reservation, no provider POST",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace pending then failed refunds are reversed exactly once",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace rejects bad signatures and a captured amount different from the order"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 35.1,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace a lost refund response is never re-sent; the processed webhook links it once",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace books a captured payment once however it is redelivered (event-id header, or payload hash when absent)",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace enforces the INR 1.00 refund minimum locally: no reservation, no provider POST",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace pending then failed refunds are reversed exactly once",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace rejects bad signatures and a captured amount different from the order"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-319b88db45": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 35.8,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 34.8,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ff46326d5b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-72a78980e2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-2252479946": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-34b89b727b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dd6a188c57": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-142b68a317": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e9a58a7a33": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e48d36c3d0": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-62874cd85f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0a43d8d08": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 35.2,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ea850af7a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-45e6d924f9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dfaec08497": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 36.8,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 36.7,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-f8f20e03c8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 37.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 37.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7439bc78e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 37.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 38.9,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 41.9,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b084c71403": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 39.2,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 39.1,
+     "failingStable": [
+      "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 41.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7d3e9b8d06": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 37.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 37.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e41d0b1a6c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 37.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1e14570737": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-105727a328": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-96e83ff06b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8bcb27de2c": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 36.0,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace a lost refund response is never re-sent; the processed webhook links it once",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace books a captured payment once however it is redelivered (event-id header, or payload hash when absent)",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace enforces the INR 1.00 refund minimum locally: no reservation, no provider POST",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace pending then failed refunds are reversed exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 35.6,
+     "failingStable": [
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace a lost refund response is never re-sent; the processed webhook links it once",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace books a captured payment once however it is redelivered (event-id header, or payload hash when absent)",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace enforces the INR 1.00 refund minimum locally: no reservation, no provider POST",
+      "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace pending then failed refunds are reversed exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ab36a7ebf6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b59a9449f7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a995dcb549": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95f1c74d78": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 43.7,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 42.7,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-31d2e8ad79": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 35.5,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 35.7,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ab649f3ed6": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 31.2,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 30.7,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 33.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0607952b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-782d5bf789": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-efece32a35": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-32ba3a2db5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84bce1383d": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 32.7,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 34.1,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 37.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-bfd7f0f437": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 39.2,
+     "failingStable": [
+      "tests/worker.sales.test.ts :: checkout and capture manual capture: a lost capture response is reconciled by the queue and booked once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 36.1,
+     "failingStable": [
+      "tests/worker.sales.test.ts :: checkout and capture manual capture: a lost capture response is reconciled by the queue and booked once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6b2c5a0d9c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-92b5cdab2b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 653.9,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a job that links and fails the refund while the POST response is in flight is not overwritten by the stale response",
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a success event racing the API response books the refund once",
+      "tests/worker.refunds.test.ts :: refund lifecycle a failed refund is reversed once, frees capacity, and later events cannot revive it",
+      "tests/worker.refunds.test.ts :: refund lifecycle a refund event processed before its payment event still resolves (payment is reconciled first)",
+      "tests/worker.refunds.test.ts :: refund lifecycle pending refunds are recognised once and success later adds nothing",
+      "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider",
+      "tests/worker.refunds.test.ts :: refund posting concurrent refund requests cannot exceed line or payment capacity",
+      "tests/worker.refunds.test.ts :: refund posting each request has its own idempotency key and carries order, line and request ids",
+      "tests/worker.refunds.test.ts :: refund posting refunds reverse the right seller and the clearing account, and derive order status from live refunds",
+      "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider",
+      "tests/worker.refunds.test.ts :: restart a request in flight at a crash becomes unknown on restart and is not re-posted",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 429 before execution and a definitive 400 reject the request and release the reservation",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 5xx before the effect is also unknown: the request is not re-sent",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a lost response keeps the amount reserved, is never re-posted, and the exact webhook links it once",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a request whose provider refund shows a different amount is rejected, never linked",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once",
+      "tests/worker.sales.test.ts :: checkout and capture concurrent checkouts create one provider payment; a lost create response never creates a second",
+      "tests/worker.sales.test.ts :: checkout and capture manual capture: a lost capture response is reconciled by the queue and booked once",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a partial capture is not allocated to sellers and does not mint money",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a second captured payment for an already paid order is not allocated twice",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers an object that is not ours is ignored without booking",
+      "tests/worker.sales.test.ts :: retries and crashes a crash with a job 'running' is recovered; a crash AFTER the money was booked does not book twice",
+      "tests/worker.sales.test.ts :: retries and crashes a dead-lettered job is re-queued when the provider redelivers the same event",
+      "tests/worker.sales.test.ts :: retries and crashes a job that hits provider 5xx is retried and applies exactly once",
+      "tests/worker.sales.test.ts :: sale recognition via the queue a stale or regressed provider snapshot cannot undo or re-book a captured payment",
+      "tests/worker.sales.test.ts :: sale recognition via the queue acknowledges a valid webhook only after the job is durably stored, and drops exact duplicate event ids",
+      "tests/worker.sales.test.ts :: sale recognition via the queue books the capture once with exact seller/commission split and persists the allocation",
+      "tests/worker.sales.test.ts :: sale recognition via the queue concurrent workers, duplicate events with different ids and the confirm endpoint book the sale once",
+      "tests/worker.sales.test.ts :: sale recognition via the queue when the job store is unavailable the webhook is NOT acknowledged (so the provider redelivers)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 636.1,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a job that links and fails the refund while the POST response is in flight is not overwritten by the stale response",
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a success event racing the API response books the refund once",
+      "tests/worker.refunds.test.ts :: refund lifecycle a failed refund is reversed once, frees capacity, and later events cannot revive it",
+      "tests/worker.refunds.test.ts :: refund lifecycle a refund event processed before its payment event still resolves (payment is reconciled first)",
+      "tests/worker.refunds.test.ts :: refund lifecycle pending refunds are recognised once and success later adds nothing",
+      "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider",
+      "tests/worker.refunds.test.ts :: refund posting concurrent refund requests cannot exceed line or payment capacity",
+      "tests/worker.refunds.test.ts :: refund posting each request has its own idempotency key and carries order, line and request ids",
+      "tests/worker.refunds.test.ts :: refund posting refunds reverse the right seller and the clearing account, and derive order status from live refunds",
+      "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider",
+      "tests/worker.refunds.test.ts :: restart a request in flight at a crash becomes unknown on restart and is not re-posted",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 429 before execution and a definitive 400 reject the request and release the reservation",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 5xx before the effect is also unknown: the request is not re-sent",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a lost response keeps the amount reserved, is never re-posted, and the exact webhook links it once",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a request whose provider refund shows a different amount is rejected, never linked",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once",
+      "tests/worker.sales.test.ts :: checkout and capture concurrent checkouts create one provider payment; a lost create response never creates a second",
+      "tests/worker.sales.test.ts :: checkout and capture manual capture: a lost capture response is reconciled by the queue and booked once",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a partial capture is not allocated to sellers and does not mint money",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a second captured payment for an already paid order is not allocated twice",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers an object that is not ours is ignored without booking",
+      "tests/worker.sales.test.ts :: retries and crashes a crash with a job 'running' is recovered; a crash AFTER the money was booked does not book twice",
+      "tests/worker.sales.test.ts :: retries and crashes a dead-lettered job is re-queued when the provider redelivers the same event",
+      "tests/worker.sales.test.ts :: retries and crashes a job that hits provider 5xx is retried and applies exactly once",
+      "tests/worker.sales.test.ts :: sale recognition via the queue a stale or regressed provider snapshot cannot undo or re-book a captured payment",
+      "tests/worker.sales.test.ts :: sale recognition via the queue acknowledges a valid webhook only after the job is durably stored, and drops exact duplicate event ids",
+      "tests/worker.sales.test.ts :: sale recognition via the queue books the capture once with exact seller/commission split and persists the allocation",
+      "tests/worker.sales.test.ts :: sale recognition via the queue concurrent workers, duplicate events with different ids and the confirm endpoint book the sale once",
+      "tests/worker.sales.test.ts :: sale recognition via the queue when the job store is unavailable the webhook is NOT acknowledged (so the provider redelivers)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6845349f43": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 35.7,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 36.5,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-983dba84d7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4d248a7464": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d21e7d8f0c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 32.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cac8e14334": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 33.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 513.0,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a job that links and fails the refund while the POST response is in flight is not overwritten by the stale response",
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a success event racing the API response books the refund once",
+      "tests/worker.refunds.test.ts :: refund lifecycle a failed refund is reversed once, frees capacity, and later events cannot revive it",
+      "tests/worker.refunds.test.ts :: refund lifecycle a refund event processed before its payment event still resolves (payment is reconciled first)",
+      "tests/worker.refunds.test.ts :: refund lifecycle pending refunds are recognised once and success later adds nothing",
+      "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider",
+      "tests/worker.refunds.test.ts :: refund posting concurrent refund requests cannot exceed line or payment capacity",
+      "tests/worker.refunds.test.ts :: refund posting each request has its own idempotency key and carries order, line and request ids",
+      "tests/worker.refunds.test.ts :: refund posting refunds reverse the right seller and the clearing account, and derive order status from live refunds",
+      "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider",
+      "tests/worker.refunds.test.ts :: restart a request in flight at a crash becomes unknown on restart and is not re-posted",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 429 before execution and a definitive 400 reject the request and release the reservation",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 5xx before the effect is also unknown: the request is not re-sent",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a lost response keeps the amount reserved, is never re-posted, and the exact webhook links it once",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a request whose provider refund shows a different amount is rejected, never linked",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once",
+      "tests/worker.sales.test.ts :: checkout and capture concurrent checkouts create one provider payment; a lost create response never creates a second",
+      "tests/worker.sales.test.ts :: checkout and capture manual capture: a lost capture response is reconciled by the queue and booked once",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a partial capture is not allocated to sellers and does not mint money",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a second captured payment for an already paid order is not allocated twice",
+      "tests/worker.sales.test.ts :: retries and crashes a crash with a job 'running' is recovered; a crash AFTER the money was booked does not book twice",
+      "tests/worker.sales.test.ts :: retries and crashes a dead-lettered job is re-queued when the provider redelivers the same event",
+      "tests/worker.sales.test.ts :: retries and crashes a job that hits provider 5xx is retried and applies exactly once",
+      "tests/worker.sales.test.ts :: sale recognition via the queue a stale or regressed provider snapshot cannot undo or re-book a captured payment",
+      "tests/worker.sales.test.ts :: sale recognition via the queue acknowledges a valid webhook only after the job is durably stored, and drops exact duplicate event ids",
+      "tests/worker.sales.test.ts :: sale recognition via the queue books the capture once with exact seller/commission split and persists the allocation",
+      "tests/worker.sales.test.ts :: sale recognition via the queue concurrent workers, duplicate events with different ids and the confirm endpoint book the sale once",
+      "tests/worker.sales.test.ts :: sale recognition via the queue when the job store is unavailable the webhook is NOT acknowledged (so the provider redelivers)"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 504.8,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a job that links and fails the refund while the POST response is in flight is not overwritten by the stale response",
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a success event racing the API response books the refund once",
+      "tests/worker.refunds.test.ts :: refund lifecycle a failed refund is reversed once, frees capacity, and later events cannot revive it",
+      "tests/worker.refunds.test.ts :: refund lifecycle a refund event processed before its payment event still resolves (payment is reconciled first)",
+      "tests/worker.refunds.test.ts :: refund lifecycle pending refunds are recognised once and success later adds nothing",
+      "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider",
+      "tests/worker.refunds.test.ts :: refund posting concurrent refund requests cannot exceed line or payment capacity",
+      "tests/worker.refunds.test.ts :: refund posting each request has its own idempotency key and carries order, line and request ids",
+      "tests/worker.refunds.test.ts :: refund posting refunds reverse the right seller and the clearing account, and derive order status from live refunds",
+      "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider",
+      "tests/worker.refunds.test.ts :: restart a request in flight at a crash becomes unknown on restart and is not re-posted",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 429 before execution and a definitive 400 reject the request and release the reservation",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 5xx before the effect is also unknown: the request is not re-sent",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a lost response keeps the amount reserved, is never re-posted, and the exact webhook links it once",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a request whose provider refund shows a different amount is rejected, never linked",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once",
+      "tests/worker.sales.test.ts :: checkout and capture concurrent checkouts create one provider payment; a lost create response never creates a second",
+      "tests/worker.sales.test.ts :: checkout and capture manual capture: a lost capture response is reconciled by the queue and booked once",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a partial capture is not allocated to sellers and does not mint money",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a second captured payment for an already paid order is not allocated twice",
+      "tests/worker.sales.test.ts :: retries and crashes a crash with a job 'running' is recovered; a crash AFTER the money was booked does not book twice",
+      "tests/worker.sales.test.ts :: retries and crashes a dead-lettered job is re-queued when the provider redelivers the same event",
+      "tests/worker.sales.test.ts :: retries and crashes a job that hits provider 5xx is retried and applies exactly once",
+      "tests/worker.sales.test.ts :: sale recognition via the queue a stale or regressed provider snapshot cannot undo or re-book a captured payment",
+      "tests/worker.sales.test.ts :: sale recognition via the queue acknowledges a valid webhook only after the job is durably stored, and drops exact duplicate event ids",
+      "tests/worker.sales.test.ts :: sale recognition via the queue books the capture once with exact seller/commission split and persists the allocation",
+      "tests/worker.sales.test.ts :: sale recognition via the queue concurrent workers, duplicate events with different ids and the confirm endpoint book the sale once",
+      "tests/worker.sales.test.ts :: sale recognition via the queue when the job store is unavailable the webhook is NOT acknowledged (so the provider redelivers)"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-969024dce1": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-671cf65d46": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 42.5,
+     "failingStable": [
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a partial capture is not allocated to sellers and does not mint money",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a second captured payment for an already paid order is not allocated twice"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 42.6,
+     "failingStable": [
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a partial capture is not allocated to sellers and does not mint money",
+      "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a second captured payment for an already paid order is not allocated twice"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a74098df3b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8e53f6c1c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 32.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f877242f9": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 134.9,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a job that links and fails the refund while the POST response is in flight is not overwritten by the stale response",
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a success event racing the API response books the refund once",
+      "tests/worker.refunds.test.ts :: refund lifecycle a failed refund is reversed once, frees capacity, and later events cannot revive it",
+      "tests/worker.refunds.test.ts :: refund lifecycle a refund event processed before its payment event still resolves (payment is reconciled first)",
+      "tests/worker.refunds.test.ts :: refund lifecycle pending refunds are recognised once and success later adds nothing",
+      "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider",
+      "tests/worker.refunds.test.ts :: refund posting concurrent refund requests cannot exceed line or payment capacity",
+      "tests/worker.refunds.test.ts :: refund posting refunds reverse the right seller and the clearing account, and derive order status from live refunds",
+      "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider",
+      "tests/worker.refunds.test.ts :: restart a request in flight at a crash becomes unknown on restart and is not re-posted",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 429 before execution and a definitive 400 reject the request and release the reservation",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a lost response keeps the amount reserved, is never re-posted, and the exact webhook links it once",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 134.9,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a job that links and fails the refund while the POST response is in flight is not overwritten by the stale response",
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a success event racing the API response books the refund once",
+      "tests/worker.refunds.test.ts :: refund lifecycle a failed refund is reversed once, frees capacity, and later events cannot revive it",
+      "tests/worker.refunds.test.ts :: refund lifecycle a refund event processed before its payment event still resolves (payment is reconciled first)",
+      "tests/worker.refunds.test.ts :: refund lifecycle pending refunds are recognised once and success later adds nothing",
+      "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider",
+      "tests/worker.refunds.test.ts :: refund posting concurrent refund requests cannot exceed line or payment capacity",
+      "tests/worker.refunds.test.ts :: refund posting refunds reverse the right seller and the clearing account, and derive order status from live refunds",
+      "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider",
+      "tests/worker.refunds.test.ts :: restart a request in flight at a crash becomes unknown on restart and is not re-posted",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 429 before execution and a definitive 400 reject the request and release the reservation",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a lost response keeps the amount reserved, is never re-posted, and the exact webhook links it once",
+      "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6065a428c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 32.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cb29202017": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-25fd6c557b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 33.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 170.3,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a job that links and fails the refund while the POST response is in flight is not overwritten by the stale response",
+      "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 145.9,
+     "failingStable": [
+      "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-55a2fd5278": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9b27895cee": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95c7dbb56d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 34.9,
+     "failingStable": [
+      "tests/worker.sales.test.ts :: input safety rejects a bool amount",
+      "tests/worker.sales.test.ts :: input safety rejects a exponent amount",
+      "tests/worker.sales.test.ts :: input safety rejects a fraction amount",
+      "tests/worker.sales.test.ts :: input safety rejects a huge amount",
+      "tests/worker.sales.test.ts :: input safety rejects a negative amount",
+      "tests/worker.sales.test.ts :: input safety rejects a string fraction amount",
+      "tests/worker.sales.test.ts :: input safety rejects a zero amount"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 35.1,
+     "failingStable": [
+      "tests/worker.sales.test.ts :: input safety rejects a bool amount",
+      "tests/worker.sales.test.ts :: input safety rejects a exponent amount",
+      "tests/worker.sales.test.ts :: input safety rejects a fraction amount",
+      "tests/worker.sales.test.ts :: input safety rejects a huge amount",
+      "tests/worker.sales.test.ts :: input safety rejects a negative amount",
+      "tests/worker.sales.test.ts :: input safety rejects a string fraction amount",
+      "tests/worker.sales.test.ts :: input safety rejects a zero amount"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d23172263e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-daf9a44d54": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-78ca9e9e6d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 36.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0e7a916448": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 31.4,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 32.0,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8ef18682cf": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 31.9,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 31.2,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8f0abdb617": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 30.9,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 30.9,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-b95cd1f2cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9aa99b20bc": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ae3a3b1bc7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 34.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2c7243ba14": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 30.6,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 30.6,
+     "failingStable": [
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+      "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 35.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e167f3ab92": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 33.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace a lost refund response is never re-sent; the processed webhook links it once",
+  "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace books a captured payment once however it is redelivered (event-id header, or payload hash when absent)",
+  "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace enforces the INR 1.00 refund minimum locally: no reservation, no provider POST",
+  "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace pending then failed refunds are reversed exactly once",
+  "tests/inline.razorpay.test.ts :: Razorpay through the inline marketplace rejects bad signatures and a captured amount different from the order",
+  "tests/inline.refunds.test.ts :: lost / failed refund responses a 429 rate limit before execution releases the reservation so the refund can be retried safely",
+  "tests/inline.refunds.test.ts :: lost / failed refund responses a 5xx before the effect is also treated as unknown: nothing is re-posted and capacity stays reserved",
+  "tests/inline.refunds.test.ts :: lost / failed refund responses a definitive provider refusal (amount_too_large) releases the reservation and books nothing",
+  "tests/inline.refunds.test.ts :: lost / failed refund responses a lost response keeps capacity reserved, is never re-posted, and the webhook links it exactly once",
+  "tests/inline.refunds.test.ts :: lost / failed refund responses a refund created in the dashboard is recorded once, unallocated to any seller, and consumes order capacity",
+  "tests/inline.refunds.test.ts :: lost / failed refund responses a same-amount dashboard refund is not attributed to an unresolved API request; different amounts are recorded independently",
+  "tests/inline.refunds.test.ts :: lost / failed refund responses an event whose request metadata names a different amount than the reservation is rejected, not booked",
+  "tests/inline.refunds.test.ts :: process crash and restart a reservation committed before any POST is sent exactly once after restart, with its original identity",
+  "tests/inline.refunds.test.ts :: process crash and restart a reservation whose POST may have started (crash after the marker) is not re-sent and waits for exact reconciliation",
+  "tests/inline.refunds.test.ts :: races between the API response and provider webhooks a success webhook racing the API response books the refund once",
+  "tests/inline.refunds.test.ts :: races between the API response and provider webhooks a webhook that links and fails the refund while the POST response is still in flight is not overwritten by the stale response",
+  "tests/inline.refunds.test.ts :: refund lifecycle (pending, failed, out of order) a refund event that arrives before the sale is recorded is not acknowledged, and applies once the sale lands",
+  "tests/inline.refunds.test.ts :: refund lifecycle (pending, failed, out of order) a refund that fails later is reversed exactly once, capacity returns, and stale success events cannot resurrect it",
+  "tests/inline.refunds.test.ts :: refund lifecycle (pending, failed, out of order) a signed refund body that disagrees with the provider's current object is not applied",
+  "tests/inline.refunds.test.ts :: refund lifecycle (pending, failed, out of order) pending refunds are recognised once; success later does not book again",
+  "tests/inline.refunds.test.ts :: refund lifecycle (pending, failed, out of order) property: any interleaving of refund status transitions and (duplicated, reordered) events ends consistent with the provider",
+  "tests/inline.refunds.test.ts :: refund lifecycle (pending, failed, out of order) rejects refund observations in another currency or exceeding the captured total, booking nothing",
+  "tests/inline.refunds.test.ts :: refund posting a line refund reverses exactly the refunded amount against that line's seller and the clearing account",
+  "tests/inline.refunds.test.ts :: refund posting concurrent refund requests cannot over-refund a line or the order",
+  "tests/inline.refunds.test.ts :: refund posting each API refund uses its own idempotency key and carries order, line and request identity",
+  "tests/inline.refunds.test.ts :: refund posting never lets refunds exceed a line or the order, and does not call the provider for refused requests",
+  "tests/inline.refunds.test.ts :: refund posting refuses to refund an unpaid order",
+  "tests/inline.sales.test.ts :: checkout a lost create response never produces a second provider payment; the provider event recovers identity and the sale books once",
+  "tests/inline.sales.test.ts :: checkout checkout on a paid order is refused and cannot create a second payment",
+  "tests/inline.sales.test.ts :: checkout concurrent checkout submissions create exactly one provider payment",
+  "tests/inline.sales.test.ts :: input safety large exact amounts survive the provider round trip without rounding",
+  "tests/inline.sales.test.ts :: input safety rejects a beyond safe integer number line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a beyond safe integer string line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a boolean line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a empty line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a exponent string line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a fraction number line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a fraction string line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a negative line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a null-ish text line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects a zero line amount without creating money rows",
+  "tests/inline.sales.test.ts :: input safety rejects bad currency codes and an overflowing order total",
+  "tests/inline.sales.test.ts :: manual capture a capture whose response is lost parks the order; the webhook later books it once and a repeated capture is a no-op",
+  "tests/inline.sales.test.ts :: manual capture a partial capture is never booked as a full sale",
+  "tests/inline.sales.test.ts :: manual capture capture + success webhook + confirm book once",
+  "tests/inline.sales.test.ts :: sale recognition books exactly the captured amount, splitting 10% commission half-even per line, balanced",
+  "tests/inline.sales.test.ts :: sale recognition zero-decimal currency amounts are kept as integers and currency is carried to every ledger row",
+  "tests/inline.sales.test.ts :: webhook delivery (at least once, concurrent, out of order) a failed delivery is retried successfully later with the same event id (marker rolled back with effects)",
+  "tests/inline.sales.test.ts :: webhook delivery (at least once, concurrent, out of order) a signed event with a bad signature is rejected and has no effect",
+  "tests/inline.sales.test.ts :: webhook delivery (at least once, concurrent, out of order) different event ids, the return-URL confirm and redelivery together still book once",
+  "tests/inline.sales.test.ts :: webhook delivery (at least once, concurrent, out of order) many concurrent deliveries of the same event id book the sale once",
+  "tests/inline.sales.test.ts :: webhook delivery (at least once, concurrent, out of order) payment_intent.created / amount_capturable_updated observations never book money",
+  "tests/inline.sales.test.ts :: webhook delivery (at least once, concurrent, out of order) rejects success whose currency, amount or payment identity differs from the order",
+  "tests/inline.sales.test.ts :: webhook delivery (at least once, concurrent, out of order) success for an unknown payment is not acknowledged and leaves no dedupe marker (provider will retry)",
+  "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a failed refund is reversed once",
+  "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace a lost refund response stays unknown and is never re-sent; the processed event links it once",
+  "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace books a captured payment once under duplicate / header-less redelivery",
+  "tests/worker.razorpay.test.ts :: Razorpay through the queue marketplace enforces the INR 1.00 minimum before any reservation or POST, and sends the idempotency header otherwise",
+  "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a job that links and fails the refund while the POST response is in flight is not overwritten by the stale response",
+  "tests/worker.refunds.test.ts :: races between the API response and provider webhooks a success event racing the API response books the refund once",
+  "tests/worker.refunds.test.ts :: refund lifecycle a failed refund is reversed once, frees capacity, and later events cannot revive it",
+  "tests/worker.refunds.test.ts :: refund lifecycle a refund event processed before its payment event still resolves (payment is reconciled first)",
+  "tests/worker.refunds.test.ts :: refund lifecycle pending refunds are recognised once and success later adds nothing",
+  "tests/worker.refunds.test.ts :: refund lifecycle property: any interleaving of provider refund transitions and reordered/duplicated events ends consistent with the provider",
+  "tests/worker.refunds.test.ts :: refund lifecycle refunds in another currency than their payment are rejected without booking",
+  "tests/worker.refunds.test.ts :: refund posting concurrent refund requests cannot exceed line or payment capacity",
+  "tests/worker.refunds.test.ts :: refund posting each request has its own idempotency key and carries order, line and request ids",
+  "tests/worker.refunds.test.ts :: refund posting refunds reverse the right seller and the clearing account, and derive order status from live refunds",
+  "tests/worker.refunds.test.ts :: refund posting refuses over-refunds on the line and on the payment, and unpaid orders, without calling the provider",
+  "tests/worker.refunds.test.ts :: restart a request in flight at a crash becomes unknown on restart and is not re-posted",
+  "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 429 before execution and a definitive 400 reject the request and release the reservation",
+  "tests/worker.refunds.test.ts :: unknown and rejected outcomes a 5xx before the effect is also unknown: the request is not re-sent",
+  "tests/worker.refunds.test.ts :: unknown and rejected outcomes a lost response keeps the amount reserved, is never re-posted, and the exact webhook links it once",
+  "tests/worker.refunds.test.ts :: unknown and rejected outcomes a request whose provider refund shows a different amount is rejected, never linked",
+  "tests/worker.refunds.test.ts :: unknown and rejected outcomes a same-amount dashboard refund and an unknown API request are attributed independently, each booked once",
+  "tests/worker.sales.test.ts :: checkout and capture concurrent checkouts create one provider payment; a lost create response never creates a second",
+  "tests/worker.sales.test.ts :: checkout and capture manual capture: a lost capture response is reconciled by the queue and booked once",
+  "tests/worker.sales.test.ts :: input safety rejects a bool amount",
+  "tests/worker.sales.test.ts :: input safety rejects a exponent amount",
+  "tests/worker.sales.test.ts :: input safety rejects a fraction amount",
+  "tests/worker.sales.test.ts :: input safety rejects a huge amount",
+  "tests/worker.sales.test.ts :: input safety rejects a negative amount",
+  "tests/worker.sales.test.ts :: input safety rejects a string fraction amount",
+  "tests/worker.sales.test.ts :: input safety rejects a zero amount",
+  "tests/worker.sales.test.ts :: input safety rejects unknown sellers, bad currencies and oversized orders",
+  "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a partial capture is not allocated to sellers and does not mint money",
+  "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a payment in another currency than the order is rejected (job fails), nothing booked",
+  "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers a second captured payment for an already paid order is not allocated twice",
+  "tests/worker.sales.test.ts :: money that does not match the order goes to suspense, never to sellers an object that is not ours is ignored without booking",
+  "tests/worker.sales.test.ts :: retries and crashes a crash with a job 'running' is recovered; a crash AFTER the money was booked does not book twice",
+  "tests/worker.sales.test.ts :: retries and crashes a dead-lettered job is re-queued when the provider redelivers the same event",
+  "tests/worker.sales.test.ts :: retries and crashes a job that hits provider 5xx is retried and applies exactly once",
+  "tests/worker.sales.test.ts :: sale recognition via the queue a stale or regressed provider snapshot cannot undo or re-book a captured payment",
+  "tests/worker.sales.test.ts :: sale recognition via the queue acknowledges a valid webhook only after the job is durably stored, and drops exact duplicate event ids",
+  "tests/worker.sales.test.ts :: sale recognition via the queue an invalid signature is rejected and stores no job",
+  "tests/worker.sales.test.ts :: sale recognition via the queue books the capture once with exact seller/commission split and persists the allocation",
+  "tests/worker.sales.test.ts :: sale recognition via the queue concurrent workers, duplicate events with different ids and the confirm endpoint book the sale once",
+  "tests/worker.sales.test.ts :: sale recognition via the queue state comes from the provider object, not the webhook body: a lying success event books nothing",
+  "tests/worker.sales.test.ts :: sale recognition via the queue when the job store is unavailable the webhook is NOT acknowledged (so the provider redelivers)"
+ ],
+ "stablePassing": 99,
+ "baseFlaky": [],
+ "detectedCases": 28
+}

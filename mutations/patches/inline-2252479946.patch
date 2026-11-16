@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -221,7 +221,7 @@
+       // Stripe idempotency.rate-limit-precedes: this request did not reach endpoint execution.
+       if (error?.type === "StripeRateLimitError" && error.statusCode === 429) return "rate_limited";
+       return error?.type === "StripeInvalidRequestError" &&
+-        error.statusCode === 400 &&
++        error.statusCode === 400 ||
+         error.code === "amount_too_large"
+         ? "amount_too_large"
+         : undefined;

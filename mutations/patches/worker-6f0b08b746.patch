@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -403,7 +403,7 @@
+     if (snap.ref !== ref)
+       throw new ProviderError("unknown", undefined, "payment lookup returned another object");
+     const orderId = await this.applyPayment(snap);
+-    if (!orderId) console.warn(`payment ${ref.slice(0, 60)} belongs to no known order; ignored`);
++    if (true) console.warn(`payment ${ref.slice(0, 60)} belongs to no known order; ignored`);
+     return orderId;
+   }
+ 

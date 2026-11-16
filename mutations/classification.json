@@ -1,0 +1,602 @@
+{
+ "inline-70629133d3": {
+  "category": "equivalent",
+  "reason": "Stripe payment status label failed vs canceled; both rejected everywhere."
+ },
+ "inline-ee754b3bb8": {
+  "category": "money",
+  "reason": "A canceled/failed refund could be revived by a stale event and be booked."
+ },
+ "inline-fb216a035f": {
+  "category": "equivalent",
+  "reason": "Razorpay payment failed vs canceled label; both non-succeeded and treated alike."
+ },
+ "inline-b5fd4183b8": {
+  "category": "validation",
+  "reason": "Missing line now yields a 500 instead of 404 before any reservation."
+ },
+ "inline-64ba133a73": {
+  "category": "equivalent",
+  "reason": "r*2 is even so >10001 is equivalent to >10000."
+ },
+ "inline-653460e299": {
+  "category": "money",
+  "reason": "Half-even tie rounding never rounds up so commission is mis-rounded."
+ },
+ "inline-c296b9d62b": {
+  "category": "validation",
+  "reason": "Provider refund amount bounds check disabled; currency check remains."
+ },
+ "inline-9ee9f08c53": {
+  "category": "money",
+  "reason": "Tie rounding to even broken so commission is mis-rounded."
+ },
+ "inline-d93c04ad3b": {
+  "category": "money",
+  "reason": "Captured Razorpay payment not selected so it may be unbooked or wrong payment refunded."
+ },
+ "inline-fef5230a73": {
+  "category": "money",
+  "reason": "Cross-order refund identity/amount check weakened so a refund could book to the wrong order."
+ },
+ "inline-8e3bb6d724": {
+  "category": "validation",
+  "reason": "Stripe errors no longer mapped to 502; only status code changes."
+ },
+ "inline-0704d70e4c": {
+  "category": "validation",
+  "reason": "Checkout lookup order-identity check altered; markPaid re-validates, only error behaviour changes."
+ },
+ "inline-9c38b231f6": {
+  "category": "availability",
+  "reason": "Body size limit removed, only a resource exhaustion risk."
+ },
+ "inline-24d415ba3f": {
+  "category": "validation",
+  "reason": "Refund request id consistency check altered; error/accept behaviour only."
+ },
+ "inline-385602d75f": {
+  "category": "availability",
+  "reason": "Razorpay webhook with missing refund entity crashes parse with a 500."
+ },
+ "inline-8aaee70e82": {
+  "category": "equivalent",
+  "reason": "ledger amount nullable but all inserts supply a value."
+ },
+ "inline-5d46dc1d2f": {
+  "category": "money",
+  "reason": "Commission rounded up becomes q-1, mis-rounded money."
+ },
+ "inline-4d5755f597": {
+  "category": "equivalent",
+  "reason": "Stripe canceled label changed to an invalid status; still rejected as non-succeeded."
+ },
+ "inline-e323fc38ea": {
+  "category": "availability",
+  "reason": "Server never migrates or listens."
+ },
+ "inline-1767da2ed7": {
+  "category": "equivalent",
+  "reason": "requires_capture vs pending are both accepted by observation and neither books."
+ },
+ "inline-54e3474062": {
+  "category": "money",
+  "reason": "Refund response payment identity check weakened so a foreign refund could be booked."
+ },
+ "inline-27bb27260f": {
+  "category": "money",
+  "reason": "Razorpay payment.captured webhook ignored so captured payments are not booked."
+ },
+ "inline-346082ac3c": {
+  "category": "money",
+  "reason": "Refund correlation logic broadened and may fail or mis-link provider refunds."
+ },
+ "inline-319b88db45": {
+  "category": "equivalent",
+  "reason": "Checkout retrieval ref check is redundant, ref is always the stored one."
+ },
+ "inline-510763980e": {
+  "category": "validation",
+  "reason": "Rejects valid 1-unit lines."
+ },
+ "inline-ff46326d5b": {
+  "category": "validation",
+  "reason": "Unmatched routes return 500 instead of 404."
+ },
+ "inline-6a7e3c5119": {
+  "category": "money",
+  "reason": "Refund with known/resolved request identity recorded as unallocated instead of rejected, wrong account."
+ },
+ "inline-72a78980e2": {
+  "category": "money",
+  "reason": "Razorpay definitive-rejection guard weakened so a possibly committed refund could be released and resent."
+ },
+ "inline-42ae3a30e9": {
+  "category": "money",
+  "reason": "Payment of another order could be attached to this order."
+ },
+ "inline-2252479946": {
+  "category": "validation",
+  "reason": "Stripe 400 invalid-request errors treated as definitive rejection; no commit occurs on 400."
+ },
+ "inline-ef7f49f7bd": {
+  "category": "availability",
+  "reason": "Advisory lock leaked so refund recovery gets stuck."
+ },
+ "inline-34b89b727b": {
+  "category": "equivalent",
+  "reason": "Nullable column never receives null."
+ },
+ "inline-201aa69f53": {
+  "category": "validation",
+  "reason": "Only changes webhook status code for HttpErrors (503 vs error status)."
+ },
+ "inline-dd6a188c57": {
+  "category": "money",
+  "reason": "Payment created in wrong currency no longer detected at checkout."
+ },
+ "inline-a4b5b1effe": {
+  "category": "validation",
+  "reason": "Rejects refund of exactly MAX_SDK_MINOR."
+ },
+ "inline-142b68a317": {
+  "category": "validation",
+  "reason": "Capture without a payment yields 502 instead of 404."
+ },
+ "inline-e0775fa0fc": {
+  "category": "equivalent",
+  "reason": "Refund line existence check unreachable since lines are never deleted."
+ },
+ "inline-e9a58a7a33": {
+  "category": "equivalent",
+  "reason": "Nullable created_at is always defaulted."
+ },
+ "inline-70f1d0f6d2": {
+  "category": "equivalent",
+  "reason": "Unlock without lock only warns on own session."
+ },
+ "inline-e48d36c3d0": {
+  "category": "money",
+  "reason": "Wrong Razorpay payment chosen so capture may be missed or booked incorrectly."
+ },
+ "inline-9170ec8d72": {
+  "category": "availability",
+  "reason": "Refunds with request id but no unresolved reservation always error and are retried."
+ },
+ "inline-62874cd85f": {
+  "category": "equivalent",
+  "reason": "<= vs < on next_attempt_at is only timing."
+ },
+ "inline-1fe2e2dc74": {
+  "category": "equivalent",
+  "reason": "Nullable column never receives null."
+ },
+ "inline-e0a43d8d08": {
+  "category": "equivalent",
+  "reason": "Nullable column never receives null."
+ },
+ "inline-464b838e84": {
+  "category": "money",
+  "reason": "Commission never rounded up above half so mis-rounded."
+ },
+ "inline-9ea850af7a": {
+  "category": "validation",
+  "reason": "All unexpected errors return 502 instead of 500."
+ },
+ "inline-8534f7752a": {
+  "category": "availability",
+  "reason": "Razorpay checkout retrieval throws when no payment yet."
+ },
+ "inline-45e6d924f9": {
+  "category": "money",
+  "reason": "Checkout payment amount mismatch no longer detected so wrong amount can be charged."
+ },
+ "inline-27b0c4aa77": {
+  "category": "equivalent",
+  "reason": "Length check redundant with the MAX_SDK_MINOR check."
+ },
+ "inline-dfaec08497": {
+  "category": "availability",
+  "reason": "Authorized Razorpay payment may not be selected for capture."
+ },
+ "inline-c7d17c8408": {
+  "category": "money",
+  "reason": "Tie rounding inverted so commission is mis-rounded."
+ },
+ "inline-f8f20e03c8": {
+  "category": "money",
+  "reason": "POST can be resent despite failing start marker risking duplicate refund."
+ },
+ "inline-1a7bb27a0f": {
+  "category": "availability",
+  "reason": "Razorpay capture always fails."
+ },
+ "inline-7439bc78e9": {
+  "category": "validation",
+  "reason": "Missing order gives 500 instead of 404."
+ },
+ "inline-4f4c57ccb6": {
+  "category": "money",
+  "reason": "Commission never rounded up so mis-rounded."
+ },
+ "inline-b084c71403": {
+  "category": "money",
+  "reason": "Commission never rounded up so mis-rounded."
+ },
+ "inline-94ed68c398": {
+  "category": "equivalent",
+  "reason": "Nullable column always defaulted."
+ },
+ "inline-7d3e9b8d06": {
+  "category": "validation",
+  "reason": "Range check removed, later bounds checks still reject oversized amounts."
+ },
+ "inline-10d4b7363c": {
+  "category": "money",
+  "reason": "Refund response payment identity mismatch no longer detected."
+ },
+ "inline-e41d0b1a6c": {
+  "category": "equivalent",
+  "reason": "Missing order id still ends in 503 via order-not-found."
+ },
+ "inline-b2a51cdf43": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "inline-1e14570737": {
+  "category": "validation",
+  "reason": "Missing order gives 500 instead of 503, webhook still retried."
+ },
+ "inline-403c7c764d": {
+  "category": "availability",
+  "reason": "All other Stripe events parsed as refunds and fail, causing webhook errors."
+ },
+ "inline-105727a328": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "inline-ad0e059160": {
+  "category": "validation",
+  "reason": "Refund in progress returns 200 with empty body rather than 502."
+ },
+ "inline-96e83ff06b": {
+  "category": "money",
+  "reason": "Manual capture succeeds at provider but sale not booked."
+ },
+ "inline-9975555927": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "inline-8bcb27de2c": {
+  "category": "money",
+  "reason": "Razorpay amountReceived always 0 so captured payments are never booked."
+ },
+ "inline-b730a3bc90": {
+  "category": "equivalent",
+  "reason": "Razorpay failed vs canceled label equivalent."
+ },
+ "inline-ab36a7ebf6": {
+  "category": "validation",
+  "reason": "Provider errors return 500 instead of 502."
+ },
+ "inline-1ea3025178": {
+  "category": "availability",
+  "reason": "Shutdown no longer closes the pool."
+ },
+ "inline-b59a9449f7": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "inline-d0158eeacd": {
+  "category": "availability",
+  "reason": "Schema not migrated at startup."
+ },
+ "inline-a995dcb549": {
+  "category": "availability",
+  "reason": "Advisory lock never released so refund recovery gets stuck."
+ },
+ "inline-e6ee5834a8": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-95f1c74d78": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled and check still holds."
+ },
+ "worker-d062dcc6cd": {
+  "category": "money",
+  "reason": "Razorpay processed refunds throw so they are never booked."
+ },
+ "worker-31d2e8ad79": {
+  "category": "money",
+  "reason": "Payment-level refund headroom inflated so over-refund possible."
+ },
+ "worker-85b817796c": {
+  "category": "money",
+  "reason": "Refund payment/order identity check weakened."
+ },
+ "worker-ab649f3ed6": {
+  "category": "money",
+  "reason": "Webhook signature check inverted so genuine Razorpay events are dropped and not booked."
+ },
+ "worker-94e0d3c3f7": {
+  "category": "other",
+  "reason": "Released Razorpay authorization labeled pending rather than canceled, status only."
+ },
+ "worker-0607952b0b": {
+  "category": "money",
+  "reason": "Non-captured payments become terminal canceled so later capture is never booked."
+ },
+ "worker-5cf6709ca9": {
+  "category": "money",
+  "reason": "Refund response payment/amount mismatch no longer detected."
+ },
+ "worker-782d5bf789": {
+  "category": "validation",
+  "reason": "Rejects valid 1-unit lines."
+ },
+ "worker-d575d9c7e2": {
+  "category": "availability",
+  "reason": "Always uses Razorpay so Stripe deployments break."
+ },
+ "worker-efece32a35": {
+  "category": "availability",
+  "reason": "Extra Razorpay events enqueue useless payment jobs that fail."
+ },
+ "worker-4776252d40": {
+  "category": "availability",
+  "reason": "Stripe charge events no longer trigger payment reconciliation."
+ },
+ "worker-32ba3a2db5": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-dff2bcd327": {
+  "category": "availability",
+  "reason": "Invalid status violates CHECK so such payment cannot be recorded."
+ },
+ "worker-84bce1383d": {
+  "category": "availability",
+  "reason": "Invalid status violates CHECK so Razorpay checkout fails."
+ },
+ "worker-94151bf16a": {
+  "category": "availability",
+  "reason": "Health check no longer touches DB."
+ },
+ "worker-bfd7f0f437": {
+  "category": "money",
+  "reason": "Capture ProviderError no longer enqueues reconciliation so capture may go unbooked."
+ },
+ "worker-84dcce17c5": {
+  "category": "equivalent",
+  "reason": "Line position offset, ordering unchanged."
+ },
+ "worker-6b2c5a0d9c": {
+  "category": "money",
+  "reason": "Confirm no longer reconciles payments so a captured payment may stay unbooked."
+ },
+ "worker-796fede7f5": {
+  "category": "validation",
+  "reason": "Confirm always rejected with 409."
+ },
+ "worker-92b5cdab2b": {
+  "category": "equivalent",
+  "reason": "Only a log line."
+ },
+ "worker-e647ee6d8b": {
+  "category": "availability",
+  "reason": "Protocol flipped for redirected Stripe base so Stripe calls fail."
+ },
+ "worker-6845349f43": {
+  "category": "validation",
+  "reason": "Capture success falsely treated as unknown, reconcile job books it later."
+ },
+ "worker-dff4b81f39": {
+  "category": "money",
+  "reason": "Provider-origin refunds booked to seller:undefined instead of unallocated refunds."
+ },
+ "worker-983dba84d7": {
+  "category": "validation",
+  "reason": "Rejects amount exactly at MAX."
+ },
+ "worker-a05bc61a71": {
+  "category": "availability",
+  "reason": "Worker busy-loops without sleeping."
+ },
+ "worker-4d248a7464": {
+  "category": "money",
+  "reason": "Cross-order refund/request check weakened so refund may be booked to wrong account."
+ },
+ "worker-65b43b0dae": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-d21e7d8f0c": {
+  "category": "validation",
+  "reason": "Checkout payment_ref conflict error dropped, second payment still tracked."
+ },
+ "worker-1c13dbfd56": {
+  "category": "availability",
+  "reason": "Stripe charge events no longer enqueue payment reconciliation."
+ },
+ "worker-cac8e14334": {
+  "category": "equivalent",
+  "reason": "Only logging."
+ },
+ "worker-1a1524e96a": {
+  "category": "money",
+  "reason": "Stripe succeeded payments not recognised and non-succeeded flagged succeeded, wrong booking."
+ },
+ "worker-969024dce1": {
+  "category": "equivalent",
+  "reason": "ok is already false initially."
+ },
+ "worker-3a5c5dcc6f": {
+  "category": "validation",
+  "reason": "Missing order gives 500 instead of 404."
+ },
+ "worker-671cf65d46": {
+  "category": "money",
+  "reason": "Mismatched or second captures allocated as sales, double or unbalanced booking."
+ },
+ "worker-8fde601101": {
+  "category": "equivalent",
+  "reason": "d is never zero in callers."
+ },
+ "worker-a74098df3b": {
+  "category": "availability",
+  "reason": "Concurrent migrations no longer serialised."
+ },
+ "worker-7f0a581b0b": {
+  "category": "validation",
+  "reason": "Refund of uncaptured payment attempted, provider rejects."
+ },
+ "worker-8e53f6c1c3": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-c3bc308cc0": {
+  "category": "money",
+  "reason": "Uncaptured payments treated as captured so sale booked without money."
+ },
+ "worker-7f877242f9": {
+  "category": "money",
+  "reason": "Stripe refund snapshots always fail so refunds are never booked."
+ },
+ "worker-2e77ef85b5": {
+  "category": "equivalent",
+  "reason": "Only a log line."
+ },
+ "worker-6065a428c3": {
+  "category": "equivalent",
+  "reason": "Order totals are always positive."
+ },
+ "worker-a098bed6af": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-cb29202017": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-590bcee418": {
+  "category": "equivalent",
+  "reason": "Currency already verified equal to order currency."
+ },
+ "worker-25fd6c557b": {
+  "category": "availability",
+  "reason": "Razorpay baseURL unset in production so all calls fail."
+ },
+ "worker-da3139b2f8": {
+  "category": "money",
+  "reason": "Canceled refund statuses rejected so reversals are never booked."
+ },
+ "worker-55a2fd5278": {
+  "category": "equivalent",
+  "reason": "Missing payment_intent still fails later."
+ },
+ "worker-eb1ee00c39": {
+  "category": "equivalent",
+  "reason": "Process exits right after."
+ },
+ "worker-9b27895cee": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-87d8d0453f": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-95c7dbb56d": {
+  "category": "validation",
+  "reason": "Capture of already captured payment is re-attempted and rejected by the provider."
+ },
+ "worker-edf0bc482f": {
+  "category": "validation",
+  "reason": "Amount validation removed; bad values fail with 500."
+ },
+ "worker-d23172263e": {
+  "category": "validation",
+  "reason": "Routing change: any GET or /healthz returns health."
+ },
+ "worker-e20df2a2ce": {
+  "category": "equivalent",
+  "reason": "Order mismatch still caught by later payment checks."
+ },
+ "worker-daf9a44d54": {
+  "category": "equivalent",
+  "reason": "Index predicate affects only performance."
+ },
+ "worker-c1e79a810e": {
+  "category": "money",
+  "reason": "Checkout response amount/currency mismatch weakened."
+ },
+ "worker-78ca9e9e6d": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-e8b1fd5617": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-0e7a916448": {
+  "category": "availability",
+  "reason": "Razorpay checkout always fails after order creation."
+ },
+ "worker-fc421b93e7": {
+  "category": "validation",
+  "reason": "Rejects a body of exactly the size limit."
+ },
+ "worker-8ef18682cf": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-678a4763fe": {
+  "category": "money",
+  "reason": "Razorpay payment webhooks never enqueued so captures not booked."
+ },
+ "worker-8f0abdb617": {
+  "category": "money",
+  "reason": "Razorpay payment webhooks never enqueued so captures not booked."
+ },
+ "worker-6dea72a760": {
+  "category": "other",
+  "reason": "Non-captured Razorpay payments all reported requires_capture; status misreport."
+ },
+ "worker-b95cd1f2cd": {
+  "category": "availability",
+  "reason": "Authorized payments never capturable."
+ },
+ "worker-e389535c13": {
+  "category": "equivalent",
+  "reason": "Nullable column always filled."
+ },
+ "worker-9aa99b20bc": {
+  "category": "equivalent",
+  "reason": "Differs only for empty or array event-id header."
+ },
+ "worker-6f0b08b746": {
+  "category": "equivalent",
+  "reason": "Only a log line."
+ },
+ "worker-ae3a3b1bc7": {
+  "category": "availability",
+  "reason": "Health endpoint removed."
+ },
+ "worker-09d8418457": {
+  "category": "equivalent",
+  "reason": "Provider returns the same ref for capture."
+ },
+ "worker-2c7243ba14": {
+  "category": "availability",
+  "reason": "Razorpay checkout always fails after order creation."
+ },
+ "worker-939cd21c03": {
+  "category": "equivalent",
+  "reason": "Only a log line."
+ },
+ "worker-e167f3ab92": {
+  "category": "equivalent",
+  "reason": "failed and pending have equal rank and can move sideways."
+ }
+}

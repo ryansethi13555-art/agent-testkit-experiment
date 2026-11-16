@@ -1,0 +1,19 @@
+{
+  "name": "leakybazaar-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Separately versioned corrected marketplace control; historical LeakyBazaar stays unchanged.",
+  "scripts": {
+    "start": "node src/server.ts"
+  },
+  "dependencies": {
+    "pg": "^8.16.0",
+    "razorpay": "2.9.8",
+    "stripe": "23.0.0"
+  },
+  "devDependencies": {
+    "@moneyinvariant/engine": "workspace:*"
+  }
+}

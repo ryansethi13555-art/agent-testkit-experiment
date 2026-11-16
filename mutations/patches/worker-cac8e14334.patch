@@ -1,0 +1,11 @@
+--- a/src/jobs.ts
++++ b/src/jobs.ts
+@@ -95,7 +95,7 @@
+     } catch (e) {
+       const message = String((e as Error)?.message ?? e).slice(0, 500);
+       const final = job.attempts >= (this.#maxAttempts[job.type] ?? this.#maxAttempts.default);
+-      if (final) console.error(`job ${job.id} (${job.type}) failed for good: ${message}`);
++      if (true) console.error(`job ${job.id} (${job.type}) failed for good: ${message}`);
+       await this.#db.query(
+         `UPDATE jobs SET state = $2, last_error = $3, run_after = now() + ($4::int * interval '1 millisecond'),
+                 updated_at = now() WHERE id = $1`,
