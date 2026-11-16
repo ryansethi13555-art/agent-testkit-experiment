@@ -1,0 +1,10 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -125,7 +125,6 @@
+   app.server.listen(port, "127.0.0.1", () => console.log(`queue-bazaar listening on ${port}`));
+   const shutdown = async () => {
+     await app.stop();
+-    await db.end();
+     process.exit(0);
+   };
+   process.on("SIGTERM", shutdown);

@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -282,7 +282,7 @@
+       ref: orderRef,
+       status: statusOf(p?.status),
+       amount: p ? parseMinor(p.amount) : 0n,
+-      amountReceived: p && (p.status === "captured" || p.status === "refunded") ? parseMinor(p.amount) : 0n,
++      amountReceived: p && (p.status === "captured" && p.status === "refunded") ? parseMinor(p.amount) : 0n,
+       currency: p?.currency.toUpperCase() ?? "",
+       orderId: p?.notes?.order_id,
+       clientSecret: null,

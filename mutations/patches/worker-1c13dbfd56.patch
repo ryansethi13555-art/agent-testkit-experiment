@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -220,7 +220,7 @@
+       }
+       const obj = ev.data.object as { id?: unknown; object?: unknown; payment_intent?: unknown };
+       const id = typeof obj.id === "string" ? obj.id : "";
+-      const pi = typeof obj.payment_intent === "string" ? obj.payment_intent : undefined;
++      const pi = typeof obj.payment_intent !== "string" ? obj.payment_intent : undefined;
+       if (obj.object === "payment_intent")
+         return { eventId: ev.id, type: ev.type, object: "payment", ref: id };
+       if (obj.object === "charge" && pi) return { eventId: ev.id, type: ev.type, object: "payment", ref: pi };

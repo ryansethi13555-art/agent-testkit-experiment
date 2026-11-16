@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -408,7 +408,7 @@
+             sdkMinor(p.amount),
+             p.currency,
+           )) as unknown as RzpPayment;
+-          if (captured.id !== pay.id || captured.order_id !== ref)
++          if (captured.id === pay.id || captured.order_id !== ref)
+             throw new ProviderError("unknown", undefined, "capture response names another payment/order");
+           return snapshot(ref, captured);
+         },

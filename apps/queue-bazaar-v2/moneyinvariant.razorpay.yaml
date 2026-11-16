@@ -1,0 +1,93 @@
+# QueueBazaar on Razorpay: `moneyinv test --config moneyinvariant.razorpay.yaml` from this folder.
+version: 0
+
+app:
+  name: queue-bazaar-v2
+  start: node src/server.ts
+  port_env: PORT
+  health: /healthz
+  env:
+    DATABASE_URL: env:MI_DATABASE_URL
+    PAYMENT_PROVIDER: razorpay
+  actions: moneyinv/actions.mjs
+  # webhook handlers only queue a job; the worker does the money work later
+  quiescence:
+    work_probe: >-
+      SELECT NOT EXISTS (SELECT 1 FROM jobs WHERE state IN ('queued','running')
+        OR (state = 'failed' AND type <> 'resolve_refund_request'))
+    probe: >-
+      SELECT NOT EXISTS (SELECT 1 FROM jobs WHERE state IN ('queued','running','failed'))
+        AND NOT EXISTS (SELECT 1 FROM refund_requests WHERE state IN ('requested','unknown'))
+    timeout_seconds: 30
+
+provider:
+  name: razorpay
+  webhook_path: /webhooks/razorpay
+  env:
+    api_base: MONEYINV_RAZORPAY_API_BASE
+    key_id: RAZORPAY_KEY_ID
+    key_secret: RAZORPAY_KEY_SECRET
+    webhook_secret: RAZORPAY_WEBHOOK_SECRET
+
+database:
+  url: env:MI_DATABASE_URL
+  disposable: true
+
+bindings:
+  orders: SELECT id AS order_id, currency, total AS amount_due, status FROM orders
+  order_lines: SELECT id AS line_id, order_id AS order_ref, seller_id AS seller_ref, currency, amount FROM order_lines
+  refunds: |
+    SELECT id AS refund_id, order_id AS order_ref, line_id AS line_ref, provider_ref, currency, amount, status, origin
+    FROM refunds
+  ledger_entries: |
+    SELECT id::text AS entry_id, txn_id, account, currency, amount, cause_ref, kind, effect_ref
+    FROM ledger_entries
+  # chart of accounts: 'provider:clearing' holds the funds at the provider (debit-positive)
+  ledger_accounts: |
+    SELECT DISTINCT account, CASE WHEN account = 'provider:clearing' THEN 'provider_clearing' ELSE 'internal' END AS class
+    FROM ledger_entries
+  # each captured payment allocated to the order lines, written when the capture is booked
+  allocations: |
+    SELECT id AS allocation_id, cause_ref, line_id AS line_ref, currency, amount FROM allocations
+  # each allocated line split into the platform commission (declared rate and rounding) and the seller remainder
+  declared_splits: |
+    SELECT 'line:' || id AS split_ref, 'commission' AS part_ref, currency, amount AS whole_amount,
+           commission_amount AS amount, rate_num, rate_den, rounding
+    FROM allocations
+    UNION ALL
+    SELECT 'line:' || id, 'seller', currency, amount, seller_amount, NULL::bigint, NULL::bigint, NULL::text
+    FROM allocations
+  # the books summed per money-model party (debit-positive). Every account maps to a party; unknown accounts surface as other:<account>
+  party_positions: |
+    SELECT CASE
+             WHEN account = 'provider:clearing' THEN 'clearing'
+             WHEN account LIKE 'seller:%' THEN account
+             WHEN account = 'platform:commission' THEN 'platform'
+             WHEN account = 'platform:unallocated_receipts' THEN 'platform:unallocated_receipts'
+             WHEN account = 'platform:unallocated_refunds' THEN 'platform:unallocated_refunds'
+             ELSE 'other:' || account
+           END AS party,
+           currency, SUM(amount)::bigint AS amount
+    FROM ledger_entries
+    GROUP BY 1, 2
+
+invariants:
+  packs: [payments-core@0.5.0, money-model@0.1.0]
+
+# The reference money model's policy for QueueBazaar, written from its README and BASE source as a product spec:
+#   commission:  money.ts COMMISSION = 1000/10000, "10 %, rounded half-even to the minor unit" per order line
+#                (commissionOf); the seller receives the remainder (saleLegs).
+#   on refund:   #syncRefundLedger debits the line's seller account with the full refunded amount and no commission
+#                leg, so the platform keeps its commission.
+#   recognition: refundHoldsMoney (money.ts): "recognised exactly while the provider holds it" (pending,
+#                requires_action, succeeded); reversed once if it fails or is canceled.
+#   unexplained capture: #bookCapture books money the order does not explain ("a second payment, or a different
+#                amount") to platform:unallocated_receipts.
+#   line-less refund: a refund with no line is debited to platform:unallocated_refunds.
+money_model:
+  default_currency: INR   # shop.ts createOrder: currency defaults to INR
+  commission: { rate: 1000/10000, rounding: half_even }
+  commission_on_refund: retained
+  refund_recognition: holds_money
+  unexplained_capture_party: platform:unallocated_receipts
+  unallocated_refund_party: platform:unallocated_refunds

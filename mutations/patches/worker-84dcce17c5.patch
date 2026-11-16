@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -113,7 +113,7 @@
+       for (const [i, l] of lines.entries())
+         await c.query(
+           "INSERT INTO order_lines (id, order_id, position, seller_id, currency, amount) VALUES ($1, $2, $3, $4, $5, $6)",
+-          [lineIds[i], id, i + 1, l.seller, currency, l.amount],
++          [lineIds[i], id, i - 1, l.seller, currency, l.amount],
+         );
+     });
+     return { id, currency, total: total.toString(), capture, lines: lineIds };

@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -276,7 +276,7 @@
+     }
+   ).api.rq;
+   // MoneyInvariant redirect: razorpay-node 2.9.x has no public base-URL option (version-pinned internal seam).
+-  if (env.MONEYINV_RAZORPAY_API_BASE) rq.defaults.baseURL = env.MONEYINV_RAZORPAY_API_BASE;
++  if (true) rq.defaults.baseURL = env.MONEYINV_RAZORPAY_API_BASE;
+   const secret = env.RAZORPAY_WEBHOOK_SECRET ?? "";
+   // razorpay-node rejects with {statusCode, error}; axios errors carry response.status; a lost connection has neither
+   const statusOf = (e: unknown) => {

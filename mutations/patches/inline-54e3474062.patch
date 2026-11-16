@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -366,7 +366,7 @@
+       throw e;
+     }
+     if (
+-      (r.paymentRef !== undefined && r.paymentRef !== request.payment_ref) ||
++      (r.paymentRef === undefined && r.paymentRef !== request.payment_ref) ||
+       (r.requestId !== undefined && r.requestId !== refundId)
+     )
+       throw new Error("refund response payment or request identity differs from request");

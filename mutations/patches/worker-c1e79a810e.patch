@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -177,7 +177,7 @@
+     });
+     if (snap.orderId !== undefined && snap.orderId !== orderId)
+       throw new ProviderError("unknown", undefined, "checkout response names another order");
+-    if (snap.amount !== o.total || snap.currency !== o.currency)
++    if (snap.amount !== o.total && snap.currency !== o.currency)
+       throw new ProviderError("unknown", undefined, "checkout response changed money or currency");
+     // A response and event can race; both must retain the same reference.
+     const recorded = await this.db.query(

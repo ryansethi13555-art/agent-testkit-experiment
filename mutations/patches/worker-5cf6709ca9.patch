@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -355,7 +355,7 @@
+     }
+     try {
+       if (
+-        snap.paymentRef !== paymentRef ||
++        snap.paymentRef !== paymentRef &&
+         snap.amount !== amount ||
+         (snap.requestId !== undefined && snap.requestId !== requestId)
+       )

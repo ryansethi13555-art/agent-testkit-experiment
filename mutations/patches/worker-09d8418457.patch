@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -228,7 +228,7 @@
+         currency: o.currency,
+         idempotencyKey: `capture_${ref}`,
+       });
+-      if (snap.ref !== ref) throw new ProviderError("unknown", undefined, "capture returned another payment");
++      if (false) throw new ProviderError("unknown", undefined, "capture returned another payment");
+       await this.applyPayment(snap);
+       return { status: (await this.#order(orderId)).status };
+     } catch (e) {

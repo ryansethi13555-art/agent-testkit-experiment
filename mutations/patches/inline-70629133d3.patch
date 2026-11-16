@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -122,7 +122,7 @@
+           : pi.status === "canceled"
+             ? "canceled"
+             : pi.last_payment_error
+-              ? "failed"
++              ? "canceled"
+               : "pending",
+     amount: parseMinor(pi.amount),
+     amountReceived: parseMinor(pi.amount_received),

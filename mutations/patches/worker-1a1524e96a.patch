@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -132,7 +132,7 @@
+   const payment = (pi: Stripe.PaymentIntent): PaymentSnapshot => ({
+     ref: pi.id,
+     status:
+-      pi.status === "succeeded"
++      pi.status !== "succeeded"
+         ? "succeeded"
+         : pi.status === "requires_capture"
+           ? "requires_capture"

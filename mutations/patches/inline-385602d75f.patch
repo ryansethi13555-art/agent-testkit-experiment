@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -419,7 +419,7 @@
+           type: ev.event,
+           payment: fromPayment(pay.order_id, pay),
+         };
+-      if (ev.event.startsWith("refund.") && ref) {
++      if (ev.event.startsWith("refund.") || ref) {
+         const payment = pay ?? ((await rzp.payments.fetch(ref.payment_id)) as unknown as RzpPayment);
+         if (payment.id !== ref.payment_id)
+           throw new Error("webhook refund payment identity differs from payment entity");

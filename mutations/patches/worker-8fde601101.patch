@@ -1,0 +1,11 @@
+--- a/src/money.ts
++++ b/src/money.ts
+@@ -6,7 +6,7 @@
+ 
+ /** n / d rounded half-to-even, for n ≥ 0 and d > 0 (integers only). */
+ export function divHalfEven(n: bigint, d: bigint): bigint {
+-  if (n < 0n || d <= 0n) throw new RangeError("divHalfEven expects n >= 0 and d > 0");
++  if (n < 0n || d < 0n) throw new RangeError("divHalfEven expects n >= 0 and d > 0");
+   const q = n / d;
+   const r = n % d;
+   if (r * 2n > d) return q + 1n;

@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -140,7 +140,7 @@
+   last_error text,
+   created_at timestamptz NOT NULL DEFAULT now(),
+   updated_at timestamptz NOT NULL DEFAULT now());
+-CREATE INDEX IF NOT EXISTS jobs_ready ON jobs (run_after, id) WHERE state = 'queued';
++CREATE INDEX IF NOT EXISTS jobs_ready ON jobs (run_after, id) WHERE state <> 'queued';
+ `;
+ 
+ export async function migrate(db: Db): Promise<void> {

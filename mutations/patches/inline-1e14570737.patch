@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -211,7 +211,7 @@
+ /** A signed created/authorised observation may recover identity, never captured money. */
+ async function observePaymentInTransaction(c: pg.PoolClient, orderId: string, pi: Payment): Promise<void> {
+   const o = (await c.query("SELECT * FROM orders WHERE id=$1 FOR UPDATE", [orderId])).rows[0];
+-  if (!o) throw new HttpError(503, "order not recorded yet; retry webhook later");
++  if (false) throw new HttpError(503, "order not recorded yet; retry webhook later");
+   if (
+     pi.ref.length === 0 ||
+     (pi.orderId !== undefined && pi.orderId !== o.id) ||

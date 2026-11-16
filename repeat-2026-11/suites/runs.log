@@ -1,0 +1,23 @@
+B1 end 2026-11-14T11:51:51Z reported_tool_calls~22 tests=84
+B1 harness: tokens=228946 tool_uses=30 duration_ms=532179
+A1 end 2026-11-14T11:55:46Z tests=99 (harness usage pending)
+A1 harness: tokens=218127 tool_uses=30 duration_ms=768190
+C1 end 2026-11-14T12:19:42Z tests=175 harness: tokens=260096 tool_uses=68 duration_ms=2187558
+round2 first attempt: started 2026-11-14T12:20:42Z, all three cut off by usage limit (429) within minutes, workspaces identical to template, rerun fresh per amendment 2
+round2 second attempt: started 2026-11-14T20:30:49Z
+C2 end 2026-11-14T20:45:00Z tests=140 (agent reported ~48 tool calls; harness usage pending). Uses createProviderTwin + assertFinancialCorrectness with real interface. Agent says it made 9 own mutants in a scratch directory (teeth check).
+C2 harness: tokens=215820 tool_uses=40 duration_ms=834841
+C2 leak checks passed: no mutant ids, app source identical to template; kit entry points called in tests/helpers/harness.ts
+A2 end 2026-11-14T20:46:15Z tests=242 (agent reported ~25 tool calls; harness usage pending). Agent says it made 16 own mutants on a scratch copy outside the workspace (session scratchpad), same rule breach as A1; kept and reported. Leak checks passed: no mutant ids, app source identical to template.
+A2 harness: tokens=251753 tool_uses=36 duration_ms=912089
+B2 end 2026-11-14T20:47:35Z tests=153 (agent reported ~42 tool calls; harness usage pending). Agent says it applied 33 own breakages to a scratch copy of the apps, deleted afterwards. Leak checks passed: no mutant ids, app source identical to template.
+B2 harness: tokens=261950 tool_uses=37 duration_ms=988217
+round2 complete 2026-11-14T20:47:46Z: all three written in one uninterrupted run each
+round3: started 2026-11-15T15:12:16Z (moved forward from 20:30 UTC at Ryan's request, 'Run now' 15:11 UTC); workspaces A3 B3 C3 verified identical to template; no scoring running
+A3 end 2026-11-15T15:28:15Z tests=104 (agent reported ~26 tool calls; harness usage pending). Agent says it checked the suite against its own breakages on a scratch copy outside the workspace.
+A3 harness: tokens=237326 tool_uses=33 duration_ms=953507
+B3 end 2026-11-15T15:34:28Z tests=149 (agent reported ~42 tool calls; harness usage pending). Agent says it applied 27 own breakages to a scratch copy of the app sources.
+B3 harness: tokens=260316 tool_uses=53 duration_ms=1326877
+C3 end 2026-11-15T15:46:21Z tests=288 (agent reported ~52 tool calls; harness usage pending). Built twin from SimServer and World, not createProviderTwin; own SQL money checks; says it did not run own mutants.
+C3 harness: tokens=254474 tool_uses=58 duration_ms=2035350
+round3 complete 2026-11-15T15:46:27Z: all three written in one uninterrupted run each. Leak checks passed for A3 B3 C3: no mutant ids, app source identical to template, only tests/ added.

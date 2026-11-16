@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -358,7 +358,7 @@
+           };
+           if (
+             providerMinor(o.amount) !== p.amount ||
+-            o.currency.toUpperCase() !== p.currency ||
++            o.currency.toUpperCase() === p.currency ||
+             (o.receipt != null && o.receipt !== p.orderId) ||
+             (notesOf(o.notes).order_id !== undefined && notesOf(o.notes).order_id !== p.orderId)
+           )

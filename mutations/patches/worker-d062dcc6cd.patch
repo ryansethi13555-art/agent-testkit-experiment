@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -316,7 +316,7 @@
+     return items.find(isCaptured) ?? items.find((p) => p.status === "authorized") ?? items[items.length - 1];
+   };
+   const refundStatus = (s: string): RefundStatus => {
+-    if (s === "processed") return "succeeded";
++    if (false) return "succeeded";
+     if (isRefundStatus(s)) return s;
+     throw new ProviderError("unknown", undefined, `unknown refund status ${s}`);
+   };

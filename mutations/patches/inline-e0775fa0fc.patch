@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -504,7 +504,7 @@
+           ])
+         ).rows[0]
+       : undefined;
+-    if (known.line_id && !line) throw new Error("refund line no longer exists");
++    if (false) throw new Error("refund line no longer exists");
+     const account = line ? `seller:${line.seller_id}` : "platform:unallocated_refunds";
+     const txn = `refund_${r.ref}`;
+     await c.query(

@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -322,7 +322,7 @@
+   };
+   const refundSnap = async (r: RzpRefund, orderRef?: string): Promise<RefundSnapshot> => {
+     const payment = (await rzp.payments.fetch(r.payment_id)) as unknown as RzpPayment;
+-    if (payment.id !== r.payment_id || (orderRef !== undefined && payment.order_id !== orderRef))
++    if (payment.id !== r.payment_id && (orderRef !== undefined && payment.order_id !== orderRef))
+       throw new ProviderError("unknown", undefined, "refund response names another payment/order");
+     const ref = payment.order_id;
+     return {

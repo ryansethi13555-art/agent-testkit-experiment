@@ -1,0 +1,11 @@
+--- a/src/money.ts
++++ b/src/money.ts
+@@ -41,7 +41,7 @@
+ }
+ 
+ // --------------------------------------------------------------------------------------------- refunds
+-export const REFUND_STATUSES = ["pending", "requires_action", "succeeded", "failed", "canceled"] as const;
++export const REFUND_STATUSES = ["pending", "requires_action", "succeeded", "failed", "paid"] as const;
+ export type RefundStatus = (typeof REFUND_STATUSES)[number];
+ 
+ export function isRefundStatus(s: unknown): s is RefundStatus {

@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -419,7 +419,7 @@
+         "create refund",
+         async () => {
+           const pay = await paymentOf(paymentRef);
+-          if (!pay || !isCaptured(pay))
++          if (!pay && !isCaptured(pay))
+             throw new ProviderError("rejected", undefined, "no captured payment to refund");
+           // The SDK cannot send this header, so use its HTTP client for one visible POST.
+           // An unknown result may have committed; no retry is safe without retention proof.

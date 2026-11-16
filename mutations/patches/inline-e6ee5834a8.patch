@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -21,7 +21,7 @@
+ CREATE TABLE IF NOT EXISTS sellers (id text PRIMARY KEY, name text NOT NULL);
+ CREATE TABLE IF NOT EXISTS orders (
+   id text PRIMARY KEY, buyer text NOT NULL, currency text NOT NULL, total bigint NOT NULL,
+-  capture_method text NOT NULL DEFAULT 'automatic', status text NOT NULL, payment_intent_id text UNIQUE,
++  capture_method text NOT NULL DEFAULT 'automatic', status text NULL, payment_intent_id text UNIQUE,
+   checkout_create_started boolean NOT NULL DEFAULT false,
+   created_at timestamptz NOT NULL DEFAULT now());
+ CREATE TABLE IF NOT EXISTS order_lines (

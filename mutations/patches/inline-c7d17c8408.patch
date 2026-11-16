@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -67,7 +67,7 @@
+   const n = amount * COMMISSION_BPS;
+   const q = n / 10000n;
+   const r = n % 10000n;
+-  if (r * 2n > 10000n || (r * 2n === 10000n && q % 2n === 1n)) return q + 1n;
++  if (r * 2n > 10000n || (r * 2n === 10000n && q % 2n !== 1n)) return q + 1n;
+   return q;
+ };
+ 

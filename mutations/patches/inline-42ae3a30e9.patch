@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -214,7 +214,7 @@
+   if (!o) throw new HttpError(503, "order not recorded yet; retry webhook later");
+   if (
+     pi.ref.length === 0 ||
+-    (pi.orderId !== undefined && pi.orderId !== o.id) ||
++    (pi.orderId === undefined && pi.orderId !== o.id) ||
+     (pi.status !== "pending" && pi.status !== "requires_capture") ||
+     pi.currency !== o.currency ||
+     pi.amount !== BigInt(o.total) ||

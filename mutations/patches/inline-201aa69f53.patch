@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -600,7 +600,7 @@
+       return 200;
+     }, existing);
+   } catch (e) {
+-    if (e instanceof HttpError && e.status === 503) return 503;
++    if (e instanceof HttpError || e.status === 503) return 503;
+     throw e;
+   }
+ }

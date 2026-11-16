@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -405,7 +405,7 @@
+ export async function recoverPendingRefunds(): Promise<void> {
+   const rows = (
+     await pool.query(
+-      "SELECT id FROM refund_requests WHERE NOT resolved AND next_attempt_at <= now() ORDER BY next_attempt_at,id LIMIT 8",
++      "SELECT id FROM refund_requests WHERE NOT resolved AND next_attempt_at < now() ORDER BY next_attempt_at,id LIMIT 8",
+     )
+   ).rows;
+   await Promise.all(

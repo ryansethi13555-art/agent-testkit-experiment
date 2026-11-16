@@ -1,0 +1,2307 @@
+{
+ "workspace": "/home/claude/rep/B1",
+ "corpus": "corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 6.0,
+   "tests": 84,
+   "failed": []
+  },
+  {
+   "seconds": 7.0,
+   "tests": 84,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 5.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ee754b3bb8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 5.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b5fd4183b8": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 5.9,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: refunds, happy and bounded rejects bad refund inputs and lines that belong to another order or do not exist",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refunds on two orders stay on their own order and seller"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: refunds, happy and bounded rejects bad refund inputs and lines that belong to another order or do not exist",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refunds on two orders stay on their own order and seller"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-653460e299": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.5,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ee9f08c53": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.4,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace a failed attempt then a captured one: confirm books the captured payment exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.5,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace a failed attempt then a captured one: confirm books the captured payment exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fef5230a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks checkout response lost after the provider applied it: never creates a second payment, even after idempotency expiry"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.9,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks checkout response lost after the provider applied it: never creates a second payment, even after idempotency expiry"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-0704d70e4c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-24d415ba3f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8aaee70e82": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.2,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4d5755f597": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1767da2ed7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27bb27260f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace books a capture once across captured/authorized snapshots, duplicate event ids and body-hash dedupe",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace provider-side over-refund refusal (dashboard refund unseen) releases the reservation and the dashboard refund is recorded",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund response lost: never re-POSTed; the processed webhook links it once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund.failed after a pending acceptance reverses once; a replayed processed event cannot revive it",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund: idempotency header is the durable request id, INR minimum is local, partials and over-refund are bounded",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refunds on two orders stay on their own order and seller"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.7,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace books a capture once across captured/authorized snapshots, duplicate event ids and body-hash dedupe",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace provider-side over-refund refusal (dashboard refund unseen) releases the reservation and the dashboard refund is recorded",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund response lost: never re-POSTed; the processed webhook links it once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund.failed after a pending acceptance reverses once; a replayed processed event cannot revive it",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund: idempotency header is the durable request id, INR minimum is local, partials and over-refund are bounded",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refunds on two orders stay on their own order and seller"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-319b88db45": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting books zero-decimal currency in its own currency",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting books zero-decimal currency in its own currency",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ff46326d5b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-72a78980e2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace books a capture once across captured/authorized snapshots, duplicate event ids and body-hash dedupe",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace books a capture once across captured/authorized snapshots, duplicate event ids and body-hash dedupe",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-2252479946": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-34b89b727b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dd6a188c57": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-142b68a317": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e9a58a7a33": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e48d36c3d0": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace a failed attempt then a captured one: confirm books the captured payment exactly once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.3,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace a failed attempt then a captured one: confirm books the captured payment exactly once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-62874cd85f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0a43d8d08": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.4,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.7,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ea850af7a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-45e6d924f9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dfaec08497": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.9,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-f8f20e03c8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.0,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7439bc78e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.7,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.9,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b084c71403": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.3,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line",
+      "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7d3e9b8d06": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e41d0b1a6c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1e14570737": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-105727a328": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-96e83ff06b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8bcb27de2c": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace a failed attempt then a captured one: confirm books the captured payment exactly once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace books a capture once across captured/authorized snapshots, duplicate event ids and body-hash dedupe",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace provider-side over-refund refusal (dashboard refund unseen) releases the reservation and the dashboard refund is recorded",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund response lost: never re-POSTed; the processed webhook links it once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund.failed after a pending acceptance reverses once; a replayed processed event cannot revive it",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund: idempotency header is the durable request id, INR minimum is local, partials and over-refund are bounded",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refunds on two orders stay on their own order and seller"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace a failed attempt then a captured one: confirm books the captured payment exactly once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace books a capture once across captured/authorized snapshots, duplicate event ids and body-hash dedupe",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace provider-side over-refund refusal (dashboard refund unseen) releases the reservation and the dashboard refund is recorded",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund response lost: never re-POSTed; the processed webhook links it once",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund.failed after a pending acceptance reverses once; a replayed processed event cannot revive it",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund: idempotency header is the durable request id, INR minimum is local, partials and over-refund are bounded",
+      "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refunds on two orders stay on their own order and seller"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ab36a7ebf6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b59a9449f7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a995dcb549": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95f1c74d78": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.4,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-31d2e8ad79": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: refunds refunds the shop did not initiate count against the payment's headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.0,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: refunds refunds the shop did not initiate count against the payment's headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ab649f3ed6": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.4,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.9,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0607952b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-782d5bf789": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking books the sale with half-even commission, allocation rows per line, balanced"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking books the sale with half-even commission, allocation rows per line, balanced"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-efece32a35": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: stripe adapter wire behaviour parses payment, charge and refund notices to the object that changed"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.0,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: stripe adapter wire behaviour parses payment, charge and refund notices to the object that changed"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-32ba3a2db5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84bce1383d": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-bfd7f0f437": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture capture applied but response lost is reconciled from the provider object and booked once",
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture capture refused by the provider is reported and books nothing"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture capture applied but response lost is reconciled from the provider object and booked once",
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture capture refused by the provider is reported and books nothing"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6b2c5a0d9c": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture capture applied but response lost is reconciled from the provider object and booked once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture capture applied but response lost is reconciled from the provider object and booked once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.5,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture capture applied but response lost is reconciled from the provider object and booked once"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture capture applied but response lost is reconciled from the provider object and booked once"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-92b5cdab2b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6845349f43": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/worker-marketplace.test.ts :: worker: refunds refunds the shop did not initiate count against the payment's headroom"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.5,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/worker-marketplace.test.ts :: worker: refunds refunds the shop did not initiate count against the payment's headroom"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-983dba84d7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4d248a7464": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: refund faults and ambiguity a refund event carrying another order's request identity is refused, not linked"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.4,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: refund faults and ambiguity a refund event carrying another order's request identity is refused, not linked"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d21e7d8f0c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: stripe adapter wire behaviour parses payment, charge and refund notices to the object that changed"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.2,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: stripe adapter wire behaviour parses payment, charge and refund notices to the object that changed"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cac8e14334": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-969024dce1": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: refunds rejects bad amounts, foreign lines, unknown orders and unpaid orders without provider calls"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.2,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: refunds rejects bad amounts, foreign lines, unknown orders and unpaid orders without provider calls"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-671cf65d46": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture a capture of a different amount than the order is held in suspense, never credited to sellers",
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture a second captured payment on a paid order is held in suspense and does not re-credit sellers"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 6.3,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture a capture of a different amount than the order is held in suspense, never credited to sellers",
+      "tests/worker-marketplace.test.ts :: worker: checkout and capture a second captured payment on a paid order is held in suspense and does not re-credit sellers"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a74098df3b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8e53f6c1c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 5.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f877242f9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6065a428c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cb29202017": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-25fd6c557b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-55a2fd5278": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9b27895cee": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95c7dbb56d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking validates order input"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking validates order input"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d23172263e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-daf9a44d54": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-78ca9e9e6d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0e7a916448": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.2,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.2,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8ef18682cf": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.3,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8f0abdb617": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 6.9,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.2,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-b95cd1f2cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9aa99b20bc": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ae3a3b1bc7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2c7243ba14": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 7.1,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 7.3,
+     "failingStable": [
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+      "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e167f3ab92": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 6.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks a created observation recovers the lost identity without booking money",
+  "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks checkout response lost after the provider applied it: never creates a second payment, even after idempotency expiry",
+  "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks concurrent checkout double-submit creates exactly one provider payment",
+  "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks confirm-return and webhook racing together book the sale once",
+  "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks does not mark paid on partial capture, wrong currency, wrong order or an unrelated payment",
+  "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks duplicate payment webhook: same id sequential, same id concurrent, fresh id",
+  "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks payment event for an order that does not exist is retryable, not acknowledged",
+  "tests/inline-marketplace.test.ts :: inline: checkout and payment webhooks rejects forged, tampered, wrong-secret and stale-timestamp webhooks with no effect",
+  "tests/inline-marketplace.test.ts :: inline: manual capture capture applied but response lost: parked, then the webhook books once; retry is harmless",
+  "tests/inline-marketplace.test.ts :: inline: manual capture capture lost with no webhook: confirm recovers it exactly once",
+  "tests/inline-marketplace.test.ts :: inline: manual capture capture rejected before applying leaves nothing booked",
+  "tests/inline-marketplace.test.ts :: inline: order input and sale posting books zero-decimal currency in its own currency",
+  "tests/inline-marketplace.test.ts :: inline: order input and sale posting posts a balanced sale with half-even commission remainders, per line",
+  "tests/inline-marketplace.test.ts :: inline: order input and sale posting property: random orders always post balanced sales whose parts sum to the whole",
+  "tests/inline-marketplace.test.ts :: inline: order input and sale posting rejects malformed money without creating rows",
+  "tests/inline-marketplace.test.ts :: inline: refund event ordering and lifecycle async failure after acceptance reverses exactly once, frees the line, and stale events cannot resurrect it",
+  "tests/inline-marketplace.test.ts :: inline: refund event ordering and lifecycle concurrent API refund and dashboard refund of the same amount are not conflated",
+  "tests/inline-marketplace.test.ts :: inline: refund event ordering and lifecycle pending then succeeded: recognised once; duplicate and distinct-id events do not re-post",
+  "tests/inline-marketplace.test.ts :: inline: refund event ordering and lifecycle refund event before the payment event is retried (503), then applied once the payment is known",
+  "tests/inline-marketplace.test.ts :: inline: refund event ordering and lifecycle refund events with a different currency or beyond the captured total are never recorded",
+  "tests/inline-marketplace.test.ts :: inline: refund event ordering and lifecycle requires_action may return to success (cyclic state), booked once",
+  "tests/inline-marketplace.test.ts :: inline: refund event ordering and lifecycle stale pending after success never regresses the recorded refund",
+  "tests/inline-marketplace.test.ts :: inline: refund faults and ambiguity 429 on the first POST is a definitive no-op: released and retryable",
+  "tests/inline-marketplace.test.ts :: inline: refund faults and ambiguity 5xx before the provider applied anything: no provider refund, no resend, reservation never exceeds the line",
+  "tests/inline-marketplace.test.ts :: inline: refund faults and ambiguity a provider response whose amount differs from the request is not booked as success",
+  "tests/inline-marketplace.test.ts :: inline: refund faults and ambiguity crash recovery: an unsent persisted reservation is POSTed exactly once; a crash after the send marker is never re-POSTed",
+  "tests/inline-marketplace.test.ts :: inline: refund faults and ambiguity network error (no response) is also ambiguous and never double-sent",
+  "tests/inline-marketplace.test.ts :: inline: refund faults and ambiguity provider says amount too large (out-of-band dashboard refund the app has not seen yet): rejected, then dashboard refund is recorded",
+  "tests/inline-marketplace.test.ts :: inline: refund faults and ambiguity response lost after the provider applied the refund: never re-POSTed, capacity held, webhook links it once",
+  "tests/inline-marketplace.test.ts :: inline: refunds, happy and bounded Razorpay-style INR minimum: below 100 minor units is refused before any reservation or POST",
+  "tests/inline-marketplace.test.ts :: inline: refunds, happy and bounded concurrent refunds across lines are bounded by each line and by the payment",
+  "tests/inline-marketplace.test.ts :: inline: refunds, happy and bounded concurrent refunds on one line never over-refund (rendezvous)",
+  "tests/inline-marketplace.test.ts :: inline: refunds, happy and bounded refund credits back the right seller and the clearing account; ledger stays balanced",
+  "tests/inline-marketplace.test.ts :: inline: refunds, happy and bounded rejects bad refund inputs and lines that belong to another order or do not exist",
+  "tests/inline-marketplace.test.ts :: inline: refunds, happy and bounded sequential partial refunds can reach but never pass the line or the order",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace a failed attempt then a captured one: confirm books the captured payment exactly once",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace books a capture once across captured/authorized snapshots, duplicate event ids and body-hash dedupe",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace creates one Razorpay order with the exact integer amount, currency and order identity",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace manual capture: authorised is not money; capture response lost is recovered once",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace provider-side over-refund refusal (dashboard refund unseen) releases the reservation and the dashboard refund is recorded",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund response lost: never re-POSTed; the processed webhook links it once",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund.failed after a pending acceptance reverses once; a replayed processed event cannot revive it",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refund: idempotency header is the durable request id, INR minimum is local, partials and over-refund are bounded",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace refunds on two orders stay on their own order and seller",
+  "tests/razorpay-adapters.test.ts :: razorpay + inline-marketplace rejects forged signatures and tampered bodies",
+  "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace books a capture once through jobs, dedupes event ids and body hashes, and rejects forged events",
+  "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace dashboard refund is recorded against the right order; a failed attempt plus captured attempt are handled by the captured one",
+  "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund POST carries the request id as idempotency key; min, over-refund and bound hold",
+  "tests/razorpay-adapters.test.ts :: razorpay + worker-marketplace refund response lost: 202, never re-POSTed through retries, linked by the exact processed event",
+  "tests/worker-marketplace.test.ts :: worker: checkout and capture a capture of a different amount than the order is held in suspense, never credited to sellers",
+  "tests/worker-marketplace.test.ts :: worker: checkout and capture a second captured payment on a paid order is held in suspense and does not re-credit sellers",
+  "tests/worker-marketplace.test.ts :: worker: checkout and capture capture applied but response lost is reconciled from the provider object and booked once",
+  "tests/worker-marketplace.test.ts :: worker: checkout and capture capture refused by the provider is reported and books nothing",
+  "tests/worker-marketplace.test.ts :: worker: checkout and capture double-submitted checkout creates one provider payment",
+  "tests/worker-marketplace.test.ts :: worker: checkout and capture lost create response never leads to a second payment; the payment event recovers and books once",
+  "tests/worker-marketplace.test.ts :: worker: database guarantees rejects an unbalanced ledger transaction at commit and a repeated posting slot",
+  "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking an event for a payment that is not ours is ignored without booking",
+  "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking books the sale with half-even commission, allocation rows per line, balanced",
+  "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking crash recovery: running jobs are re-queued and re-applied idempotently",
+  "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking duplicate and fresh-id deliveries, drained by two workers at once, book exactly once",
+  "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking failed jobs are retried with the same state, dead-letter, and revive on redelivery without double booking",
+  "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking rejects forged and malformed webhooks and enqueues nothing",
+  "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking trusts the provider object, not the webhook body: a lying 'succeeded' event books nothing",
+  "tests/worker-marketplace.test.ts :: worker: orders, webhooks and sale booking validates order input",
+  "tests/worker-marketplace.test.ts :: worker: pure money rules a terminal payment state is never left, and order status follows money facts",
+  "tests/worker-marketplace.test.ts :: worker: pure money rules divHalfEven and commissionOf are exact half-even, never lose a minor unit",
+  "tests/worker-marketplace.test.ts :: worker: pure money rules line headroom counts held refunds and open reservations, but not failed/canceled",
+  "tests/worker-marketplace.test.ts :: worker: pure money rules parseMinorUnits accepts only exact non-negative integers within range",
+  "tests/worker-marketplace.test.ts :: worker: pure money rules sale legs always sum to zero and equal the captured total",
+  "tests/worker-marketplace.test.ts :: worker: refund faults and ambiguity 5xx or network error before apply: no provider refund, no resend, capacity bounded",
+  "tests/worker-marketplace.test.ts :: worker: refund faults and ambiguity a definitive 4xx first rejection releases the reservation; 429 on the first POST does too",
+  "tests/worker-marketplace.test.ts :: worker: refund faults and ambiguity a provider response that does not match the request is not booked",
+  "tests/worker-marketplace.test.ts :: worker: refund faults and ambiguity a refund event carrying another order's request identity is refused, not linked",
+  "tests/worker-marketplace.test.ts :: worker: refund faults and ambiguity response lost after apply: 202, reservation held, never re-POSTed through retries and dead-letter, linked by the exact event",
+  "tests/worker-marketplace.test.ts :: worker: refund faults and ambiguity restart recovery: a request left in flight becomes unknown (never re-POSTed) and still blocks over-refunding",
+  "tests/worker-marketplace.test.ts :: worker: refunds INR minimum (Razorpay contract) is enforced before any reservation",
+  "tests/worker-marketplace.test.ts :: worker: refunds concurrent refunds on one line never exceed it",
+  "tests/worker-marketplace.test.ts :: worker: refunds lifecycle: pending, succeeded, stale pending replay, and async failure reverse exactly once and free the line",
+  "tests/worker-marketplace.test.ts :: worker: refunds refund event before the payment event: the refund job reconciles the payment first, in any order",
+  "tests/worker-marketplace.test.ts :: worker: refunds refunds the right seller via the allocated payment; order status follows refunds that hold money",
+  "tests/worker-marketplace.test.ts :: worker: refunds refunds the shop did not initiate count against the payment's headroom",
+  "tests/worker-marketplace.test.ts :: worker: refunds rejects bad amounts, foreign lines, unknown orders and unpaid orders without provider calls",
+  "tests/worker-marketplace.test.ts :: worker: stripe adapter wire behaviour enqueue dedupes by key and only revives failed jobs",
+  "tests/worker-marketplace.test.ts :: worker: stripe adapter wire behaviour parses payment, charge and refund notices to the object that changed"
+ ],
+ "stablePassing": 84,
+ "baseFlaky": [],
+ "detectedCases": 35
+}

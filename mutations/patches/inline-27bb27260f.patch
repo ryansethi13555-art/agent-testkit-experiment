@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -403,7 +403,7 @@
+       );
+       const pay = ev.payload.payment?.entity;
+       const ref = ev.payload.refund?.entity;
+-      if (ev.event === "payment.captured" && pay)
++      if (false)
+         return {
+           eventId,
+           kind: "payment_succeeded",

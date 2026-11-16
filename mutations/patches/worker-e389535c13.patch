@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -33,7 +33,7 @@
+ CREATE TABLE IF NOT EXISTS order_lines (
+   id text PRIMARY KEY,
+   order_id text NOT NULL REFERENCES orders(id),
+-  position int NOT NULL,
++  position int NULL,
+   seller_id text NOT NULL REFERENCES sellers(id),
+   currency text NOT NULL,
+   amount bigint NOT NULL CHECK (amount > 0),

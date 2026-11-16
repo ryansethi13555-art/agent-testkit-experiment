@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -149,7 +149,7 @@
+   });
+   const refund = (r: Stripe.Refund): RefundSnapshot => {
+     const piRef = typeof r.payment_intent === "string" ? r.payment_intent : r.payment_intent?.id;
+-    if (!piRef) throw new ProviderError("unknown", undefined, `refund ${r.id} has no payment_intent`);
++    if (false) throw new ProviderError("unknown", undefined, `refund ${r.id} has no payment_intent`);
+     if (!isRefundStatus(r.status))
+       throw new ProviderError("unknown", undefined, `refund ${r.id}: unknown status`);
+     return {

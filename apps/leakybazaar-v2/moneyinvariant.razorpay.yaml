@@ -1,0 +1,76 @@
+# LeakyBazaar on Razorpay: run with `moneyinv test --config moneyinvariant.razorpay.yaml` (worked example, docs/QUICKSTART.md).
+version: 0
+
+app:
+  name: leakybazaar-v2
+  start: node src/server.ts
+  port_env: PORT
+  health: /healthz
+  env:
+    DATABASE_URL: env:MI_DATABASE_URL
+    PAYMENT_PROVIDER: razorpay
+  actions: moneyinv/actions.mjs
+  # Out of envelope (README): a capture must equal the order total, so a dashboard partial capture is never booked.
+  unsupported: [d1.cap.partial]
+  quiescence:
+    work_probe: SELECT true
+    probe: SELECT count(*) = 0 FROM refund_requests WHERE NOT resolved
+    timeout_seconds: 30
+
+provider:
+  name: razorpay
+  webhook_path: /webhooks/razorpay
+  env:
+    api_base: MONEYINV_RAZORPAY_API_BASE
+    key_id: RAZORPAY_KEY_ID
+    key_secret: RAZORPAY_KEY_SECRET
+    webhook_secret: RAZORPAY_WEBHOOK_SECRET
+
+database:
+  url: env:MI_DATABASE_URL
+  disposable: true
+
+bindings:
+  orders: SELECT id AS order_id, currency, total AS amount_due, status FROM orders
+  order_lines: SELECT id AS line_id, order_id AS order_ref, seller_id AS seller_ref, currency, amount FROM order_lines
+  refunds: |
+    SELECT id AS refund_id, order_id AS order_ref, line_id AS line_ref, provider_ref, currency, amount, status, origin
+    FROM refunds
+  ledger_entries: SELECT id AS entry_id, txn_id, account, currency, amount, cause_ref, kind, effect_ref FROM ledger_entries
+  # chart of accounts: 'provider:clearing' holds the funds at the provider (debit-positive, like the provider's books)
+  ledger_accounts: |
+    SELECT DISTINCT account, CASE WHEN account = 'provider:clearing' THEN 'provider_clearing' ELSE 'internal' END AS class
+    FROM ledger_entries
+  # the books summed per money-model party (debit-positive). Every account maps to a party; unknown accounts surface as other:<account>
+  party_positions: |
+    SELECT CASE
+             WHEN account = 'provider:clearing' THEN 'clearing'
+             WHEN account LIKE 'seller:%' THEN account
+             WHEN account LIKE 'platform:revenue:%' THEN 'platform'
+             WHEN account = 'platform:unallocated_refunds' THEN 'platform:unallocated_refunds'
+             ELSE 'other:' || account
+           END AS party,
+           currency, SUM(amount)::bigint AS amount
+    FROM ledger_entries
+    GROUP BY 1, 2
+
+invariants:
+  packs: [payments-core@0.5.0, money-model@0.1.0]
+
+# The reference money model's policy for LeakyBazaar, written from its README and BASE source as a product spec:
+#   commission:  server.ts COMMISSION_BPS = 1000n ("10% platform commission"), `commission()` rounds half-even once per
+#                order line; the line's seller is credited the rest (markPaid).
+#   on refund:   applyRefund debits the line's seller account with the full refunded amount and no commission leg, so
+#                the platform keeps its commission.
+#   recognition: refundHoldsMoney (money.ts): pending, requires_action and succeeded are booked; failed and canceled
+#                are reversed (README: "Pending provider refunds retain v1's reservation/recognition semantics").
+#   unexplained capture: markPaidInTransaction throws unless amount, currency and order match, so the app defines no
+#                booking for it: null (no model verdict for runs that capture such money).
+#   line-less refund: a provider-dashboard refund (no line) is debited to platform:unallocated_refunds.
+money_model:
+  default_currency: INR   # server.ts createOrder: currency defaults to INR
+  commission: { rate: 1000/10000, rounding: half_even }
+  commission_on_refund: retained
+  refund_recognition: holds_money
+  unexplained_capture_party: null
+  unallocated_refund_party: platform:unallocated_refunds

@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -273,7 +273,7 @@
+       : s === "authorized"
+         ? "requires_capture"
+         : s === "failed"
+-          ? "failed"
++          ? "canceled"
+           : "pending";
+   const fromPayment = (orderRef: string, p: RzpPayment | undefined): Payment => {
+     if (p && p.order_id !== orderRef)

@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -184,7 +184,7 @@
+       "UPDATE orders SET payment_ref=$2 WHERE id=$1 AND payment_ref IS NULL RETURNING id",
+       [orderId, snap.ref],
+     );
+-    if (!recorded.rowCount && (await this.#order(orderId)).payment_ref !== snap.ref)
++    if (false)
+       throw new ProviderError("unknown", undefined, "checkout response conflicts with stored payment");
+     await this.applyPayment({ ...snap, orderId: snap.orderId ?? orderId });
+     return { payment_ref: snap.ref, client_secret: snap.clientSecret, status: snap.status };

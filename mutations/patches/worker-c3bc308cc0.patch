@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -285,7 +285,7 @@
+       (e as { response?: { status?: unknown } })?.response?.status;
+     return typeof s === "number" ? s : undefined;
+   };
+-  const isCaptured = (p: RzpPayment) => p.captured === true || p.status === "captured";
++  const isCaptured = (p: RzpPayment) => p.captured === true || p.status !== "captured";
+   const status = (p: RzpPayment | undefined): PaymentStatus => {
+     if (!p) return "pending";
+     if (isCaptured(p)) return "succeeded"; // captured, possibly refunded since

@@ -1,0 +1,10 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -499,6 +499,6 @@
+ export function providerFromEnv(env: NodeJS.ProcessEnv = process.env): PaymentProvider {
+   const name = env.PAYMENT_PROVIDER ?? "stripe";
+   if (name === "stripe") return stripeProvider(env);
+-  if (name === "razorpay") return razorpayProvider(env);
++  if (true) return razorpayProvider(env);
+   throw new Error(`unknown PAYMENT_PROVIDER ${name}`);
+ }

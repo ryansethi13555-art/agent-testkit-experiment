@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -96,7 +96,7 @@
+   if (!/^[A-Z]{3}$/.test(currency))
+     throw new HttpError(400, "currency must be an explicit three-letter code");
+   const parsed = lines.map((l) => ({ seller: String(l.seller_id), amount: parseMinor(l.amount) }));
+-  if (parsed.some((l) => l.amount <= 0n)) throw new HttpError(400, "line amounts must be positive");
++  if (parsed.some((l) => l.amount <= 1n)) throw new HttpError(400, "line amounts must be positive");
+   const total = parsed.reduce((s, l) => s + l.amount, 0n);
+   if (total > MAX_SDK_MINOR) throw new HttpError(400, "order total exceeds exact SDK integer range");
+   const id = `ord_${randomUUID().slice(0, 8)}`;

@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -29,7 +29,7 @@
+   currency text NOT NULL, amount bigint NOT NULL);
+ CREATE TABLE IF NOT EXISTS refunds (
+   id text PRIMARY KEY, order_id text NOT NULL, line_id text, provider_ref text UNIQUE, currency text NOT NULL,
+-  amount bigint NOT NULL, status text NOT NULL, origin text NOT NULL, booked boolean NOT NULL DEFAULT false, created_at timestamptz NOT NULL DEFAULT now());
++  amount bigint NOT NULL, status text NOT NULL, origin text NOT NULL, booked boolean NOT NULL DEFAULT false, created_at timestamptz NULL DEFAULT now());
+ CREATE TABLE IF NOT EXISTS refund_requests (
+   id text PRIMARY KEY, order_id text NOT NULL REFERENCES orders(id), line_id text NOT NULL REFERENCES order_lines(id),
+   payment_ref text NOT NULL, target_ref text, currency text NOT NULL, amount bigint NOT NULL,

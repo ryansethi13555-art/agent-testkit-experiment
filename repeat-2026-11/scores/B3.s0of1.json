@@ -1,0 +1,2286 @@
+{
+ "workspace": "/home/claude/rep/B3",
+ "corpus": "corpus/corpus.json",
+ "base": [
+  {
+   "seconds": 17.2,
+   "tests": 149,
+   "failed": []
+  },
+  {
+   "seconds": 17.9,
+   "tests": 149,
+   "failed": []
+  }
+ ],
+ "cases": {
+  "inline-70629133d3": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ee754b3bb8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fb216a035f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b5fd4183b8": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [
+      "tests/inline/refunds.test.ts :: inline: refunds API refunds rejects unpaid orders, unknown lines and lines of another order"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.3,
+     "failingStable": [
+      "tests/inline/refunds.test.ts :: inline: refunds API refunds rejects unpaid orders, unknown lines and lines of another order"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-64ba133a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-653460e299": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 14.5,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 14.8,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c296b9d62b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ee9f08c53": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.1,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.2,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d93c04ad3b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-fef5230a73": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8e3bb6d724": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-0704d70e4c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9c38b231f6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-24d415ba3f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-385602d75f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8aaee70e82": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-5d46dc1d2f": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 16.8,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 16.9,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4d5755f597": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e323fc38ea": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1767da2ed7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-54e3474062": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27bb27260f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-346082ac3c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-319b88db45": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-510763980e": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.9,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.7,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ff46326d5b": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.9,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments unknown routes and methods change nothing",
+      "tests/inline/refunds.test.ts :: inline: refunds webhook transport edge: GET to the webhook path and an unparseable body change nothing"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.8,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments unknown routes and methods change nothing",
+      "tests/inline/refunds.test.ts :: inline: refunds webhook transport edge: GET to the webhook path and an unparseable body change nothing"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-6a7e3c5119": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-72a78980e2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-42ae3a30e9": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-2252479946": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 20.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ef7f49f7bd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-34b89b727b": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-201aa69f53": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dd6a188c57": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a4b5b1effe": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-142b68a317": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0775fa0fc": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e9a58a7a33": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-70f1d0f6d2": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e48d36c3d0": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9170ec8d72": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-62874cd85f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1fe2e2dc74": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e0a43d8d08": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-464b838e84": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.6,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9ea850af7a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8534f7752a": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-45e6d924f9": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments checkout a provider payment whose amount differs from the order is never accepted as the order's payment"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.9,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments checkout a provider payment whose amount differs from the order is never accepted as the order's payment"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-27b0c4aa77": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-dfaec08497": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-c7d17c8408": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 12.5,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 14.6,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-f8f20e03c8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1a7bb27a0f": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7439bc78e9": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments unknown routes and methods change nothing"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.9,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments unknown routes and methods change nothing"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-4f4c57ccb6": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 11.4,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 13.8,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b084c71403": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 15.1,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.2,
+     "failingStable": [
+      "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-94ed68c398": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-7d3e9b8d06": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 16.6,
+     "failingStable": [
+      "tests/worker/units.test.ts :: inline money.ts parseMinor accepts only exact safe integers and digit strings"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 14.9,
+     "failingStable": [
+      "tests/worker/units.test.ts :: inline money.ts parseMinor accepts only exact safe integers and digit strings"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-10d4b7363c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e41d0b1a6c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b2a51cdf43": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1e14570737": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-403c7c764d": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-105727a328": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ad0e059160": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-96e83ff06b": {
+   "app": "inline-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 14.9,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments manual capture a capture rejected or failed before apply books nothing and can be retried",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments manual capture is paid only after capture; a repeated capture is idempotent"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.9,
+     "failingStable": [
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments manual capture a capture rejected or failed before apply books nothing and can be retried",
+      "tests/inline/payments.test.ts :: inline: orders, checkout, payments manual capture is paid only after capture; a repeated capture is idempotent"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-9975555927": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-8bcb27de2c": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b730a3bc90": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-ab36a7ebf6": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-1ea3025178": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-b59a9449f7": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-d0158eeacd": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-a995dcb549": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "inline-e6ee5834a8": {
+   "app": "inline-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95f1c74d78": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 13.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d062dcc6cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-31d2e8ad79": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 14.7,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic refunds a refund that exceeds what outside refunds left is refused locally once they are known"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 16.1,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic refunds a refund that exceeds what outside refunds left is refused locally once they are known"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-85b817796c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 14.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ab649f3ed6": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94e0d3c3f7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0607952b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-5cf6709ca9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-782d5bf789": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 16.3,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object commission and seller parts sum exactly to each line for awkward amounts"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 15.6,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object commission and seller parts sum exactly to each line for awkward amounts"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d575d9c7e2": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 15.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-efece32a35": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4776252d40": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-32ba3a2db5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff2bcd327": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84bce1383d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-94151bf16a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-bfd7f0f437": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 16.3,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture capture with a lost response is reconciled from the provider object, never booked twice"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.5,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture capture with a lost response is reconciled from the provider object, never booked twice"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-84dcce17c5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6b2c5a0d9c": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture a partial capture is never allocated as the full sale"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.1,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture a partial capture is never allocated as the full sale"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-796fede7f5": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.8,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture a partial capture is never allocated as the full sale"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.6,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture a partial capture is never allocated as the full sale"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-92b5cdab2b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e647ee6d8b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6845349f43": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 20.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-dff4b81f39": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 20.6,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering a dashboard refund is recorded once; unallocated to any seller"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.3,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering a dashboard refund is recorded once; unallocated to any seller"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-983dba84d7": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 19.7,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic orders accepts the largest order total and rejects invalid JSON bodies",
+      "tests/worker/units.test.ts :: worker money.ts parseMinorUnits accepts only exact non-negative integers within the domain"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 19.2,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic orders accepts the largest order total and rejects invalid JSON bodies",
+      "tests/worker/units.test.ts :: worker money.ts parseMinorUnits accepts only exact non-negative integers within the domain"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a05bc61a71": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-4d248a7464": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-65b43b0dae": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d21e7d8f0c": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1c13dbfd56": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cac8e14334": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-1a1524e96a": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-969024dce1": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-3a5c5dcc6f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.0,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic refunds rejects bad amounts, unpaid orders and foreign lines without a provider call"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.6,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic refunds rejects bad amounts, unpaid orders and foreign lines without a provider call"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-671cf65d46": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 16.1,
+     "failingStable": [
+      "tests/worker/model.test.ts :: worker: model-based interleavings holds the money laws for hostile fixed schedules",
+      "tests/worker/model.test.ts :: worker: model-based interleavings holds the money laws under random schedules",
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture a partial capture is never allocated as the full sale",
+      "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object a second captured provider payment for the order goes to suspense and credits no seller again"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 14.6,
+     "failingStable": [
+      "tests/worker/model.test.ts :: worker: model-based interleavings holds the money laws for hostile fixed schedules",
+      "tests/worker/model.test.ts :: worker: model-based interleavings holds the money laws under random schedules",
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture a partial capture is never allocated as the full sale",
+      "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object a second captured provider payment for the order goes to suspense and credits no seller again"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8fde601101": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a74098df3b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f0a581b0b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8e53f6c1c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c3bc308cc0": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-7f877242f9": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2e77ef85b5": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6065a428c3": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-a098bed6af": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-cb29202017": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-590bcee418": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-25fd6c557b": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-da3139b2f8": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [
+      "tests/worker/model.test.ts :: worker: model-based interleavings holds the money laws under random schedules",
+      "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering succeeded then failed is reversed once; canceled behaves like failed"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.4,
+     "failingStable": [
+      "tests/worker/model.test.ts :: worker: model-based interleavings holds the money laws under random schedules",
+      "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering succeeded then failed is reversed once; canceled behaves like failed"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-55a2fd5278": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-eb1ee00c39": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9b27895cee": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-87d8d0453f": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 19.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-95c7dbb56d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-edf0bc482f": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects decimal string and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects exponent and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects fraction and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects negative and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects too large line and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects zero and stores nothing"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 18.8,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects decimal string and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects exponent and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects fraction and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects negative and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects too large line and stores nothing",
+      "tests/worker/shop.test.ts :: worker: money logic orders rejects zero and stores nothing"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-d23172263e": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 18.3,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic orders stores the exact sum, normalises currency, and exposes the order"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.9,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic orders stores the exact sum, normalises currency, and exposes the order"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e20df2a2ce": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-daf9a44d54": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-c1e79a810e": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture a created payment that does not match the order's money is refused"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 17.4,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic checkout and capture a created payment that does not match the order's money is refused"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-78ca9e9e6d": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e8b1fd5617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-0e7a916448": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-fc421b93e7": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8ef18682cf": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.8,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-678a4763fe": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 18.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-8f0abdb617": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.7,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6dea72a760": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.6,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-b95cd1f2cd": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e389535c13": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-9aa99b20bc": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.1,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-6f0b08b746": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.5,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-ae3a3b1bc7": {
+   "app": "worker-marketplace",
+   "detected": true,
+   "reproduced": 2,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic health and unknown routes"
+     ],
+     "timedOut": false
+    },
+    {
+     "seconds": 16.5,
+     "failingStable": [
+      "tests/worker/shop.test.ts :: worker: money logic health and unknown routes"
+     ],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-09d8418457": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 16.9,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-2c7243ba14": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.4,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-939cd21c03": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.0,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  },
+  "worker-e167f3ab92": {
+   "app": "worker-marketplace",
+   "detected": false,
+   "reproduced": 0,
+   "runs": [
+    {
+     "seconds": 17.2,
+     "failingStable": [],
+     "timedOut": false
+    }
+   ]
+  }
+ },
+ "stable": [
+  "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws for hostile fixed schedules",
+  "tests/inline/model.test.ts :: inline: model-based interleavings holds the money laws under random schedules (3 lines)",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments checkout a 5xx before apply does not allow a second create either",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments checkout a lost create response never causes a second provider payment, even after the idempotency key expired",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments checkout a provider payment whose amount differs from the order is never accepted as the order's payment",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments checkout concurrent double submit creates at most one provider payment",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments checkout creates exactly one provider payment with the order's exact money, however often it is submitted",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments checkout refuses to checkout an order that is already paid",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments health check answers",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money accepts a total at the exact SDK integer limit and refuses one unit more",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money accepts decimal digit strings and normalises currency case; total is the exact sum",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money an unknown seller leaves no half-written order",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects a malformed currency",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects decimal string",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects exponent string",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects fractional number",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects huge digit string",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects negative amount",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects no lines",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects null amount",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects total overflows safe range",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects unsafe integer",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments input validation: nothing is created for bad money rejects zero amount",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments ledger arithmetic for many line shapes the seller and platform parts sum exactly to each line and balance",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments manual capture a capture rejected or failed before apply books nothing and can be retried",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments manual capture a capture whose response is lost is parked and then resolved by the webhook exactly once",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments manual capture a partial capture is never booked as the full sale",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments manual capture is paid only after capture; a repeated capture is idempotent",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks a captured amount or currency different from the order is not booked as the order's sale",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks a forged or tampered webhook has no effect",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks a late duplicate payment event after refunds neither re-books the sale nor undoes the refund",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks a payment event delivered many times, sequentially and concurrently, books once",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks a payment event for an unknown order is retried later and books nothing",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks a second provider payment for an order is never booked as another sale",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks a signed 'succeeded' event whose status says not succeeded cannot book money",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks books a sale once: balanced, correct split, per-line commission rounded half to even",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks concurrent first deliveries of the same event book once",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks created/authorised observations never book captured money",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks return-from-checkout confirm and the webhook together book once; confirm before payment books nothing",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks the same payment under fresh event ids (redelivery by a different envelope) does not double book",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments payment webhooks works in non-INR currencies with every ledger row in the order currency",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments settle helper leaves nothing pending in a quiet system",
+  "tests/inline/payments.test.ts :: inline: orders, checkout, payments unknown routes and methods change nothing",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds Razorpay's documented INR minimum of 100 minor units is enforced before any reservation",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds a line cannot be refunded beyond its own amount using another line's capacity",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds a provider limit exceeded by outside refunds is surfaced and books nothing extra",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds a provider rejection that proves nothing was created releases the reservation",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds a rate limit (429, not executed) releases the reservation too",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds a refund reverses the right seller's share once and moves the order to partially_refunded",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds concurrent refunds across lines and a dashboard refund together never exceed the payment",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds concurrent refunds on one line never exceed the line",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds refunding every line in full ends in refunded",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds rejects bad amounts without reserving or calling the provider",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds rejects unpaid orders, unknown lines and lines of another order",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds sequential partial refunds can never sum past the line",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds unknown outcomes keep the money reserved and are never blindly re-sent a 5xx before the provider applied also keeps the reservation and never double sends",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds unknown outcomes keep the money reserved and are never blindly re-sent a crash before sending is recovered by sending exactly once, with the request id as idempotency key",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds unknown outcomes keep the money reserved and are never blindly re-sent a process crash after the durable send marker is treated as possibly committed",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds unknown outcomes keep the money reserved and are never blindly re-sent a webhook for the refund arriving before the API response is correlated by request id, not by amount",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds unknown outcomes keep the money reserved and are never blindly re-sent concurrent recovery scans of the same unsent request send once",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds unknown outcomes keep the money reserved and are never blindly re-sent response lost after the provider applied: reservation holds, exact webhook links it, books once",
+  "tests/inline/refunds.test.ts :: inline: refunds API refunds unknown outcomes keep the money reserved and are never blindly re-sent the recovery scan never POSTs a request whose first attempt may have committed",
+  "tests/inline/refunds.test.ts :: inline: refunds an event that cannot be processed because another delivery holds the refund is not acknowledged",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering a canceled refund frees capacity like a failed one",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering a dashboard refund is recorded once, unallocated, and cannot be double counted by redelivery",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering a refund event arriving before the payment event is retried and then recorded exactly once",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering a refund that fails after having succeeded is reversed once",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering a signed refund event naming a refund the provider reports with other money is not booked",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering a stale 'pending' event delivered after 'succeeded' does not regress the refund",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering an in-flight API refund and an equal-amount dashboard refund are both recorded, neither merged into the other",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering async failure reverses the recognition exactly once, frees the line, and survives replays and stale success",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering dashboard refunds reduce what the app will let API users refund",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering pending then succeeded: recognised once while pending, status follows the provider",
+  "tests/inline/refunds.test.ts :: inline: refunds provider-originated refunds and event ordering two orders with identical amounts keep their refunds apart",
+  "tests/inline/refunds.test.ts :: inline: refunds webhook transport edge: GET to the webhook path and an unparseable body change nothing",
+  "tests/worker/model.test.ts :: worker: model-based interleavings holds the money laws for hostile fixed schedules",
+  "tests/worker/model.test.ts :: worker: model-based interleavings holds the money laws under random schedules",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture a 5xx before apply also never leads to a second create",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture a created payment that does not match the order's money is refused",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture a lost create response never produces a second provider payment, even after idempotency expiry",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture a paid order cannot be checked out again",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture a partial capture is never allocated as the full sale",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture capture rejects a payment that is not awaiting capture",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture capture with a lost response is reconciled from the provider object, never booked twice",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture creates exactly one provider payment however often (and however concurrently) it is submitted",
+  "tests/worker/shop.test.ts :: worker: money logic checkout and capture manual capture: authorised is not paid; capture books once; repeat is harmless",
+  "tests/worker/shop.test.ts :: worker: money logic health and unknown routes",
+  "tests/worker/shop.test.ts :: worker: money logic job queue a failing job is retried with backoff, dead-lettered after its limit, and a redelivery revives it",
+  "tests/worker/shop.test.ts :: worker: money logic job queue a job that succeeded is not re-queued by a redelivery",
+  "tests/worker/shop.test.ts :: worker: money logic orders accepts the largest order total and rejects invalid JSON bodies",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects 21 lines and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects bad currency and capture values",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects decimal string and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects exponent and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects fraction and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects missing seller and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects negative and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects no lines and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects too large line and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects total too large and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects unknown seller and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders rejects zero and stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic orders stores the exact sum, normalises currency, and exposes the order",
+  "tests/worker/shop.test.ts :: worker: money logic refunds Razorpay's INR minimum is enforced before any reservation",
+  "tests/worker/shop.test.ts :: worker: money logic refunds a definitive rejection releases the reservation",
+  "tests/worker/shop.test.ts :: worker: money logic refunds a line with no allocated captured money cannot be refunded",
+  "tests/worker/shop.test.ts :: worker: money logic refunds a refund that exceeds what outside refunds left is refused locally once they are known",
+  "tests/worker/shop.test.ts :: worker: money logic refunds books a refund against the right seller once",
+  "tests/worker/shop.test.ts :: worker: money logic refunds concurrent refunds across lines, plus an outside refund, never exceed the payment",
+  "tests/worker/shop.test.ts :: worker: money logic refunds concurrent refunds on one line never exceed it",
+  "tests/worker/shop.test.ts :: worker: money logic refunds full refunds of every line end in refunded",
+  "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering a dashboard refund is recorded once; unallocated to any seller",
+  "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering a refund event for a payment the shop has not seen yet reconciles the payment first",
+  "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering a refund notice whose object the provider reports as another payment's is not mixed into this order",
+  "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering async failure reverses the recognition once, restores the line and the order, and replays are harmless",
+  "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering pending then succeeded then a stale pending notice: status follows the provider's current object",
+  "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering succeeded then failed is reversed once; canceled behaves like failed",
+  "tests/worker/shop.test.ts :: worker: money logic refunds provider-originated refunds and event ordering two orders with identical amounts keep their refunds apart",
+  "tests/worker/shop.test.ts :: worker: money logic refunds rejects bad amounts, unpaid orders and foreign lines without a provider call",
+  "tests/worker/shop.test.ts :: worker: money logic refunds sequential partial refunds can never exceed the line",
+  "tests/worker/shop.test.ts :: worker: money logic refunds unknown outcomes a crash between the provider applying a refund and the shop recording it leaves it recoverable by event",
+  "tests/worker/shop.test.ts :: worker: money logic refunds unknown outcomes a late exact webhook links the unknown request, retires the dead letter and books once",
+  "tests/worker/shop.test.ts :: worker: money logic refunds unknown outcomes a restart finds requests left in flight and resolves them without re-sending",
+  "tests/worker/shop.test.ts :: worker: money logic refunds unknown outcomes before5xx: answers 202, keeps the amount reserved and never re-posts",
+  "tests/worker/shop.test.ts :: worker: money logic refunds unknown outcomes jobs left running by a crashed process are re-queued and applied idempotently",
+  "tests/worker/shop.test.ts :: worker: money logic refunds unknown outcomes lost: answers 202, keeps the amount reserved and never re-posts",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object a (signed) succeeded notice for a payment the provider still shows unpaid books nothing",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object a currency that differs from the order is not booked",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object a forged signature stores nothing",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object a late payment notice after refunds does not re-book the sale or reset the order",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object a notice for an object that is not ours is ignored",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object a second captured provider payment for the order goes to suspense and credits no seller again",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object books correctly in USD, JPY and KWD with every row in the order currency",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object commission and seller parts sum exactly to each line for awkward amounts",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object duplicate deliveries of one event id, sequential and concurrent, create one job and book once",
+  "tests/worker/shop.test.ts :: worker: money logic webhooks are notices; state comes from the provider object the same fact under different event ids (and confirm) still books once",
+  "tests/worker/units.test.ts :: inline money.ts parseMinor accepts only exact safe integers and digit strings",
+  "tests/worker/units.test.ts :: inline money.ts sdkMinor refuses values outside the exact range",
+  "tests/worker/units.test.ts :: provider adapters (pure parts) Razorpay's INR minimum refund is 100 minor units and applies to INR only",
+  "tests/worker/units.test.ts :: worker money.ts commission is exactly 10% rounded half to even, and net + fee = amount",
+  "tests/worker/units.test.ts :: worker money.ts divHalfEven matches an exact reference on small values and rejects bad input",
+  "tests/worker/units.test.ts :: worker money.ts line headroom subtracts live refunds and reservations only",
+  "tests/worker/units.test.ts :: worker money.ts order status follows money, not event order",
+  "tests/worker/units.test.ts :: worker money.ts parseMinorUnits accepts only exact non-negative integers within the domain",
+  "tests/worker/units.test.ts :: worker money.ts payment status only moves forward; terminal states never change",
+  "tests/worker/units.test.ts :: worker money.ts provider money must be an exact JSON integer in range",
+  "tests/worker/units.test.ts :: worker money.ts refund statuses: exactly pending, requires_action and succeeded hold money",
+  "tests/worker/units.test.ts :: worker money.ts retry backoff is monotonic and capped",
+  "tests/worker/units.test.ts :: worker money.ts sale legs always balance and credit each seller line minus its commission"
+ ],
+ "stablePassing": 149,
+ "baseFlaky": [],
+ "detectedCases": 28
+}

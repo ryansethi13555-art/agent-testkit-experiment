@@ -1,0 +1,11 @@
+--- a/src/db.ts
++++ b/src/db.ts
+@@ -78,7 +78,7 @@
+   status text NOT NULL CHECK (status IN ('pending', 'requires_action', 'succeeded', 'failed', 'canceled')),
+   origin text NOT NULL CHECK (origin IN ('shop', 'provider')),
+   created_at timestamptz NOT NULL DEFAULT now(),
+-  updated_at timestamptz NOT NULL DEFAULT now());
++  updated_at timestamptz NULL DEFAULT now());
+ CREATE INDEX IF NOT EXISTS refunds_order ON refunds (order_id);
+ CREATE INDEX IF NOT EXISTS refunds_line ON refunds (line_id);
+ 

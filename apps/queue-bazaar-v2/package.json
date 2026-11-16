@@ -1,0 +1,17 @@
+{
+  "name": "queue-bazaar-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Versioned QueueBazaar development control candidate; historical app preserved",
+  "scripts": {
+    "start": "node src/server.ts",
+    "test": "node --test --test-concurrency=1 test/*.test.ts"
+  },
+  "dependencies": {
+    "pg": "^8.16.0",
+    "razorpay": "2.9.8",
+    "stripe": "23.0.0"
+  }
+}

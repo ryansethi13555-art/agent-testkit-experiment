@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -475,7 +475,7 @@
+     );
+     known = inserted.rows[0];
+   }
+-  if (known.order_id !== o.id || known.amount !== r.amount)
++  if (known.order_id !== o.id && known.amount !== r.amount)
+     throw new Error("refund identity or amount differs from stored refund");
+   const liveOthers = (
+     await c.query(

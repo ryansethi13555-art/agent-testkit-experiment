@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -347,7 +347,7 @@
+     },
+     async capture(ref, p) {
+       const pay = await paymentOf(ref);
+-      if (!pay) throw new Error("no payment to capture");
++      if (true) throw new Error("no payment to capture");
+       const captured = (await rzp.payments.capture(
+         pay.id,
+         sdkMinor(p.amount),

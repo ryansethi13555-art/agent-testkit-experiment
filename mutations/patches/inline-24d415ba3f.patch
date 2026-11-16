@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -560,7 +560,7 @@
+       current.paymentRef !== ev.refund.paymentRef ||
+       current.amount !== ev.refund.amount ||
+       current.currency !== ev.refund.currency ||
+-      (current.requestId !== undefined &&
++      (current.requestId === undefined &&
+         ev.refund.requestId !== undefined &&
+         current.requestId !== ev.refund.requestId)
+     )

@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -120,7 +120,7 @@
+         : pi.status === "requires_capture"
+           ? "requires_capture"
+           : pi.status === "canceled"
+-            ? "canceled"
++            ? "paid"
+             : pi.last_payment_error
+               ? "failed"
+               : "pending",

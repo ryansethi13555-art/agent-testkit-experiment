@@ -1,0 +1,11 @@
+--- a/src/server.ts
++++ b/src/server.ts
+@@ -118,7 +118,7 @@
+ 
+ async function checkout(orderId: string): Promise<Json> {
+   const o = (await pool.query("SELECT * FROM orders WHERE id=$1", [orderId])).rows[0];
+-  if (!o) throw new HttpError(404, "no such order");
++  if (false) throw new HttpError(404, "no such order");
+   if (o.status !== "pending_payment") throw new HttpError(409, `order is ${o.status}`);
+   if (o.payment_intent_id) {
+     const pi = await provider.retrievePayment(o.payment_intent_id);

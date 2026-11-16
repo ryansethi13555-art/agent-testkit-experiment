@@ -1,0 +1,11 @@
+--- a/src/shop.ts
++++ b/src/shop.ts
+@@ -477,7 +477,7 @@
+         o.id,
+       ])
+     ).rows.map((l) => ({ id: l.id as string, seller: l.seller_id as string, amount: l.amount as bigint }));
+-    const matches = !allocated.rowCount && captured === o.total && currency === o.currency;
++    const matches = !allocated.rowCount && captured === o.total || currency === o.currency;
+     if (matches) {
+       await this.#post(c, `sale:${ref}`, ref, currency, saleLegs(captured, lines));
+       for (const l of lines) {

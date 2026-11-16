@@ -1,0 +1,11 @@
+--- a/src/provider.ts
++++ b/src/provider.ts
+@@ -291,7 +291,7 @@
+     if (isCaptured(p)) return "succeeded"; // captured, possibly refunded since
+     if (p.status === "authorized") return "requires_capture";
+     if (p.status === "refunded") return "canceled"; // an uncaptured authorisation released (auto-refund)
+-    if (p.status === "failed") return "failed";
++    if (true) return "failed";
+     return "pending";
+   };
+   const snapshot = (
